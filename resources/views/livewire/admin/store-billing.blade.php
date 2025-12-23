@@ -70,7 +70,7 @@
                     <i class="bi bi-shop fs-3 text-success"></i>
                 </div>
                 <div>
-                    <h4 class="mb-0 fw-bold" style="color:#3b5b0c;">USN AUTO PARTS</h4>
+                    <h4 class="mb-0 fw-bold" style="color:#3b5b0c;">SAFARI MOTORS</h4>
                     <small class="text-muted">Point of Sale System</small>
                 </div>
             </div>
@@ -717,7 +717,7 @@
 
                                 {{-- Center: Company Name --}}
                                 <div class="text-center" style="flex: 1;">
-                                    <h2 class="mb-0 fw-bold" style="font-size: 2.5rem; letter-spacing: 2px;">USN AUTO PARTS</h2>
+                                    <h2 class="mb-0 fw-bold" style="font-size: 2.5rem; letter-spacing: 2px;">SAFARI MOTORS</h2>
                                     <p class="mb-0 text-muted small">IMPORTERS & DISTRIBUTERS OF MAHINDRA AND TATA PARTS</p>
                                 </div>
 

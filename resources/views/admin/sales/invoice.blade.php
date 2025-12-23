@@ -315,7 +315,7 @@
                         <img src="{{ public_path('images/USN.png') }}" alt="Logo">
                     </td>
                     <td class="company-section">
-                        <h2>USN AUTO PARTS</h2>
+                        <h2>SAFARI MOTORS</h2>
                         <p>IMPORTERS & DISTRIBUTORS OF MAHINDRA AND TATA PARTS</p>
                     </td>
                     <td class="invoice-section">

@@ -133,7 +133,7 @@
                     <div class="w-100">
                         <img src="{{ asset('images/USN.png') }}" alt="Logo"
                              class="img-fluid mb-2" style="max-height:60px;">
-                        <h4 class="mb-0 fw-bold">USN AUTO PARTS</h4>
+                        <h4 class="mb-0 fw-bold">SAFARI MOTORS</h4>
                         
                     </div>
                     <button type="button" class="btn-close btn-close-white closebtn"

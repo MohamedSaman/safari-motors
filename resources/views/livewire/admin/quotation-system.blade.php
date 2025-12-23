@@ -396,7 +396,7 @@
                     <div class="quotation-preview p-4">
                         {{-- Header --}}
                         <div class="header text-center mb-4">
-                            <h2 class="text-success mb-1">USN AUTO PARTS</h2>
+                            <h2 class="text-success mb-1">SAFARI MOTORS</h2>
                             <p class="mb-1">103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
                             <p class="mb-1">Phone: (076) 9085352 | Email: autopartsusn@gmail.com</p>
                         </div>

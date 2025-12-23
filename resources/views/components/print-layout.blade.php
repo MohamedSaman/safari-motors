@@ -311,7 +311,7 @@
                 </div>
                 {{-- Center: Company Name --}}
                 <div class="text-center" style="flex: 1;">
-                    <h2 class="mb-0 fw-bold" style="font-size: 2rem; letter-spacing: 1.5px;">USN AUTO PARTS</h2>
+                    <h2 class="mb-0 fw-bold" style="font-size: 2rem; letter-spacing: 1.5px;">SAFARI MOTORS</h2>
                     <p class="mb-0 text-muted small">IMPORTERS & DISTRIBUTERS OF MAHINDRA AND TATA PARTS</p>
                 </div>
                 {{-- Right: Motor Parts & Invoice --}}

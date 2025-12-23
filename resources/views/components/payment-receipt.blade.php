@@ -101,7 +101,7 @@
         {{-- Header --}}
         <div class="header">
             <div class="company-info">
-                <h2> USN Auto Parts</h2>
+                <h2> SAFARI MOTORS</h2>
             </div>
             <div class="receipt-title">PAYMENT RECEIPT</div>
         </div>
