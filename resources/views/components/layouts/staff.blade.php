@@ -23,14 +23,16 @@
     <style>
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: #f5f7fa;
+            background-color: #ffffff;
+            color: #000000;
         }
 
         .sidebar {
             width: 265px;
             height: 100vh;
-            background-color: #000000;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
+            border-right: 1px solid #dee2e6;
             padding: 20px 0;
             position: fixed;
             transition: all 0.3s ease;
@@ -76,7 +78,7 @@
         .sidebar-title {
             font-weight: 600;
             font-size: 1.2rem;
-            color: #ffffff;
+            color: #000000;
             letter-spacing: -0.02em;
         }
 
@@ -86,22 +88,22 @@
         }
 
         .nav-link {
-            color: #fff;
+            color: #000000;
             padding: 8px 20px;
             transition: all 0.2s;
         }
 
         .nav-link.active {
-            background: #3B5B0C;
-            background: linear-gradient(0deg, rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
-            color: #fff;
+            background: #28a745;
+            color: #ffffff;
             font-weight: 500;
         }
 
         .nav-link:focus,
         .nav-link:hover,
         .nav-link:focus-visible {
-            color: #fff;
+            color: #000000;
+            background-color: #f8f9fa;
             outline: none;
         }
 
@@ -138,8 +140,8 @@
 
         .top-bar {
             height: 60px;
-            background-color: #000000;
-            border-bottom: 1px solid #e0e0e0;
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
             padding: 0 20px;
             position: fixed;
             top: 0;
@@ -162,11 +164,11 @@
             padding: 5px;
             border-radius: 5px;
             transition: background-color 0.2s;
-            color: #ffffff;
+            color: #000000;
         }
 
         .admin-info:hover {
-            background-color: #8eb922;
+            background-color: #f8f9fa;
         }
 
         .admin-avatar,
@@ -175,14 +177,14 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background-color: #000000;
+            background-color: #28a745;
             color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 600;
             letter-spacing: -0.03em;
-            border: 1px solid #ffffff;
+            border: 1px solid #28a745;
         }
 
         .admin-name {
@@ -261,7 +263,7 @@
         }
 
         .stat-label {
-            color: #6c757d;
+            color: #000000;
             font-size: 14px;
             margin-bottom: 5px;
             font-size: 0.875rem;
@@ -274,8 +276,118 @@
         }
 
         .stat-change-alert {
-            color: #842029;
+            color: #dc3545;
             font-size: 13px;
+        }
+        
+        /* Button Styles */
+        .btn {
+            background: #28a745;
+            color: #ffffff;
+            border: none;
+        }
+        
+        .btn:hover {
+            background: #218838;
+            color: #ffffff;
+        }
+        
+        .btn-primary {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-primary:hover {
+            background: #218838 !important;
+            border-color: #218838 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-success {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-success:hover {
+            background: #218838 !important;
+            border-color: #218838 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-info {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-info:hover {
+            background: #218838 !important;
+            border-color: #218838 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-outline-primary {
+            color: #28a745 !important;
+            border-color: #28a745 !important;
+            background: transparent !important;
+        }
+        
+        .btn-outline-primary:hover {
+            color: #ffffff !important;
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+        }
+        
+        /* Table Styles */
+        .table th {
+            background: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        /* Modal Header */
+        .modal-header {
+            background: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        /* Global color overrides for all custom styles */
+        .bg-primary, .badge-primary {
+            background-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .text-primary {
+            color: #28a745 !important;
+        }
+        
+        .border-primary {
+            border-color: #28a745 !important;
+        }
+        
+        /* Card backgrounds */
+        .card {
+            background-color: #ffffff !important;
+        }
+        
+        .card-header {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+        
+        /* Alert colors */
+        .alert-primary {
+            background-color: #d4edda !important;
+            border-color: #28a745 !important;
+            color: #000000 !important;
+        }
+        
+        .alert-info {
+            background-color: #d4edda !important;
+            border-color: #28a745 !important;
+            color: #000000 !important;
+        }
         }
 
         .content-tabs {
@@ -288,18 +400,18 @@
             padding: 10px 20px;
             cursor: pointer;
             font-weight: 500;
-            color: #495057;
+            color: #000000;
             border-bottom: 3px solid transparent;
             transition: all 0.2s;
         }
 
         .content-tab.active {
-            color: #0d6efd;
-            border-bottom-color: #0d6efd;
+            color: #28a745;
+            border-bottom-color: #28a745;
         }
 
         .content-tab:hover:not(.active) {
-            color: #0d6efd;
+            color: #28a745;
             border-bottom-color: #dee2e6;
         }
 
@@ -320,7 +432,7 @@
         }
 
         .chart-header {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             padding: 1rem 1.5rem;
             border-bottom: 1px solid #dee2e6;
             border-top-left-radius: 0.5rem;
@@ -812,7 +924,7 @@
         <div class="sidebar">
             <div class="sidebar-header d-flex justify-content-center">
                 <div class="sidebar-title">
-                    <img src="{{ asset('images/USN-Dark.png') }}" alt="Logo" width="200">
+                    <img src="{{ asset('images/SAFARI-Dark.png') }}" alt="Logo" width="200">
                 </div>
             </div>
             <ul class="nav flex-column">

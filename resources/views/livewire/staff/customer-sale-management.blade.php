@@ -25,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 6px;
-            background: linear-gradient(to right, #4f46e5, #7c3aed);
+            background: #28a745;
             opacity: 0.8;
         }
 
@@ -37,7 +37,7 @@
         }
 
         .stat-label {
-            color: #6c757d;
+            color: #000000;
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 10px;
@@ -64,12 +64,12 @@
         }
 
         .custom-table thead th {
-            background-color: #f8fafc;
+            background-color: #ffffff;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 12px;
             letter-spacing: 1px;
-            color: #64748b;
+            color: #000000;
             padding: 16px 20px;
             border-bottom: 2px solid #e2e8f0;
         }
@@ -78,7 +78,7 @@
             padding: 16px 20px;
             vertical-align: middle;
             border-bottom: 1px solid #f1f5f9;
-            color: #334155;
+            color: #000000;
             font-size: 14px;
         }
 
@@ -87,7 +87,7 @@
         }
 
         .custom-table tbody tr:hover {
-            background-color: #f8fafc;
+            background-color: #f8f9fa;
         }
 
         .custom-table tbody tr:last-child td {
@@ -99,7 +99,7 @@
             font-family: 'Courier New', monospace;
             font-weight: 600;
             letter-spacing: -0.5px;
-            color: #334155;
+            color: #000000;
         }
 
         /* Avatar styling */
@@ -127,18 +127,18 @@
         }
 
         .badge-paid {
-            background-color: #ecfdf5;
-            color: #10b981;
+            background-color: #d4edda;
+            color: #000000;
         }
 
         .badge-partial {
-            background-color: #fffbeb;
-            color: #f59e0b;
+            background-color: #fff3cd;
+            color: #000000;
         }
 
         .badge-unpaid {
-            background-color: #fee2e2;
-            color: #ef4444;
+            background-color: #f8d7da;
+            color: #000000;
         }
 
         /* Enhanced buttons */
@@ -165,14 +165,14 @@
 
         .modal-header {
             border-bottom: 1px solid #f1f5f9;
-            background-color: #f8fafc;
+            background-color: #ffffff;
             padding: 18px 24px;
         }
 
         .modal-title {
             font-weight: 600;
             font-size: 18px;
-            color: #334155;
+            color: #000000;
         }
 
         .modal-body {
@@ -663,7 +663,7 @@
                         <div class="text-center mb-4">
                             <h3 class="mb-0">SAFARI MOTORS</h3>
                             <p class="mb-0 text-muted small">103 H,Yatiyanthota Road,Seethawaka,avissawella.</p>
-                            <p class="mb-0 text-muted small">Phone: ( 076) 9085252| Email: autopartsusn@gmail.com </p>
+                            <p class="mb-0 text-muted small">Phone: ( 076) 9085252| Email: sample@gmail.com </p>
                             <h4 class="mt-3 border-bottom border-2 pb-2">SALES RECEIPT</h4>
                         </div>
 

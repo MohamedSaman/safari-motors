@@ -167,7 +167,7 @@
     }
 
     .accordion-button:not(.collapsed) {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
         color: #212529;
     }
 
@@ -188,7 +188,7 @@
 
     .table th {
         border-bottom: 2px solid #e9ecef;
-        background-color: #f8f9fa;
+        background-color: #ffffff;
         padding: 1rem 0.75rem;
         font-weight: 600;
     }
@@ -200,7 +200,7 @@
     }
 
     .table tbody tr:hover {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
 
     /* Modern Button Styles */
@@ -229,7 +229,7 @@
     }
 
     .btn-edit {
-        background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+        background: #28a745;
         color: white;
     }
 
@@ -274,7 +274,7 @@
             title: 'Success!',
             text: 'Configuration added successfully.',
             icon: 'success',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#28a745',
         });
     });
 
@@ -283,7 +283,7 @@
             title: 'Updated!',
             text: 'Configuration updated successfully.',
             icon: 'success',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#28a745',
         });
     });
 
@@ -292,7 +292,7 @@
             title: 'Deleted!',
             text: 'Configuration deleted successfully.',
             icon: 'success',
-            confirmButtonColor: '#3085d6',
+            confirmButtonColor: '#28a745',
         });
     });
 
@@ -340,7 +340,7 @@
             text: "This configuration will be deleted permanently.",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonColor: "#3085d6",
+            confirmButtonColor: "#28a745",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {

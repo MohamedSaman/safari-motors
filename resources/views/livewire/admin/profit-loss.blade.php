@@ -31,11 +31,11 @@
 
         .revenue-icon { background: #198754; }
         .expense-icon { background: #dc3545; }
-        .salary-icon { background: #ffc107; }
-        .profit-icon { background: #8eb922; }
+        .salary-icon { background: #28a745; }
+        .profit-icon { background: #28a745; }
 
         .metric-content h6 {
-            color: #6c757d;
+            color: #000000;
             font-size: 0.875rem;
             font-weight: 600;
             margin-bottom: 8px;
@@ -54,7 +54,7 @@
         .metric-percentage {
             font-size: 0.875rem;
             font-weight: 500;
-            color: #6c757d;
+            color: #000000;
         }
 
         .pl-chart-card {
@@ -111,8 +111,8 @@
         }
 
         .filter-card .form-control:focus {
-            border-color: #8eb922;
-            box-shadow: 0 0 0 0.2rem rgba(142, 185, 34, 0.25);
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
         }
 
         .filter-card .btn {
@@ -122,8 +122,8 @@
         }
 
         .filter-card .btn-primary {
-            background: #8eb922;
-            border-color: #8eb922;
+            background: #28a745;
+            border-color: #28a745;
         }
 
         .filter-card .btn-primary:hover {
@@ -133,7 +133,7 @@
 
         .filter-card .btn-secondary {
             background: #6c757d;
-            border-color: #6c757d;
+            border-color: #000000;
         }
 
         .filter-card .btn-secondary:hover {
@@ -154,7 +154,7 @@
 
         .pl-header .subtitle {
             font-size: 1rem;
-            color: #6c757d;
+            color: #000000;
             margin-bottom: 0;
         }
 
@@ -172,7 +172,7 @@
         }
 
         .table tbody tr:hover {
-            background-color: #f8f9fa !important;
+            background-color: #ffffff !important;
         }
 
         .table tbody td {
@@ -211,7 +211,7 @@
         }
 
         .badge-warning {
-            background: #ffc107;
+            background: #28a745;
             color: #212529;
         }
 
@@ -220,7 +220,7 @@
             border-radius: 8px;
             padding: 1rem 1.25rem;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            border-left: 4px solid #8eb922;
+            border-left: 4px solid #28a745;
         }
     </style>
     @endpush
@@ -230,7 +230,7 @@
         <div class="row align-items-center">
             <div class="col-md-8">
                 <h1>
-                    <i class="fas fa-chart-line me-3" style="color: #8eb922;"></i>Profit & Loss Statement
+                    <i class="fas fa-chart-line me-3" style="color: #28a745;"></i>Profit & Loss Statement
                 </h1>
                 <p class="subtitle">📊 Financial overview and performance analysis</p>
             </div>
@@ -377,7 +377,7 @@
                             <tr style="height: 8px; background: transparent;"></tr>
 
                             <!-- Net Revenue (Gross Profit) -->
-                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #ffc107;">
+                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #28a745;">
                                 <td class="fw-bold text-warning fs-5">✅ NET REVENUE (Gross Sales - COGS)</td>
                                 <td class="text-end fw-bold text-warning" style="font-size: 1.1rem;">
                                     {{ number_format($totalRevenue, 2) }}
@@ -416,7 +416,7 @@
                             <tr style="height: 8px; background: transparent;"></tr>
 
                             <!-- Operating Expenses Section -->
-                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #ffc107;">
+                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #28a745;">
                                 <td colspan="2" class="fw-bold text-warning fs-5">💼 OPERATING EXPENSES</td>
                             </tr>
                             <tr>
@@ -427,14 +427,14 @@
                             </tr>
                             @if(!empty($expenseBreakdown))
                                 @foreach($expenseBreakdown as $category => $details)
-                                    <tr class="table-light" style="border-left: 2px solid #ffc107;">
+                                    <tr class="table-light" style="border-left: 2px solid #28a745;">
                                         <td class="ps-5">└─ {{ $category }}</td>
                                         <td class="text-end text-warning">{{ number_format($details['amount'], 2) }}</td>
                                     </tr>
                                 @endforeach
                             @endif
 
-                            <tr class="table-light" style="border-left: 2px solid #ffc107;">
+                            <tr class="table-light" style="border-left: 2px solid #28a745;">
                                 <td class="ps-5">Expenses Total</td>
                                 <td class="text-end fw-bold text-warning">
                                     {{ number_format($totalExpenses, 2) }}
@@ -475,7 +475,7 @@
                         @if(!empty($paymentMethodWiseRevenue))
                             <div class="table-responsive">
                                 <table class="table table-sm table-hover mb-0">
-                                    <thead style="background: #f8f9fa;">
+                                    <thead style="background: #ffffff;">
                                         <tr>
                                             <th>Payment Method</th>
                                             <th class="text-end">Amount</th>
@@ -511,7 +511,7 @@
                         @if(!empty($expenseByCategoryTotals))
                             <div class="table-responsive">
                                 <table class="table table-sm table-hover mb-0">
-                                    <thead style="background: #f8f9fa;">
+                                    <thead style="background: #ffffff;">
                                         <tr>
                                             <th>Category</th>
                                             <th class="text-end">Amount</th>
@@ -634,7 +634,7 @@
             </div>
             <div class="col-xl-3 col-md-6 mb-3">
                 <div class="pl-metric-card">
-                    <div class="metric-icon" style="background: #0d6efd;">
+                    <div class="metric-icon" style="background: #28a745;">
                         <i class="fas fa-chart-pie"></i>
                     </div>
                     <div class="metric-content">
@@ -660,7 +660,7 @@
             </div>
             <div class="col-xl-3 col-md-6 mb-3">
                 <div class="pl-metric-card">
-                    <div class="metric-icon" style="background: #ffc107;">
+                    <div class="metric-icon" style="background: #28a745;">
                         <i class="fas fa-boxes"></i>
                     </div>
                     <div class="metric-content">
@@ -707,7 +707,7 @@
     }
 
     .table tbody tr:hover {
-        background-color: #f8f9fa !important;
+        background-color: #ffffff !important;
     }
 </style>
 @endpush

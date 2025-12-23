@@ -287,7 +287,7 @@
                             <div class="text-center mb-4">
                                 <h3 class="mb-0">SAFARI MOTORS</h3>
                                 <p class="mb-0 text-muted small">103 H,Yatiyanthota Road,Seethawaka,avissawella.</p>
-                                <p class="mb-0 text-muted small">Phone: (076) 9085352 | Email: autopartsusn@gmail.com</p>
+                                <p class="mb-0 text-muted small">Phone: (076) 1234567 | Email: sample@gmail.com</p>
                                 <h4 class="mt-3 border-bottom border-2 pb-2">PAYMENT RECEIPT</h4>
                             </div>
 
@@ -661,11 +661,11 @@
     }
 
     .summary-card.total {
-        border-left-color: #4361ee;
+        border-left-color: #28a745;
     }
 
     .summary-card.pending {
-        border-left-color: #ffc107;
+        border-left-color: #28a745;
     }
 
     .summary-card.approved {
@@ -688,7 +688,7 @@
     .table th {
         border-top: none;
         font-weight: 600;
-        color: #6c757d;
+        color: #000000;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -723,8 +723,8 @@
 
     .form-control:focus,
     .form-select:focus {
-        box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
-        border-color: #4361ee;
+        box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
+        border-color: #28a745;
     }
 
     .btn {
@@ -735,24 +735,24 @@
     }
 
     .btn-primary {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-primary:hover {
-        background-color: #3f37c9;
-        border-color: #3f37c9;
+        background-color: #218838;
+        border-color: #218838;
         transform: translateY(-2px);
     }
 
     .btn-outline-primary {
-        color: #4361ee;
-        border-color: #4361ee;
+        color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-outline-primary:hover {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
         transform: translateY(-2px);
     }
 
@@ -893,16 +893,16 @@
                         vertical-align: baseline;
                         border-radius: 0.25rem;
                     }
-                    .bg-warning { background-color: #ffc107; color: #000; }
+                    .bg-warning { background-color: #28a745; color: #000; }
                     .bg-success { background-color: #198754; color: #fff; }
                     .bg-danger { background-color: #dc3545; color: #fff; }
-                    .bg-secondary { background-color: #6c757d; color: #fff; }
-                    .text-primary { color: #4361ee !important; }
+                    .bg-secondary { background-color: #000000; color: #fff; }
+                    .text-primary { color: #28a745 !important; }
                     .text-success { color: #198754 !important; }
                     .text-danger { color: #dc3545 !important; }
                     .fw-bold { font-weight: bold; }
                     .fw-semibold { font-weight: 600; }
-                    .text-muted { color: #6c757d; }
+                    .text-muted { color: #000000; }
                     .border-bottom { border-bottom: 1px solid #dee2e6; }
                     .border-top { border-top: 1px solid #dee2e6; }
                     .mb-0 { margin-bottom: 0; }

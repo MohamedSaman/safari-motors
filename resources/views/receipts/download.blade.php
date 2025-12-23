@@ -266,7 +266,7 @@
             <div style="display: flex; align-items: center; justify-content: space-between;">
                 <!-- Left: Logo -->
                 <div style="flex: 0 0 150px;">
-                    <img src="{{ public_path('images/USN.png') }}" alt="Logo" style="max-height:80px;">
+                    <img src="{{ public_path('images') }}" alt="Logo" style="max-height:80px;">
                 </div>
                 <!-- Center: Company Name -->
                 <div style="flex: 1; text-align: center;">
@@ -394,22 +394,22 @@
                 <div style="flex: 0 0 33.3333%; max-width: 33.3333%; padding: 0 10px;">
                     <p><strong>.............................</strong></p>
                     <p style="margin-bottom: 8px;"><strong>Checked By</strong></p>
-                    <img src="{{ public_path('images/tata.png') }}" alt="TATA" style="height: 35px; margin: auto;">
+                    <img src="{{ public_path('images') }}" alt="TATA" style="height: 35px; margin: auto;">
                 </div>
                 <div style="flex: 0 0 33.3333%; max-width: 33.3333%; padding: 0 10px;">
                     <p><strong>.............................</strong></p>
                     <p style="margin-bottom: 8px;"><strong>Authorized Officer</strong></p>
-                    <img src="{{ public_path('images/USN.png') }}" alt="USN" style="height: 35px; margin: auto;">
+                    <img src="{{ public_path('images') }}" alt="SAFARI" style="height: 35px; margin: auto;">
                 </div>
                 <div style="flex: 0 0 33.3333%; max-width: 33.3333%; padding: 0 10px;">
                     <p><strong>.............................</strong></p>
                     <p style="margin-bottom: 8px;"><strong>Customer Stamp</strong></p>
-                    <img src="{{ public_path('images/mahindra.png') }}" alt="Mahindra" style="height: 35px; margin: auto;">
+                    <img src="{{ public_path('images') }}" alt="Mahindra" style="height: 35px; margin: auto;">
                 </div>
             </div>
             <div style="border-top: 1px solid #3b5b0c; padding-top: 10px;">
-                <p style="text-align: center;"><strong>ADDRESS :</strong> 103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-                <p style="text-align: center;"><strong>TEL :</strong> (076) 9085352, <strong>EMAIL :</strong> autopartsusn@gmail.com</p>
+                <p style="text-align: center;"><strong>ADDRESS :</strong> Sample Address</p>
+                <p style="text-align: center;"><strong>TEL :</strong> (076) 1234567, <strong>EMAIL :</strong> sample@gmail.com</p>
                 <p style="text-align: center; font-size: 11px; margin-top: 8px;"><strong>Goods return will be accepted within 10 days only. Electrical and body parts non-returnable.</strong></p>
             </div>
         </div>

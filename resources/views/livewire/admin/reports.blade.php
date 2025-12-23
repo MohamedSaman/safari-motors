@@ -16,7 +16,7 @@
         }
 
         .stat-label {
-            color: #6c757d;
+            color: #000000;
             font-size: 14px;
             margin-bottom: 5px;
         }

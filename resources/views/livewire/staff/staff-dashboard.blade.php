@@ -29,7 +29,7 @@
             }
 
             .stat-label {
-                color: #6c757d;
+                color: #000000;
                 font-size: 13px;
                 margin-bottom: 5px;
             }
@@ -75,7 +75,7 @@
                 padding: 8px 12px;
                 cursor: pointer;
                 font-weight: 500;
-                color: #495057;
+                color: #000000;
                 border-bottom: 3px solid transparent;
                 transition: all 0.2s;
                 white-space: nowrap;
@@ -88,12 +88,12 @@
             }
 
             .content-tab.active {
-                color: #0d6efd;
-                border-bottom-color: #0d6efd;
+                color: #28a745;
+                border-bottom-color: #28a745;
             }
 
             .content-tab:hover:not(.active) {
-                color: #0d6efd;
+                color: #28a745;
                 border-bottom-color: #dee2e6;
             }
 
@@ -112,7 +112,7 @@
             }
 
             .chart-header {
-                background-color: #f8f9fa;
+                background-color: #ffffff;
                 padding: 0.75rem 1rem;
                 border-bottom: 1px solid #dee2e6;
                 border-top-left-radius: 0.5rem;
@@ -269,18 +269,18 @@
             }
 
             .in-stock {
-                background-color: #d1e7dd;
-                color: #0f5132;
+                background-color: #d4edda;
+                color: #000000;
             }
 
             .low-stock {
                 background-color: #fff3cd;
-                color: #664d03;
+                color: #000000;
             }
 
             .out-of-stock {
                 background-color: #f8d7da;
-                color: #842029;
+                color: #000000;
             }
 
             .progress {
@@ -299,7 +299,7 @@
 
             .progress-bar {
                 height: 100%;
-                background-color: #007bff;
+                background-color: #28a745;
             }
 
             .staff-info {
@@ -968,7 +968,7 @@
                 labels: @json(collect($brandSales)->pluck('brand')),
                 datasets: [{
                     label: 'Sales by Brand',
-                    backgroundColor: '#0d6efd',
+                    backgroundColor: '#28a745',
                     data: @json(collect($brandSales)->pluck('total_sales'))
                 }]
             },

@@ -397,8 +397,8 @@
                         {{-- Header --}}
                         <div class="header text-center mb-4">
                             <h2 class="text-success mb-1">SAFARI MOTORS</h2>
-                            <p class="mb-1">103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-                            <p class="mb-1">Phone: (076) 9085352 | Email: autopartsusn@gmail.com</p>
+                            <p class="mb-1">Sample Address</p>
+                            <p class="mb-1">Phone: (076) 1234567 | Email: sample@gmail.com</p>
                         </div>
 
                         {{-- Customer & Quotation Details --}}
@@ -536,13 +536,13 @@
     }
 
     .search-results .p-3:hover {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
 
     .table th {
         font-size: 0.875rem;
         font-weight: 600;
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
 
     .form-control-sm {
@@ -557,7 +557,7 @@
     }
 
     .card-header {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
         border-bottom: 1px solid #dee2e6;
         padding: 1rem 1.25rem;
     }
@@ -600,7 +600,7 @@
 
     /* Quick discount buttons */
     .btn-outline-secondary:hover {
-        background-color: #6c757d;
+        background-color: #000000;
         color: white;
     }
 

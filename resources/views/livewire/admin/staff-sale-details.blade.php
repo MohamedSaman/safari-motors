@@ -361,17 +361,17 @@
     }
 
     .summary-card:nth-child(1) {
-        border-left-color: #4361ee;
+        border-left-color: #28a745;
     }
 
     .summary-card:nth-child(2) {
-        border-left-color: #4cc9f0;
+        border-left-color: #28a745;
     }
 
     .table th {
         border-top: none;
         font-weight: 600;
-        color: #6c757d;
+        color: #000000;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -405,19 +405,19 @@
     }
 
     .btn-primary {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-primary:hover {
-        background-color: #3f37c9;
-        border-color: #3f37c9;
+        background-color: #218838;
+        border-color: #218838;
         transform: translateY(-2px);
     }
 
     .btn-success {
-        background-color: #4cc9f0;
-        border-color: #4cc9f0;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-success:hover {
@@ -468,7 +468,7 @@
                     .header h2 { margin-bottom: 5px; }
                     .header p { margin-top: 0; color: #666; }
                     .badge { padding: 3px 8px; border-radius: 4px; font-size: smaller; }
-                    .bg-primary { background-color: #0d6efd; color: white; }
+                    .bg-primary { background-color: #28a745; color: white; }
                     .bg-danger { background-color: #dc3545; color: white; }
                     .bg-success { background-color: #198754; color: white; }
                 </style>
@@ -480,7 +480,7 @@
                 </div>
                 ${tableContent}
                 <div style="text-align: center; margin-top: 20px;">
-                    <button onclick="window.print();" style="padding: 8px 16px; background: #0d6efd; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
+                    <button onclick="window.print();" style="padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
                     <button onclick="window.close();" style="padding: 8px 16px; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
                 </div>
             </body>
@@ -504,7 +504,7 @@
         let summaryHtml = '<div style="display: flex; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap;">';
         summaryStats.forEach(card => {
             summaryHtml += '<div style="width: 48%; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">';
-            summaryHtml += '<div style="background-color: #f8f9fa; padding: 10px; border-bottom: 1px solid #ddd;">';
+            summaryHtml += '<div style="background-color: #ffffff; padding: 10px; border-bottom: 1px solid #ddd;">';
             summaryHtml += card.querySelector('.card-header').textContent;
             summaryHtml += '</div>';
             summaryHtml += '<div style="padding: 15px;">';
@@ -535,14 +535,14 @@
                     .fw-bold { font-weight: bold; }
                     .text-success { color: green; }
                     .text-danger { color: red; }
-                    .text-muted { color: #6c757d; }
+                    .text-muted { color: #000000; }
                     .badge { padding: 3px 8px; border-radius: 4px; font-size: smaller; }
                     .bg-success { background-color: #198754; color: white; }
                     .bg-danger { background-color: #dc3545; color: white; }
-                    .bg-warning { background-color: #ffc107; color: black; }
+                    .bg-warning { background-color: #28a745; color: black; }
                     .bg-info { background-color: #0dcaf0; color: white; }
-                    .bg-light { background-color: #f8f9fa; color: black; }
-                    .bg-primary { background-color: #0d6efd; color: white; }
+                    .bg-light { background-color: #ffffff; color: black; }
+                    .bg-primary { background-color: #28a745; color: white; }
                     img { max-width: 100%; }
                     @media print {
                         .no-print { display: none; }
@@ -571,7 +571,7 @@
                 </div>
                 
                 <div class="no-print" style="text-align: center; margin-top: 30px;">
-                    <button onclick="window.print();" style="padding: 8px 16px; background: #0d6efd; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
+                    <button onclick="window.print();" style="padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
                     <button onclick="window.close();" style="padding: 8px 16px; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
                 </div>
             </body>

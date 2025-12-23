@@ -151,9 +151,9 @@
 <body>
     {{-- Header --}}
     <div class="header">
-        <img src="{{ public_path('images/USN.png') }}" alt="SAFARI MOTORS Logo">
-        <p>103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-        <p><strong>TEL:</strong> (076) 9085352 | <strong>EMAIL:</strong> autopartsusn@gmail.com</p>
+        <img src="{{ public_path('images/SAFARI.png') }}" alt="SAFARI MOTORS Logo">
+        <p>Sample Address</p>
+        <p><strong>TEL:</strong> (076) 1234567 | <strong>EMAIL:</strong> sample@gmail.com</p>
         <h1>CLOSE REGISTER SUMMARY</h1>
     </div>
 

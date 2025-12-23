@@ -307,7 +307,7 @@
             <div class="d-flex align-items-center justify-content-between mb-3">
                 {{-- Left: Logo --}}
                 <div style="flex: 0 0 120px; margin-right:10px;">
-                    <img src="{{ asset('images/USN.png') }}" alt="Logo" class="img-fluid" style="max-height:40px;">
+                    <img src="{{ asset('images') }}" alt="Logo" class="img-fluid" style="max-height:40px;">
                 </div>
                 {{-- Center: Company Name --}}
                 <div class="text-center" style="flex: 1;">
@@ -333,22 +333,22 @@
                 <div class="col-4">
                     <p class=""><strong>.............................</strong></p>
                     <p class="mb-2"><strong>Checked By</strong></p>
-                    <img src="{{ asset('images/tata.png') }}" alt="TATA" style="height: 25px;margin: auto;">
+                    <img src="{{ asset('images') }}" alt="TATA" style="height: 25px;margin: auto;">
                 </div>
                 <div class="col-4">
                     <p class=""><strong>.............................</strong></p>
                     <p class="mb-2"><strong>Authorized Officer</strong></p>
-                    <img src="{{ asset('images/USN.png') }}" alt="USN" style="height: 25px;margin: auto;">
+                    <img src="{{ asset('images') }}" alt="SAFARI" style="height: 25px;margin: auto;">
                 </div>
                 <div class="col-4">
                     <p class=""><strong>.............................</strong></p>
                     <p class="mb-2"><strong>Customer Stamp</strong></p>
-                    <img src="{{ asset('images/mahindra.png') }}" alt="Mahindra" style="height: 25px;margin: auto;">
+                    <img src="{{ asset('images') }}" alt="Mahindra" style="height: 25px;margin: auto;">
                 </div>
             </div>
             <div class="border-top pt-3">
-                <p class="text-center"><strong>ADDRESS :</strong> 103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-                <p class="text-center"><strong>TEL :</strong> (076) 9085252, <strong>EMAIL :</strong> autopartsusn@gmail.com</p>
+                <p class="text-center"><strong>ADDRESS :</strong> Sample Address</p>
+                <p class="text-center"><strong>TEL :</strong> (076) 9085252, <strong>EMAIL :</strong> sample@gmail.com</p>
                 <p class="text-center mt-2" style="font-size: 9px;"><strong>Goods return will be accepted within 10 days only. Electrical and body parts non-returnable.</strong></p>
             </div>
         </div>

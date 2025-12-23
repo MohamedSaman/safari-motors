@@ -406,13 +406,13 @@
 <style>
     .list-group-item.active {
         background-color: #f0f7ff;
-        color: #0d6efd;
+        color: #28a745;
         border-color: #dee2e6;
         font-weight: 500;
     }
     
     .list-group-item.active .badge {
-        background-color: #0d6efd !important;
+        background-color: #28a745 !important;
     }
     
     .search-box .form-control:focus {

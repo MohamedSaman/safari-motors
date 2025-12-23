@@ -360,11 +360,11 @@
     }
 
     .summary-card:nth-child(1) {
-        border-left-color: #4361ee;
+        border-left-color: #28a745;
     }
 
     .summary-card:nth-child(2) {
-        border-left-color: #4cc9f0;
+        border-left-color: #28a745;
     }
 
     .summary-card:nth-child(3) {
@@ -374,7 +374,7 @@
     .table th {
         border-top: none;
         font-weight: 600;
-        color: #6c757d;
+        color: #000000;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -408,19 +408,19 @@
     }
 
     .btn-primary {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-primary:hover {
-        background-color: #3f37c9;
-        border-color: #3f37c9;
+        background-color: #218838;
+        border-color: #218838;
         transform: translateY(-2px);
     }
 
     .btn-success {
-        background-color: #4cc9f0;
-        border-color: #4cc9f0;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-success:hover {

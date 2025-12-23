@@ -16,10 +16,10 @@ class ProductsTemplateExport implements FromArray, WithHeadings, WithStyles, Wit
     public function array(): array
     {
         return [
-            ['USN0001', 'Flasher Musical 12 V'],
-            ['USN0002', 'Flasher Musical 24 V'],
-            ['USN0003', 'Flasher Electrical 12 V'],
-            ['USN0004', 'Flasher Electrical 24 V'],
+            ['SAFARI0001', 'Flasher Musical 12 V'],
+            ['SAFARI0002', 'Flasher Musical 24 V'],
+            ['SAFARI0003', 'Flasher Electrical 12 V'],
+            ['SAFARI0004', 'Flasher Electrical 24 V'],
         ];
     }
 

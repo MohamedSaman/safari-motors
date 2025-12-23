@@ -3,11 +3,11 @@
     <style>
         /* ANALYTICS STYLES */
         .analytics-metric-card {
-            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+            background: #ffffff;
             border-radius: 16px;
             padding: 24px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid #dee2e6;
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -21,7 +21,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #007bff, #28a745, #ffc107, #dc3545);
+            background: #28a745;
         }
 
         .analytics-metric-card:hover {
@@ -41,13 +41,13 @@
             margin-bottom: 16px;
         }
 
-        .revenue-icon { background: linear-gradient(135deg, #007bff, #0056b3); }
-        .sales-icon { background: linear-gradient(135deg, #28a745, #1e7e34); }
-        .due-icon { background: linear-gradient(135deg, #dc3545, #bd2130); }
-        .profit-icon { background: linear-gradient(135deg, #ffc107, #e0a800); }
+        .revenue-icon { background: #28a745; }
+        .sales-icon { background: #28a745; }
+        .due-icon { background: #28a745; }
+        .profit-icon { background: #28a745; }
 
         .metric-content h6 {
-            color: #6c757d;
+            color: #000000;
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 8px;
@@ -58,7 +58,7 @@
         .metric-value {
             font-size: 28px;
             font-weight: 700;
-            color: #212529;
+            color: #000000;
             margin-bottom: 8px;
             line-height: 1.2;
         }
@@ -72,7 +72,7 @@
         }
 
         .metric-change.positive { color: #28a745; }
-        .metric-change.negative { color: #dc3545; }
+        .metric-change.negative { color: #000000; }
 
         .analytics-chart-card {
             background: white;
@@ -88,21 +88,21 @@
         }
 
         .chart-header {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: #ffffff;
             padding: 20px 24px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid #dee2e6;
         }
 
         .chart-title {
             font-size: 18px;
             font-weight: 600;
-            color: #212529;
+            color: #000000;
             margin-bottom: 4px;
         }
 
         .chart-subtitle {
             font-size: 14px;
-            color: #6c757d;
+            color: #000000;
             margin-bottom: 0;
         }
 
@@ -123,8 +123,8 @@
 
         .chart-footer {
             padding: 16px 24px;
-            background: #f8f9fa;
-            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            background: #ffffff;
+            border-top: 1px solid #dee2e6;
         }
 
         .chart-controls {
@@ -140,9 +140,9 @@
         }
 
         .chart-controls .btn.active {
-            background: #007bff;
+            background: #28a745;
             color: white;
-            border-color: #007bff;
+            border-color: #28a745;
         }
 
         .status-legend {
@@ -167,7 +167,7 @@
         }
 
         .legend-color.paid { background: #28a745; }
-        .legend-color.partial { background: #ffc107; }
+        .legend-color.partial { background: #28a745; }
         .legend-color.pending { background: #dc3545; }
 
         .performance-card {
@@ -188,10 +188,10 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #ffc107, #fd7e14);
+            background: linear-gradient(90deg, #28a745, #fd7e14);
         }
 
-        .performance-card.rank-1::before { background: linear-gradient(90deg, #ffc107, #fd7e14); }
+        .performance-card.rank-1::before { background: linear-gradient(90deg, #28a745, #fd7e14); }
         .performance-card.rank-2::before { background: linear-gradient(90deg, #6c757d, #495057); }
         .performance-card.rank-3::before { background: linear-gradient(90deg, #cd7f32, #8B4513); }
 
@@ -206,7 +206,7 @@
             gap: 8px;
             font-size: 18px;
             font-weight: 700;
-            color: #495057;
+            color: #000000;
             margin-bottom: 12px;
         }
 
@@ -231,7 +231,7 @@
 
         .stat-label {
             font-size: 13px;
-            color: #6c757d;
+            color: #000000;
             font-weight: 500;
         }
 
@@ -732,12 +732,12 @@
                         {
                             label: 'Total Sales',
                             data: salesData,
-                            borderColor: '#007bff',
+                            borderColor: '#28a745',
                             backgroundColor: 'rgba(0, 123, 255, 0.15)',
                             borderWidth: 4,
                             pointRadius: 6,
                             pointHoverRadius: 8,
-                            pointBackgroundColor: '#007bff',
+                            pointBackgroundColor: '#28a745',
                             pointBorderColor: '#fff',
                             pointBorderWidth: 2,
                             fill: true,
@@ -790,7 +790,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#007bff',
+                            borderColor: '#28a745',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {
@@ -844,7 +844,7 @@
                 }
             });
             const statusCounts = invoiceStatusData.map(item => item.count);
-            const statusColors = ['#28a745', '#ffc107', '#dc3545'];
+            const statusColors = ['#28a745', '#28a745', '#dc3545'];
 
             invoiceStatusChartInstance = new Chart(ctx, {
                 type: 'doughnut',
@@ -869,7 +869,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#007bff',
+                            borderColor: '#28a745',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {
@@ -1015,7 +1015,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#007bff',
+                            borderColor: '#28a745',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {

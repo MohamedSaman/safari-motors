@@ -270,7 +270,7 @@
                     <div class="d-flex align-items-center justify-content-between mb-3">
                         {{-- Left: Logo --}}
                         <div style="flex: 0 0 150px;">
-                            <img src="{{ asset('images/USN.png') }}" alt="Logo" class="img-fluid" style="max-height:80px;">
+                            <img src="{{ asset('images') }}" alt="Logo" class="img-fluid" style="max-height:80px;">
                         </div>
 
                         {{-- Center: Company Name --}}
@@ -477,22 +477,22 @@
                             <div class="col-4">
                                 <p class=""><strong>.............................</strong></p>
                                 <p class="mb-2"><strong>Checked By</strong></p>
-                                <img src="{{ asset('images/tata.png') }}" alt="TATA" style="height: 35px;margin: auto;">
+                                <img src="{{ asset('images') }}" alt="TATA" style="height: 35px;margin: auto;">
                             </div>
                             <div class="col-4">
                                 <p class=""><strong>.............................</strong></p>
                                 <p class="mb-2"><strong>Authorized Officer</strong></p>
-                                <img src="{{ asset('images/USN.png') }}" alt="USN" style="height: 35px;margin: auto;">
+                                <img src="{{ asset('images') }}" alt="SAFARI" style="height: 35px;margin: auto;">
                             </div>
                             <div class="col-4">
                                 <p class=""><strong>.............................</strong></p>
                                 <p class="mb-2"><strong>Customer Stamp</strong></p>
-                                <img src="{{ asset('images/mahindra.png') }}" alt="Mahindra" style="height: 35px;margin: auto;">
+                                <img src="{{ asset('images') }}" alt="Mahindra" style="height: 35px;margin: auto;">
                             </div>
                         </div>
                         <div class="border-top pt-3">
-                            <p class="text-center mb-0"><strong>ADDRESS :</strong> 103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-                            <p class="text-center mb-0"><strong>TEL :</strong> (076) 9085352, <strong>EMAIL :</strong> autopartsusn@gmail.com</p>
+                            <p class="text-center mb-0"><strong>ADDRESS :</strong> Sample Address</p>
+                            <p class="text-center mb-0"><strong>TEL :</strong> (076) 1234567, <strong>EMAIL :</strong> sample@gmail.com</p>
                             <p class="text-center" style="font-size: 11px;"><strong>Goods return will be accepted within 10 days only. Electrical and body parts non-returnable.</strong></p>
                         </div>
                     </div>
@@ -580,8 +580,8 @@
             font-weight: 600;
             border-top: none;
             color: #ffffff;
-            background: #3B5B0C;
-            background: linear-gradient(0deg, rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
+            background: #28a745;
+            background: #28a745;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -599,7 +599,7 @@
 
         .modal-header {
             border-bottom: 1px solid #dee2e6;
-            background: linear-gradient(90deg, #3b5b0c, #8eb922);
+            background: #28a745;
             color: #fff;
         }
 
@@ -685,7 +685,7 @@
                 text-align: center !important;
                 margin-bottom: 15px !important;
                 background: transparent !important;
-                border-bottom: 2px solid #3b5b0c !important;
+                border-bottom: 2px solid #28a745 !important;
             }
 
             .modal-header img {
@@ -831,7 +831,7 @@
             }
 
             .bg-light {
-                background-color: #f8f9fa !important;
+                background-color: #ffffff !important;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
             }

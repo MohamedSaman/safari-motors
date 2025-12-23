@@ -775,7 +775,7 @@
             }
 
             .search-result-item:hover {
-                background-color: #f8f9fa;
+                background-color: #ffffff;
                 cursor: pointer;
             }
         </style>

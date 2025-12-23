@@ -620,7 +620,6 @@
                             <label class="form-label fw-semibold">Payment Method <span class="text-danger">*</span></label>
                             <select class="form-select @error('paymentData.payment_method') is-invalid @enderror" wire:model.live="paymentData.payment_method">
                                 <option value="cash">Cash</option>
-                                <option value="cheque">Cheque</option>
                                 <option value="bank_transfer">Bank Transfer</option>
                             </select>
                             @error('paymentData.payment_method') <span class="text-danger small">{{ $message }}</span> @enderror

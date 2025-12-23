@@ -314,7 +314,7 @@
     .table th {
         border-top: none;
         font-weight: 600;
-        color: #6c757d;
+        color: #000000;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -349,8 +349,8 @@
 
     .form-control:focus,
     .form-select:focus {
-        box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
-        border-color: #4361ee;
+        box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
+        border-color: #28a745;
     }
 
     .btn {
@@ -361,13 +361,13 @@
     }
 
     .btn-primary {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-primary:hover {
-        background-color: #3f37c9;
-        border-color: #3f37c9;
+        background-color: #218838;
+        border-color: #218838;
         transform: translateY(-2px);
     }
 

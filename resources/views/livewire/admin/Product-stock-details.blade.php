@@ -237,7 +237,7 @@
     }
 
     .summary-card.total {
-        border-left-color: #4361ee;
+        border-left-color: #28a745;
     }
 
     .summary-card.available {
@@ -245,7 +245,7 @@
     }
 
     .summary-card.sold {
-        border-left-color: #4cc9f0;
+        border-left-color: #28a745;
     }
 
     .summary-card.damaged {
@@ -276,24 +276,24 @@
     }
 
     .btn-primary {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-primary:hover {
-        background-color: #3f37c9;
-        border-color: #3f37c9;
+        background-color: #218838;
+        border-color: #218838;
         transform: translateY(-2px);
     }
 
     .btn-outline-primary {
-        color: #4361ee;
-        border-color: #4361ee;
+        color: #28a745;
+        border-color: #28a745;
     }
 
     .btn-outline-primary:hover {
-        background-color: #4361ee;
-        border-color: #4361ee;
+        background-color: #28a745;
+        border-color: #28a745;
         transform: translateY(-2px);
     }
 
@@ -349,11 +349,11 @@
                     .print-header {
                         margin-bottom: 20px;
                         padding-bottom: 15px;
-                        border-bottom: 2px solid #4361ee;
+                        border-bottom: 2px solid #28a745;
                     }
                     
                     .print-header h2 {
-                        color: #4361ee;
+                        color: #28a745;
                         font-weight: 700;
                     }
                     
@@ -364,8 +364,8 @@
                     }
                     
                     th { 
-                        background-color: #f8f9fa !important;
-                        color: #6c757d;
+                        background-color: #ffffff !important;
+                        color: #000000;
                         font-weight: 600;
                         text-transform: uppercase;
                         font-size: 0.8rem;

@@ -129,9 +129,9 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content" id="printableReturnReceipt">
                 <!-- Header – logo + company name -->
-                <div class="modal-header text-center border-0" style="background: linear-gradient(90deg, #3b5b0c, #8eb922); color: #fff;">
+                <div class="modal-header text-center border-0" style="background: #28a745; color: #fff;">
                     <div class="w-100">
-                        <img src="{{ asset('images/USN.png') }}" alt="Logo"
+                        <img src="{{ asset('images/SAFARI.png') }}" alt="Logo"
                              class="img-fluid mb-2" style="max-height:60px;">
                         <h4 class="mb-0 fw-bold">SAFARI MOTORS</h4>
                         
@@ -214,8 +214,8 @@
                     <div class="mt-4 text-center small">
                         
                         <p class="mb-0">
-                            <strong>ADDRESS :</strong> 103 H, Yatiyanthota Road, Seethawaka, Avissawella<br>
-                            <strong>TEL :</strong> (076) 9085352, <strong>EMAIL :</strong> autopartsusn@gmail.com
+                            <strong>ADDRESS :</strong> Sample Address<br>
+                            <strong>TEL :</strong> (076) 1234567, <strong>EMAIL :</strong> sample@gmail.com
                         </p>
                         <p class="mt-1 text-muted">
                             Goods return will be accepted within 10 days only. Electrical and body parts non-returnable.
@@ -300,7 +300,7 @@
     }
     .table th {
         font-weight: 600;
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
 
     .btn-group-sm>.btn {
@@ -319,8 +319,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #3B5B0C;
-            background: linear-gradient(0deg,rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
+            background: #28a745;
+            background: #28a745;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;

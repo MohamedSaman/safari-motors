@@ -133,7 +133,7 @@
                                                         <div class="card-body p-0 overflow-auto">
                                                             <div class="table-responsive">
                                                                 <table class="table table-hover mb-0">
-                                                                    <thead style="background: #f8f9fa;">
+                                                                    <thead style="background: #ffffff;">
                                                                         <tr>
                                                                             <th class="ps-4">INV.NO</th>
                                                                             <th>PAY.REF</th>
@@ -167,7 +167,7 @@
                                                                         @endforelse
                                                                     </tbody>
                                                                     @if($cashPayments->count() > 0)
-                                                                    <tfoot style="background: #f8f9fa;">
+                                                                    <tfoot style="background: #ffffff;">
                                                                         <tr>
                                                                             <td colspan="5" class="ps-4 fw-bold">TOTAL CASH SALES:</td>
                                                                             <td class="text-end pe-4 fw-bold text-success">
@@ -441,11 +441,11 @@
                                 }
 
                                 .summary-card.total {
-                                    border-left-color: #4361ee;
+                                    border-left-color: #28a745;
                                 }
 
                                 .summary-card.cash {
-                                    border-left-color: #ffc107;
+                                    border-left-color: #28a745;
                                 }
 
                                 .icon-container {
@@ -544,8 +544,8 @@
                                 }
 
                                 .btn-warning {
-                                    background-color: #ffc107;
-                                    border-color: #ffc107;
+                                    background-color: #28a745;
+                                    border-color: #28a745;
                                 }
 
                                 .btn-warning:hover {

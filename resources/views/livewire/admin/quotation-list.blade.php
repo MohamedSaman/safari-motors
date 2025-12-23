@@ -455,7 +455,7 @@
             {{-- Header – logo + company name --}}
             <div class="modal-header text-center border-0 position-relative">
                 <div class="w-100">
-                    <img src="{{ asset('images/USN.png') }}" alt="Logo"
+                    <img src="{{ asset('images/SAFARI.png') }}" alt="Logo"
                          class="img-fluid mb-2" style="max-height:60px;">
                     <h4 class="mb-0 fw-bold">SAFARI MOTORS</h4>
                 </div>
@@ -572,8 +572,8 @@
                 {{-- Footer – logos + address + note --}}
                 <div class="mt-4 text-center small">
                     <p class="mb-0">
-                        <strong>ADDRESS :</strong> 103 H, Yatiyanthota Road, Seethawaka, Avissawella<br>
-                        <strong>TEL :</strong> (076) 9085352, <strong>EMAIL :</strong> autopartsusn@gmail.com
+                        <strong>ADDRESS :</strong> Sample Address<br>
+                        <strong>TEL :</strong> (076) 1234567, <strong>EMAIL :</strong> sample@gmail.com
                     </p>
                     <p class="mt-1 text-muted">
                         This quotation is valid until {{ $selectedQuotation->valid_until ? \Carbon\Carbon::parse($selectedQuotation->valid_until)->format('F d, Y') : 'specified date' }}.
@@ -641,7 +641,7 @@
     }
 
     .action-btn.view {
-        color: #0d6efd;
+        color: #28a745;
         background-color: rgba(13, 110, 253, 0.1);
     }
 
@@ -659,7 +659,7 @@
     }
 
     .action-btn.success {
-        color: #6c757d;
+        color: #000000;
         background-color: rgba(108, 117, 125, 0.1);
     }
 
@@ -685,7 +685,7 @@
     }
 
     .search-result-item:hover {
-        background-color: #f8f9fa;
+        background-color: #ffffff;
     }
 
     .cursor-pointer {
@@ -713,17 +713,17 @@
     }
 
     .quotation-header {
-        background: linear-gradient(135deg, #3b5b0c 0%, #8eb922 100%);
+        background: #28a745;
     }
 
     .company-info h6,
     .client-info h6 {
-        color: #0d6efd;
+        color: #28a745;
     }
 
     .table-light th {
-        background-color: #f8f9fa;
-        color: #495057;
+        background-color: #ffffff;
+        color: #000000;
         font-weight: 600;
     }
 
@@ -740,8 +740,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #3B5B0C;
-            background: linear-gradient(0deg,rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
+            background: #28a745;
+            background: #28a745;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;

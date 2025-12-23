@@ -202,8 +202,8 @@
         
         <div class="header">
             <h2>SAFARI MOTORS</h2>
-            <p>103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-            <p>Phone: (076) 9085352 | Email: autopartsusn@gmail.com</p>
+            <p>Sample Address</p>
+            <p>Phone: (076) 1234567 | Email: sample@gmail.com</p>
             <div class="quotation-title">QUOTATION</div>
         </div>
 

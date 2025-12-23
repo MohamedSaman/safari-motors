@@ -17,7 +17,7 @@
         }
 
         .stat-label {
-            color: #6c757d;
+            color: #000000;
             font-size: 14px;
             margin-bottom: 5px;
         }
@@ -40,7 +40,7 @@
         }
 
         .chart-header {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             padding: 1rem 1.5rem;
             border-bottom: 1px solid #dee2e6;
             border-top-left-radius: 0.5rem;
@@ -79,7 +79,7 @@
 
         .widget-header p {
             font-size: 0.875rem;
-            color: #6c757d;
+            color: #000000;
             margin-bottom: 0;
         }
 
@@ -102,7 +102,7 @@
 
         .item-details p {
             font-size: 0.875rem;
-            color: #6c757d;
+            color: #000000;
             margin-bottom: 0;
         }
 
@@ -138,7 +138,7 @@
         }
 
         .progress-bar {
-            background-color: #007bff;
+            background-color: #28a745;
             height: 4px;
         }
 
@@ -467,8 +467,8 @@
                     labels: categoryLabels,
                     datasets: [{
                         label: 'Sales by Category',
-                        backgroundColor: '#007bff',
-                        borderColor: '#007bff',
+                        backgroundColor: '#28a745',
+                        borderColor: '#28a745',
                         borderWidth: 1,
                         data: categoryTotals
                     }]

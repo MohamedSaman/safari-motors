@@ -312,7 +312,7 @@
             <table>
                 <tr>
                     <td class="logo-section">
-                        <img src="{{ public_path('images/USN.png') }}" alt="Logo">
+                        <img src="{{ public_path('images') }}" alt="Logo">
                     </td>
                     <td class="company-section">
                         <h2>SAFARI MOTORS</h2>
@@ -480,23 +480,23 @@
                     <td>
                         <p class="signature-line"><strong>.............................</strong></p>
                         <p class="signature-label"><strong>Checked By</strong></p>
-                        <img src="{{ public_path('images/tata.png') }}" alt="Checked By">
+                        <img src="{{ public_path('images') }}" alt="Checked By">
                     </td>
                     <td>
                         <p class="signature-line"><strong>.............................</strong></p>
                         <p class="signature-label"><strong>Authorized Officer</strong></p>
-                        <img src="{{ public_path('images/USN.png') }}" alt="Authorized">
+                        <img src="{{ public_path('images') }}" alt="Authorized">
                     </td>
                     <td>
                         <p class="signature-line"><strong>.............................</strong></p>
                         <p class="signature-label"><strong>Customer Stamp</strong></p>
-                        <img src="{{ public_path('images/mahindra.png') }}" alt="Customer">
+                        <img src="{{ public_path('images') }}" alt="Customer">
                     </td>
                 </tr>
             </table>
             <div class="info-section">
-                <p><strong>ADDRESS:</strong> 103 H, Yatiyanthota Road, Seethawaka, Avissawella</p>
-                <p><strong>TEL:</strong> (076) 9085352 | <strong>EMAIL:</strong> autopartsusn@gmail.com</p>
+                <p><strong>ADDRESS:</strong> Sample Address</p>
+                <p><strong>TEL:</strong> (076) 1234567 | <strong>EMAIL:</strong> sample@gmail.com</p>
                 <p style="margin-top: 6px;"><strong>Goods return will be accepted within 10 days only. Electrical and body parts non-returnable.</strong></p>
             </div>
         </div>

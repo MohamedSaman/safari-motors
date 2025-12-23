@@ -12,18 +12,18 @@
             padding: 10px 20px;
             cursor: pointer;
             font-weight: 500;
-            color: #495057;
+            color: #000000;
             border-bottom: 3px solid transparent;
             transition: all 0.2s;
         }
 
         .content-tab.active {
-            color: #4361ee;
-            border-bottom-color: #4361ee;
+            color: #28a745;
+            border-bottom-color: #28a745;
         }
 
         .content-tab:hover:not(.active) {
-            color: #4361ee;
+            color: #28a745;
             border-bottom-color: #dee2e6;
         }
 
@@ -72,8 +72,7 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #3B5B0C;
-            background: linear-gradient(0deg, rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
+            background: #28a745;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -108,13 +107,13 @@
         }
 
         .action-btn.view {
-            color: #17a2b8;
-            background-color: rgba(23, 162, 184, 0.1);
+            color: #28a745;
+            background-color: rgba(40, 167, 69, 0.1);
         }
 
         .action-btn.edit {
-            color: #4361ee;
-            background-color: rgba(67, 97, 238, 0.1);
+            color: #28a745;
+            background-color: rgba(40, 167, 69, 0.1);
         }
 
         .action-btn.delete {
@@ -123,11 +122,11 @@
         }
 
         .action-btn:hover.view {
-            background-color: rgba(23, 162, 184, 0.2);
+            background-color: rgba(40, 167, 69, 0.2);
         }
 
         .action-btn:hover.edit {
-            background-color: rgba(67, 97, 238, 0.2);
+            background-color: rgba(40, 167, 69, 0.2);
         }
 
         .action-btn:hover.delete {
@@ -155,8 +154,8 @@
 
         .form-control:focus,
         .form-select:focus {
-            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
-            border-color: #4361ee;
+            box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
+            border-color: #28a745;
         }
 
         /* Modern button styling */
@@ -168,36 +167,36 @@
         }
 
         .btn-primary {
-            background-color: #4361ee;
-            border-color: #4361ee;
+            background-color: #28a745;
+            border-color: #28a745;
         }
 
         .btn-primary:hover {
-            background-color: #3f37c9;
-            border-color: #3f37c9;
+            background-color: #218838;
+            border-color: #218838;
             transform: translateY(-2px);
         }
 
         .btn-success {
-            background-color: #4cc9f0;
-            border-color: #4cc9f0;
+            background-color: #28a745;
+            border-color: #28a745;
         }
 
         .btn-success:hover {
-            background-color: #3db8e0;
-            border-color: #3db8e0;
+            background-color: #218838;
+            border-color: #218838;
             transform: translateY(-2px);
         }
 
         .btn-warning {
-            background-color: #ffc107;
-            border-color: #ffc107;
+            background-color: #28a745;
+            border-color: #28a745;
             color: #000;
         }
 
         .btn-warning:hover {
-            background-color: #e0a800;
-            border-color: #e0a800;
+            background-color: #218838;
+            border-color: #218838;
             transform: translateY(-2px);
             color: #000;
         }
@@ -205,7 +204,7 @@
         /* History Modal Styles */
         .nav-tabs-custom .nav-link {
             border: none;
-            color: #6c757d;
+            color: #000000;
             font-weight: 500;
             padding: 1rem 1.5rem;
             border-bottom: 3px solid transparent;
@@ -213,19 +212,19 @@
         }
 
         .nav-tabs-custom .nav-link.active {
-            color: #4361ee;
-            border-bottom-color: #4361ee;
+            color: #28a745;
+            border-bottom-color: #28a745;
             background-color: transparent;
         }
 
         .nav-tabs-custom .nav-link:hover {
-            color: #4361ee;
+            color: #28a745;
             border-bottom-color: #dee2e6;
         }
 
         /* History Table Styles */
         .history-table th {
-            background: linear-gradient(135deg, #3b5b0c 0%, #8eb922 100%);
+            background: #28a745;
             color: white;
             font-weight: 600;
             border: none;
@@ -258,9 +257,9 @@
             }
 
             .content-tab.active {
-                background-color: #4361ee;
+                background-color: #28a745;
                 color: white;
-                border-color: #4361ee;
+                border-color: #28a745;
             }
 
             .pagination {
@@ -350,7 +349,7 @@
         }
 
         .dropdown-item:hover {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
         }
 
         .dropdown-item:active {
@@ -368,16 +367,16 @@
 
         /* Stock Adjustment Modal Styles */
         #stockAdjustmentModal .modal-header {
-            background: linear-gradient(135deg, #3b5b0c 0%, #8eb922 100%) !important;
+            background: #28a745 !important;
         }
 
         #stockAdjustmentModal .alert-info {
-            background-color: #f8f9fa;
-            border-left: 4px solid #17a2b8;
+            background-color: #ffffff;
+            border-left: 4px solid #28a745;
         }
 
         #stockAdjustmentModal .preview-box {
-            background: #f8f9fa;
+            background: #ffffff;
             border-radius: 8px;
             padding: 15px;
             border-left: 4px solid #28a745;
@@ -718,7 +717,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content border-0 shadow-lg">
                     <div class="modal-header border-0 bg-gradient-primary text-white position-relative"
-                        style="background: linear-gradient(135deg, #3b5b0c 0%, #8eb922 100%); padding: 1.5rem;">
+                        style="background: #28a745; padding: 1.5rem;">
                         <h5 class="modal-title fw-bold d-flex align-items-center">
                             <i class="bi bi-box-seam me-2 fs-4"></i>
                             <span>Product Details</span>
@@ -1251,19 +1250,19 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>USN0001</td>
+                                                <td>SAFARI0001</td>
                                                 <td>Flasher Musical 12 V</td>
                                             </tr>
                                             <tr>
-                                                <td>USN0002</td>
+                                                <td>SAFARI0002</td>
                                                 <td>Flasher Musical 24 V</td>
                                             </tr>
                                             <tr>
-                                                <td>USN0003</td>
+                                                <td>SAFARI0003</td>
                                                 <td>Flasher Electrical 12 V</td>
                                             </tr>
                                             <tr>
-                                                <td>USN0004</td>
+                                                <td>SAFARI0004</td>
                                                 <td>Flasher Electrical 24 V</td>
                                             </tr>
                                         </tbody>
@@ -1662,7 +1661,7 @@
 
                     <!-- Header -->
                     <div class="modal-header border-0 text-white"
-                        style="background: linear-gradient(135deg, #3b5b0c 0%, #8eb922 100%);">
+                        style="background: #28a745;">
                         <h5 class="modal-title fw-bold">
                             <i class="bi bi-clock-history me-2"></i>
                             Product History - {{ $historyProductName ?? 'Loading...' }}

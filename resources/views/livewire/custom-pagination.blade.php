@@ -99,7 +99,7 @@
     }
 
     .pagination .page-item.disabled .page-link {
-        color: #aaa;
+        color: #000000;
         pointer-events: none;
     }
 

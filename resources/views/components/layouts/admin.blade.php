@@ -6,7 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ $title ?? 'Page Title' }}</title>
-    <link rel="icon" type="image/png" href="{{ asset('images/usnicon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/SAFARIicon.png') }}">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -21,70 +21,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        /* Theme tokens: change colors here to affect entire layout */
+        /* Theme tokens: Simple white background, black text, green buttons */
         :root {
             /* Backgrounds */
-            --page-bg: #f5f7fa;
+            --page-bg: #ffffff;
             /* body background */
             --surface: #ffffff;
             /* cards, sidebar surface */
 
 
             /* Primary / Brand */
-            --primary: #fff;
-            /* main blue (links, active) */
-            --primary-600: #0b5ed7;
-            /* hover background for links */
-            --primary-100: #8eb922;
-            /* main blue (links, active) */
-
-
-
+            --primary: #28a745;
+            /* green color */
+            --primary-600: #218838;
+            /* darker green for hover */
+            --primary-100: #28a745;
+            /* green color */
 
 
             /* Accent */
-            --accent: #198754;
-            /* green (amounts, success) */
+            --accent: #28a745;
+            /* green */
 
 
             /* Muted / borders / text */
-            --muted: #6c757d;
-            /* secondary text */
-            --muted-2: #495057;
-            /* nav link text */
-            --border: #e0e0e0;
-            /* general border color */
+            --muted: #000000;
+            /* black text */
+            --muted-2: #000000;
+            /* black text */
+            --border: #dee2e6;
+            /* light gray border */
             --muted-3: #dee2e6;
-            /* scrollbar / thumb */
-
+            /* light gray */
 
 
             /* Status colors */
-            --success-bg: #d1e7dd;
-            --success-text: #0f5132;
+            --success-bg: #d4edda;
+            --success-text: #000000;
             --warning-bg: #fff3cd;
-            --warning-text: #664d03;
+            --warning-text: #000000;
             --danger-bg: #f8d7da;
-            --danger-text: #842029;
+            --danger-text: #000000;
 
 
             /* Topbar / sidebar specifics */
-            --sidebar-bg: #000000;
-            --topbar-bg: #000000;
+            --sidebar-bg: #ffffff;
+            --topbar-bg: #ffffff;
 
 
             /* Text */
-            --text: #212529;
+            --text: #000000;
 
 
             /* Avatars */
-            --avatar-bg: var(--primary);
+            --avatar-bg: #28a745;
             --avatar-text: #ffffff;
         }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: var(--page-bg);
+            background-color: #ffffff;
+            color: #000000;
             letter-spacing: -0.01em;
         }
 
@@ -200,9 +197,9 @@
         .sidebar {
             width: 265px;
             height: 100vh;
-            background-color: #000000;
-            color: #ffffff;
-
+            background-color: #ffffff;
+            color: #000000;
+            border-right: 1px solid #dee2e6;
             padding: 20px 0;
             position: fixed;
             transition: all 0.3s ease;
@@ -219,11 +216,11 @@
         }
 
         .sidebar::-webkit-scrollbar-track {
-            background: #000000;
+            background: #f8f9fa;
         }
 
         .sidebar::-webkit-scrollbar-thumb {
-            background-color: #000000;
+            background-color: #dee2e6;
 
         }
 
@@ -263,7 +260,7 @@
         .sidebar-title {
             font-weight: 600;
             font-size: 1.2rem;
-            color: #ffffff;
+            color: #000000;
             letter-spacing: -0.02em;
         }
 
@@ -274,24 +271,23 @@
         }
 
         .nav-link {
-            color: #fff;
+            color: #000000;
             padding: 8px 20px;
             transition: all 0.2s;
         }
 
 
         .nav-link.active {
-            background: #3B5B0C;
-            background: linear-gradient(0deg, rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
-            color: var(--primary);
+            background: #28a745;
+            color: #ffffff;
             font-weight: 500;
         }
 
         .nav-link:focus,
         .nav-link:hover,
         .nav-link:focus-visible {
-            color: #fff;
-
+            color: #000000;
+            background-color: #f8f9fa;
             outline: none;
         }
 
@@ -362,8 +358,8 @@
         /* Top bar styles */
         .top-bar {
             height: 60px;
-            background-color: var(--topbar-bg);
-            border-bottom: 1px solid var(--border);
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
             padding: 0 20px;
             position: fixed;
             top: 0;
@@ -380,7 +376,7 @@
         }
 
         .top-bar .title {
-            color: #8eb922;
+            color: #28a745;
         }
 
         /* User info styles */
@@ -391,11 +387,11 @@
             padding: 5px;
             border-radius: 5px;
             transition: background-color 0.2s;
-            color: #ffffff;
+            color: #000000;
         }
 
         .admin-info:hover {
-            background-color: #8eb922;
+            background-color: #f8f9fa;
         }
 
         .admin-avatar,
@@ -404,14 +400,14 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background-color: #000000;
+            background-color: #28a745;
             color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 600;
             letter-spacing: -0.03em;
-            border: 1px solid #ffffff;
+            border: 1px solid #28a745;
         }
 
         .admin-name {
@@ -443,7 +439,7 @@
         }
 
         .dropdown-item:hover {
-            background-color: var(--primary-100);
+            background-color: #f8f9fa;
         }
 
         .dropdown-item i {
@@ -455,7 +451,7 @@
             margin-left: 260px;
             margin-top: 60px;
             padding: 20px;
-            background-color: #f5fdf1ff;
+            background-color: #ffffff;
             min-height: calc(100vh - 60px);
             width: calc(100% - 250px);
             transition: all 0.3s ease;
@@ -471,10 +467,10 @@
         /* Card styles */
         .stat-card,
         .widget-container {
-            background: var(--surface);
+            background: #ffffff;
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            border: none;
+            border: 1px solid #dee2e6;
             padding: 1.25rem;
             height: 100%;
         }
@@ -484,22 +480,23 @@
             font-weight: 700;
             letter-spacing: -0.02em;
             margin-bottom: 5px;
+            color: #000000;
         }
 
         .stat-label {
-            color: var(--muted);
+            color: #000000;
             font-size: 0.875rem;
             font-weight: 500;
             margin-bottom: 5px;
         }
 
         .stat-change {
-            color: var(--accent);
+            color: #28a745;
             font-size: 13px;
         }
 
         .stat-change-alert {
-            color: var(--danger-text);
+            color: #dc3545;
             font-size: 13px;
         }
 
@@ -514,20 +511,20 @@
             padding: 10px 20px;
             cursor: pointer;
             font-weight: 500;
-            color: var(--muted-2);
+            color: #000000;
             border-bottom: 3px solid transparent;
             transition: all 0.2s;
         }
 
         .content-tab.active {
-            color: var(--primary);
-            border-bottom-color: var(--primary);
+            color: #28a745;
+            border-bottom-color: #28a745;
             font-weight: 600;
         }
 
         .content-tab:hover:not(.active) {
-            color: var(--primary);
-            border-bottom-color: var(--border);
+            color: #28a745;
+            border-bottom-color: #dee2e6;
         }
 
         .tab-content {
@@ -546,9 +543,9 @@
         }
 
         .chart-header {
-            background-color: var(--surface);
+            background-color: #ffffff;
             padding: 1.25rem;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid #dee2e6;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
@@ -575,7 +572,7 @@
 
         .amount {
             font-weight: bold;
-            color: var(--accent);
+            color: #28a745;
         }
 
         /* Widget components */
@@ -583,13 +580,13 @@
             font-size: 1.25rem;
             margin-bottom: 5px;
             font-weight: 600;
-            color: var(--text);
+            color: #000000;
             letter-spacing: -0.02em;
         }
 
         .widget-header p {
             font-size: 0.875rem;
-            color: var(--muted-2);
+            color: #000000;
             margin-bottom: 0;
         }
 
@@ -608,12 +605,12 @@
         .item-details h6 {
             font-size: 1rem;
             margin-bottom: 3px;
-            color: var(--text);
+            color: #000000;
         }
 
         .item-details p {
             font-size: 0.875rem;
-            color: var(--muted);
+            color: #000000;
             margin-bottom: 0;
         }
 
@@ -627,31 +624,32 @@
         }
 
         .in-stock {
-            background-color: #d1e7dd;
-            color: var(--success-text);
+            background-color: #d4edda;
+            color: #000000;
         }
 
         .low-stock {
-            background-color: var(--warning-bg);
-            color: var(--warning-text);
+            background-color: #fff3cd;
+            color: #000000;
         }
 
         .out-of-stock {
-            background-color: var(--danger-bg);
-            color: var(--danger-text);
+            background-color: #f8d7da;
+            color: #000000;
         }
 
         /* Progress bars */
         .progress {
             height: 0.5rem;
             margin-top: 5px;
-            background-color: var(--muted-3);
+            background-color: #dee2e6;
             border-radius: 0.25rem;
             overflow: hidden;
         }
 
         .progress-bar {
             height: 0.5rem;
+            background-color: #28a745;
         }
 
         /* Scrollable containers */
@@ -686,7 +684,7 @@
         .inventory-container::-webkit-scrollbar-thumb,
         .staff-sales-container::-webkit-scrollbar-thumb,
         .chart-scroll-container::-webkit-scrollbar-thumb {
-            background-color: var(--muted-3);
+            background-color: #dee2e6;
             border-radius: 10px;
         }
 
@@ -706,23 +704,111 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #3B5B0C;
-            background: linear-gradient(0deg, rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
+            background: #28a745;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
         .btn {
-            background: #8eb922;
-            background: linear-gradient(0deg, rgba(142, 185, 34, 1) 0%, rgba(59, 91, 12, 1) 100%);
+            background: #28a745;
             color: #ffffff;
+            border: none;
+        }
+        
+        .btn:hover {
+            background: #218838;
+            color: #ffffff;
+        }
+        
+        .btn-primary {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-primary:hover {
+            background: #218838 !important;
+            border-color: #218838 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-success {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-success:hover {
+            background: #218838 !important;
+            border-color: #218838 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-info {
+            background: #28a745 !important;
+            border-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-info:hover {
+            background: #218838 !important;
+            border-color: #218838 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-outline-primary {
+            color: #28a745 !important;
+            border-color: #28a745 !important;
+            background: transparent !important;
+        }
+        
+        .btn-outline-primary:hover {
+            color: #ffffff !important;
+            background: #28a745 !important;
+            border-color: #28a745 !important;
         }
 
         .modal-header {
-            background: #3B5B0C;
-            background: linear-gradient(0deg, rgba(59, 91, 12, 1) 0%, rgba(142, 185, 34, 1) 100%);
+            background: #28a745;
             color: #ffffff;
+        }
+        
+        /* Global color overrides for all custom styles */
+        .bg-primary, .badge-primary {
+            background-color: #28a745 !important;
+            color: #ffffff !important;
+        }
+        
+        .text-primary {
+            color: #28a745 !important;
+        }
+        
+        .border-primary {
+            border-color: #28a745 !important;
+        }
+        
+        /* Card backgrounds */
+        .card {
+            background-color: #ffffff !important;
+        }
+        
+        .card-header {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+        }
+        
+        /* Alert colors */
+        .alert-primary {
+            background-color: #d4edda !important;
+            border-color: #28a745 !important;
+            color: #000000 !important;
+        }
+        
+        .alert-info {
+            background-color: #d4edda !important;
+            border-color: #28a745 !important;
+            color: #000000 !important;
         }
 
 
@@ -770,7 +856,7 @@
         <div class="sidebar">
             <div class="sidebar-header d-flex justify-content-center">
                 <div class="sidebar-title">
-                    <img src="{{ asset('images/USN-Dark.png') }}" alt="Logo" width="200">
+                    <img src="{{ asset('images/SAFARI-Dark.png') }}" alt="Logo" width="200">
                 </div>
             </div>
             <ul class="nav flex-column">
@@ -851,7 +937,7 @@
                     </a>
                     <div class="collapse" id="salesSubmenu">
                         <ul class="nav flex-column ms-3">
-                            <li class="nav-item">
+                            {{--<li class="nav-item">
                                 <a class="nav-link py-2" href="{{ route('admin.sales-system') }}">
                                     <i class="bi bi-plus-circle"></i> <span>Add Sales</span>
                                 </a>
@@ -860,7 +946,7 @@
                                 <a class="nav-link py-2" href="{{ route('admin.sales-list') }}">
                                     <i class="bi bi-table"></i> <span>List Sales</span>
                                 </a>
-                            </li>
+                            </li>--}}
                             <li class="nav-item">
                                 <a class="nav-link py-2" href="{{ route('admin.pos-sales') }}">
                                     <i class="bi bi-shop"></i> <span>POS Sales</span>
@@ -980,7 +1066,7 @@
                                     <i class="bi bi-cash-stack"></i> <span>Deposit By Cash</span>
                                 </a>
                             </li>
-                            <li class="nav-item">
+                            {{--<li class="nav-item">
                                 <a class="nav-link py-2" href="{{ route('admin.cheque-list') }}">
                                     <i class="bi bi-card-text"></i> <span>Cheque List</span>
                                 </a>
@@ -989,7 +1075,7 @@
                                 <a class="nav-link py-2" href="{{ route('admin.return-cheque') }}">
                                     <i class="bi bi-arrow-left-right"></i> <span>Return Cheque</span>
                                 </a>
-                            </li>
+                            </li>--}}
                         </ul>
                     </div>
                 </li>
@@ -1109,13 +1195,13 @@
         <!-- Top Navigation Bar -->
         <nav class="top-bar d-flex justify-content-between align-items-center">
             <!-- Sidebar toggle button -->
-            <button id="sidebarToggler" class="btn btn-sm px-2 py-1  d-flex align-items-center" style="color:#ffffff; border-color:#ffffff;">
+            <button id="sidebarToggler" class="btn btn-sm px-2 py-1  d-flex align-items-center" style="color:#000000; border-color:#dee2e6;">
                 <i class="bi bi-list fs-5"></i>
             </button>
 
             <!-- Centered Company Name (hidden on small screens) -->
             <div class="flex-grow-1 d-none d-md-flex justify-content-center">
-                <h5 class="m-0 fw-bold" style="color: var(--primary-100); letter-spacing: -0.02em;">SAFARI MOTORS</h5>
+                <h5 class="m-0 fw-bold" style="color: #28a745; letter-spacing: -0.02em;">SAFARI MOTORS</h5>
             </div>
             @php
             use App\Models\CashInHand as CashModel;
@@ -1124,7 +1210,7 @@
 
             <!-- Editable Cash in Hand Display -->
             <div class="badge  bg-opacity-10 rounded-pill shadow-sm border  border-opacity-25 d-flex align-items-center gap-2 me-2 "
-                style="color:#8eb922;border-color:#8eb922; font-size: 0.9rem; cursor: pointer;"
+                style="background-color:#28a745; color:#ffffff; border-color:#28a745 !important; font-size: 0.9rem; cursor: pointer;"
                 onclick="handlePOSClick()"
                 role="button">
                 <div class="d-flex align-items-center gap-1 px-2 py-1 fs-6">
@@ -1649,7 +1735,7 @@
                             title: 'Register Already Closed',
                             text: 'The POS register has already been closed for today. You cannot access the POS system again until tomorrow.',
                             confirmButtonText: 'OK',
-                            confirmButtonColor: '#3b5b0c'
+                            confirmButtonColor: '#28a745'
                         });
                         return;
                     }
