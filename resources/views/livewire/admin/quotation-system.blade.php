@@ -5,7 +5,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <h3 class="fw-bold text-dark mb-2">
-                        <i class="bi bi-file-earmark-text text-success me-2"></i> Create Quotation
+                        <i class="bi bi-file-earmark-text text-info me-2"></i> Create Quotation
                     </h3>
                     <p class="text-muted">Quickly create professional quotations for customers</p>
                 </div>
@@ -93,7 +93,7 @@
             <div class="card h-100 shadow-sm border-1">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     <h5 class="card-title mb-0 fw-semibold">
-                        <i class="bi bi-search me-2 text-success"></i> Add Products
+                        <i class="bi bi-search me-2 text-info"></i> Add Products
                     </h5>
                 </div>
 
@@ -116,7 +116,7 @@
                                         <p class="text-muted small mb-0">
                                             Code: {{ $product['code'] }} | Model: {{ $product['model'] }}
                                         </p>
-                                        <p class="text-success small mb-0">
+                                        <p class="text-info small mb-0">
                                             Rs.{{ number_format($product['price'], 2) }} | Stock: {{ $product['stock'] }}
                                         </p>
                                     </div>
@@ -396,7 +396,7 @@
                     <div class="quotation-preview p-4">
                         {{-- Header --}}
                         <div class="header text-center mb-4">
-                            <h2 class="text-success mb-1">SAFARI MOTORS</h2>
+                            <h2 class="text-info mb-1">SAFARI MOTORS</h2>
                             <p class="mb-1">Sample Address</p>
                             <p class="mb-1">Phone: (076) 1234567 | Email: sample@gmail.com</p>
                         </div>
@@ -683,3 +683,7 @@
     });
 </script>
 @endpush
+
+
+
+

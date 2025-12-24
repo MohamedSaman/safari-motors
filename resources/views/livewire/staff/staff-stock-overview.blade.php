@@ -27,7 +27,7 @@
                             <small class="text-muted">{{ $totalAssigned > 0 ? number_format(($soldInventory/$totalAssigned) * 100, 1) : 0 }}% of assigned</small>
                         </div>
                         <div class="align-self-center">
-                            <i class="bi bi-cash-stack fs-1 text-success opacity-50"></i>
+                            <i class="bi bi-cash-stack fs-1 text-info opacity-50"></i>
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@
                                                 <span class="fw-bold">{{ $ProductData['total_quantity'] }}</span>
                                             </td>
                                             <td class="text-center align-middle">
-                                                <span class="fw-bold text-success">{{ $ProductData['sold_quantity'] }}</span>
+                                                <span class="fw-bold text-info">{{ $ProductData['sold_quantity'] }}</span>
                                             </td>
                                             <td class="text-center align-middle">
                                                 <span class="fw-bold text-{{ $ProductData['remaining_quantity'] > 0 ? 'warning' : 'muted' }}">
@@ -339,7 +339,7 @@
                                                     <span class="fw-bold">{{ $product->quantity }}</span>
                                                 </td>
                                                 <td class="text-center align-middle">
-                                                    <span class="fw-bold text-success">{{ $product->sold_quantity }}</span>
+                                                    <span class="fw-bold text-info">{{ $product->sold_quantity }}</span>
                                                 </td>
                                                 <td class="text-center align-middle">
                                                     <span class="fw-bold text-{{ ($product->quantity - $product->sold_quantity) > 0 ? 'warning' : 'muted' }}">
@@ -360,7 +360,7 @@
                                                     <span>Rs. {{ number_format($product->unit_price, 2) }}</span>
                                                     @if($product->discount_per_unit > 0)
                                                         <br>
-                                                        <small class="text-success">
+                                                        <small class="text-info">
                                                             Discount: Rs. {{ number_format($product->discount_per_unit, 2) }}
                                                         </small>
                                                     @endif
@@ -406,13 +406,13 @@
 <style>
     .list-group-item.active {
         background-color: #f0f7ff;
-        color: #28a745;
+        color: #2563EB;
         border-color: #dee2e6;
         font-weight: 500;
     }
     
     .list-group-item.active .badge {
-        background-color: #28a745 !important;
+        background-color: #2563EB !important;
     }
     
     .search-box .form-control:focus {
@@ -591,3 +591,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 @endpush
+
+
+
+
+
+

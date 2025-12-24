@@ -6,8 +6,8 @@
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <h4 class="mb-1 fw-bold" style="color:#28a745;">
-                                <i class="bi bi-calendar-check me-2" style="color:#28a745;"></i>Register Report - {{ \Carbon\Carbon::parse($sessionDate)->format('d/m/Y') }}
+                            <h4 class="mb-1 fw-bold" style="color:#2563EB;">
+                                <i class="bi bi-calendar-check me-2" style="color:#2563EB;"></i>Register Report - {{ \Carbon\Carbon::parse($sessionDate)->format('d/m/Y') }}
                             </h4>
                             <p class="text-muted mb-0">
                                 <small>Cashier: {{ $session->user->name ?? 'N/A' }} | Session Date: {{ \Carbon\Carbon::parse($sessionDate)->format('l, F d, Y') }}</small>
@@ -104,8 +104,8 @@
         <div class="col-12">
             <div class="card border-0 shadow-sm">
                 <div class="card-header bg-white py-3">
-                    <h5 class="mb-0 fw-bold" style="color:#28a745;">
-                        <i class="bi bi-cash-coin me-2" style="color:#28a745;"></i>💰 CASH SALES
+                    <h5 class="mb-0 fw-bold" style="color:#2563EB;">
+                        <i class="bi bi-cash-coin me-2" style="color:#2563EB;"></i>💰 CASH SALES
                     </h5>
                 </div>
                 <div class="card-body p-0 overflow-auto">
@@ -141,7 +141,7 @@
                                         <small>{{ $payment->payment_date ? \Carbon\Carbon::parse($payment->payment_date)->format('Y-m-d H:i:s') : 'N/A' }}</small>
                                     </td>
                                     <td class="text-end">
-                                        <strong class="text-success">Rs.{{ number_format($payment->amount, 2) }}</strong>
+                                        <strong class="text-info">Rs.{{ number_format($payment->amount, 2) }}</strong>
                                     </td>
                                 </tr>
                                 @endforeach
@@ -198,3 +198,8 @@
     }
 </style>
 @endpush
+
+
+
+
+

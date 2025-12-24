@@ -143,7 +143,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <h4 class="fw-bold mb-1">
-                            <i class="bi bi-file-earmark-bar-graph text-success me-2"></i>Reports Dashboard</h4>
+                            <i class="bi bi-file-earmark-bar-graph text-info me-2"></i>Reports Dashboard</h4>
                         <p class="text-muted mb-0">Generate and export various business reports</p>
                     </div>
                     <!-- Download Excel Button - Only show after report is generated -->
@@ -219,7 +219,7 @@
                                     Total Records
                                 @endif
                             </div>
-                            <div class="stat-value text-success">
+                            <div class="stat-value text-info">
                                 @if(in_array($selectedReport, ['sales', 'salary', 'payments', 'staff']))
                                     Rs.{{ number_format($currentReportTotal, 2) }}
                                 @else
@@ -294,3 +294,7 @@
         </div>
     </div>
 </div>
+
+
+
+

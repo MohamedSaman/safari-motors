@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-cash-stack text-success me-2"></i> Customer Due Payments
+                <i class="bi bi-cash-stack text-info me-2"></i> Customer Due Payments
             </h3>
             <p class="text-muted mb-0">Manage and collect pending payments from customers efficiently</p>
         </div>
@@ -71,12 +71,12 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="icon-container bg-success bg-opacity-10 me-3">
-                            <i class="bi bi-currency-rupee text-success fs-4"></i>
+                            <i class="bi bi-currency-rupee text-info fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
                             <p class="text-muted mb-1">Total Due</p>
                             <h4 class="fw-bold mb-0">Rs.{{ number_format($totalDueAmount, 2) }}</h4>
-                            <span class="badge bg-success bg-opacity-10 text-success">Amount</span>
+                            <span class="badge bg-success bg-opacity-10 text-info">Amount</span>
                         </div>
                     </div>
                 </div>
@@ -546,7 +546,7 @@
     }
 
     .summary-card.pending {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.pending-amount {
@@ -554,7 +554,7 @@
     }
 
     .summary-card.awaiting {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.total {
@@ -609,7 +609,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #28a745;
+        border-color: #2563EB;
     }
 
     .btn {
@@ -620,13 +620,13 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
@@ -736,3 +736,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

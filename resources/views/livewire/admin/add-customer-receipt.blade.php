@@ -20,7 +20,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-receipt text-success me-2"></i> Customer Payment Receipt
+                <i class="bi bi-receipt text-info me-2"></i> Customer Payment Receipt
             </h3>
             <p class="text-muted mb-0">Record customer payments and allocate to due invoices</p>
         </div>
@@ -238,8 +238,8 @@
                                     <td class="text-end fw-bold">
                                         Rs.{{ number_format($sale['total_amount'], 2) }}
                                     </td>
-                                    <td class="text-end text-success">Rs.{{ number_format($sale['paid_amount'], 2) }}</td>
-                                    <td class="text-end fw-bold {{ $isSelected ? 'text-success' : 'text-danger' }}">
+                                    <td class="text-end text-info">Rs.{{ number_format($sale['paid_amount'], 2) }}</td>
+                                    <td class="text-end fw-bold {{ $isSelected ? 'text-info' : 'text-danger' }}">
                                         Rs.{{ number_format($sale['due_amount'], 2) }}
                                     </td>
                                     <td class="text-center">
@@ -270,10 +270,10 @@
                         <div class="card-footer bg-light">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="fw-semibold">
-                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    <i class="bi bi-check-circle-fill text-info me-2"></i>
                                     {{ count($selectedInvoices) }} invoice(s) selected
                                 </span>
-                                <span class="fw-bold text-success">
+                                <span class="fw-bold text-info">
                                     Total Due: Rs.{{ number_format($totalDueAmount, 2) }}
                                 </span>
                             </div>
@@ -448,7 +448,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Adjusted Total:</strong></td>
-                                    <td class="fw-bold text-success">Rs.{{ number_format($selectedSale->adjusted_total, 2) }}</td>
+                                    <td class="fw-bold text-info">Rs.{{ number_format($selectedSale->adjusted_total, 2) }}</td>
                                 </tr>
                                 @endif
                                 <tr>
@@ -599,7 +599,7 @@
                                 </tr>
                                 <tr>
                                     <td><strong>Amount Paid:</strong></td>
-                                    <td class="text-end text-success fw-bold">Rs.{{ number_format($totalPaymentAmount, 2) }}</td>
+                                    <td class="text-end text-info fw-bold">Rs.{{ number_format($totalPaymentAmount, 2) }}</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Remaining Due:</strong></td>
@@ -629,7 +629,7 @@
                         @if($paymentData['payment_method'] === 'cheque')
                         <div class="col-12">
                             <div class="border rounded p-3 bg-light">
-                                <h6 class="fw-semibold mb-3 text-success">
+                                <h6 class="fw-semibold mb-3 text-info">
                                     <i class="bi bi-receipt me-2"></i>Cheque Details
                                 </h6>
                                 <div class="row g-3">
@@ -730,7 +730,7 @@
                                 <tr>
                                     <td class="fw-bold">{{ $allocation['invoice_number'] }}</td>
                                     <td class="text-end">Rs.{{ number_format($allocation['due_amount'], 2) }}</td>
-                                    <td class="text-end text-success fw-bold">Rs.{{ number_format($allocation['payment_amount'], 2) }}</td>
+                                    <td class="text-end text-info fw-bold">Rs.{{ number_format($allocation['payment_amount'], 2) }}</td>
                                     <td class="text-end text-danger">Rs.{{ number_format($allocation['due_amount'] - $allocation['payment_amount'], 2) }}</td>
                                     <td>
                                         @php
@@ -785,8 +785,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="text-center mb-4">
-                        <i class="bi bi-check-circle-fill text-success display-1"></i>
-                        <h3 class="text-success mt-3">Payment Processed Successfully!</h3>
+                        <i class="bi bi-check-circle-fill text-info display-1"></i>
+                        <h3 class="text-info mt-3">Payment Processed Successfully!</h3>
                         <p class="text-muted">Payment receipt has been generated and saved.</p>
                     </div>
 
@@ -826,7 +826,7 @@
                                         </tr>
                                         <tr>
                                             <td><strong>Amount Paid:</strong></td>
-                                            <td class="fw-bold text-success">Rs.{{ number_format($latestPayment->amount, 2) }}</td>
+                                            <td class="fw-bold text-info">Rs.{{ number_format($latestPayment->amount, 2) }}</td>
                                         </tr>
                                         <tr>
                                             <td><strong>Reference No:</strong></td>
@@ -978,3 +978,7 @@
     });
 </script>
 @endpush
+
+
+
+

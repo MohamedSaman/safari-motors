@@ -66,10 +66,10 @@
                                 <span class="fw-bold text-dark">Rs.{{ number_format($sale->total_value, 2) }}</span>
                             </td>
                             <td class="text-center">
-                                <span class="fw-bold text-success">{{ $sale->sold_quantity }}</span>
+                                <span class="fw-bold text-info">{{ $sale->sold_quantity }}</span>
                             </td>
                             <td class="text-center d-none d-lg-table-cell">
-                                <span class="fw-bold text-success">Rs.{{ number_format($sale->sold_value, 2) }}</span>
+                                <span class="fw-bold text-info">Rs.{{ number_format($sale->sold_value, 2) }}</span>
                             </td>
                             <td class="text-center">
                                 <span class="badge bg-{{ $sale->available_quantity > 0 ? 'primary' : 'danger' }}">
@@ -167,7 +167,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="border-end">
-                                                <h4 class="fw-bold text-success mb-1">
+                                                <h4 class="fw-bold text-info mb-1">
                                                     {{ data_get($summaryStats, 'sold_quantity', 0) }}
                                                 </h4>
                                                 <p class="text-muted small mb-0">Sold</p>
@@ -188,7 +188,7 @@
                         <div class="col-12 col-md-6">
                             <div class="card summary-card h-100">
                                 <div class="card-header bg-success bg-opacity-10 border-0">
-                                    <h6 class="fw-bold text-success mb-0">
+                                    <h6 class="fw-bold text-info mb-0">
                                         <i class="bi bi-currency-rupee me-2"></i> Value Summary
                                     </h6>
                                 </div>
@@ -204,7 +204,7 @@
                                         </div>
                                         <div class="col-4">
                                             <div class="border-end">
-                                                <h4 class="fw-bold text-success mb-1">
+                                                <h4 class="fw-bold text-info mb-1">
                                                     Rs.{{ number_format(data_get($summaryStats, 'sold_value', 0), 0) }}
                                                 </h4>
                                                 <p class="text-muted small mb-0">Sold</p>
@@ -280,7 +280,7 @@
                                                 <span class="fw-bold text-dark">{{ $product->quantity }}</span>
                                             </td>
                                             <td class="text-center">
-                                                <span class="fw-bold text-success">{{ $product->sold_quantity }}</span>
+                                                <span class="fw-bold text-info">{{ $product->sold_quantity }}</span>
                                             </td>
                                             <td class="text-center">
                                                 <span class="badge bg-{{ $product->quantity - $product->sold_quantity > 0 ? 'primary' : 'danger' }}">
@@ -291,7 +291,7 @@
                                                 <span class="fw-bold text-dark">Rs.{{ number_format($product->total_value, 0) }}</span>
                                             </td>
                                             <td class="text-center d-none d-lg-table-cell">
-                                                <span class="fw-bold text-success">Rs.{{ number_format($product->sold_value, 0) }}</span>
+                                                <span class="fw-bold text-info">Rs.{{ number_format($product->sold_value, 0) }}</span>
                                             </td>
                                             <td class="text-center">
                                                 @if ($product->status == 'completed')
@@ -361,11 +361,11 @@
     }
 
     .summary-card:nth-child(1) {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card:nth-child(2) {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .table th {
@@ -405,19 +405,19 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
     .btn-success {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-success:hover {
@@ -468,7 +468,7 @@
                     .header h2 { margin-bottom: 5px; }
                     .header p { margin-top: 0; color: #666; }
                     .badge { padding: 3px 8px; border-radius: 4px; font-size: smaller; }
-                    .bg-primary { background-color: #28a745; color: white; }
+                    .bg-primary { background-color: #2563EB; color: white; }
                     .bg-danger { background-color: #dc3545; color: white; }
                     .bg-success { background-color: #198754; color: white; }
                 </style>
@@ -480,7 +480,7 @@
                 </div>
                 ${tableContent}
                 <div style="text-align: center; margin-top: 20px;">
-                    <button onclick="window.print();" style="padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
+                    <button onclick="window.print();" style="padding: 8px 16px; background: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
                     <button onclick="window.close();" style="padding: 8px 16px; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
                 </div>
             </body>
@@ -533,16 +533,16 @@
                     .text-center { text-align: center; }
                     .border-end { border-right: 1px solid #eee; }
                     .fw-bold { font-weight: bold; }
-                    .text-success { color: green; }
+                    .text-info { color: green; }
                     .text-danger { color: red; }
                     .text-muted { color: #000000; }
                     .badge { padding: 3px 8px; border-radius: 4px; font-size: smaller; }
                     .bg-success { background-color: #198754; color: white; }
                     .bg-danger { background-color: #dc3545; color: white; }
-                    .bg-warning { background-color: #28a745; color: black; }
+                    .bg-warning { background-color: #2563EB; color: black; }
                     .bg-info { background-color: #0dcaf0; color: white; }
                     .bg-light { background-color: #ffffff; color: black; }
-                    .bg-primary { background-color: #28a745; color: white; }
+                    .bg-primary { background-color: #2563EB; color: white; }
                     img { max-width: 100%; }
                     @media print {
                         .no-print { display: none; }
@@ -571,7 +571,7 @@
                 </div>
                 
                 <div class="no-print" style="text-align: center; margin-top: 30px;">
-                    <button onclick="window.print();" style="padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
+                    <button onclick="window.print();" style="padding: 8px 16px; background: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
                     <button onclick="window.close();" style="padding: 8px 16px; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
                 </div>
             </body>
@@ -586,3 +586,8 @@
     }
 </script>
 @endpush
+
+
+
+
+

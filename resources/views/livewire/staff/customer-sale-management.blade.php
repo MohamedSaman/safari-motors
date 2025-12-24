@@ -25,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 6px;
-            background: #28a745;
+            background: #2563EB;
             opacity: 0.8;
         }
 
@@ -294,7 +294,7 @@
                     <div class="d-flex justify-content-between">
                         <div>
                             <div class="stat-label">Customers</div>
-                            <div class="stat-value text-success">{{ $totals->customer_count ?? 0 }}</div>
+                            <div class="stat-value text-info">{{ $totals->customer_count ?? 0 }}</div>
                             <div class="text-muted small">
                                 @if ($totals->customer_count != 0)
                                 {{ round($sales->total() / $totals->customer_count, 1) }} sales per customer
@@ -304,7 +304,7 @@
                             </div>
                         </div>
                         <div class="stat-icon bg-success bg-opacity-10">
-                            <i class="bi bi-people text-success fs-4"></i>
+                            <i class="bi bi-people text-info fs-4"></i>
                         </div>
                     </div>
                 </div>
@@ -856,3 +856,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

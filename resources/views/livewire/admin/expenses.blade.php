@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-pie-chart-fill text-success me-2"></i> Expense Management
+                <i class="bi bi-pie-chart-fill text-info me-2"></i> Expense Management
             </h3>
             <p class="text-muted mb-0">Track and manage your company expenses efficiently</p>
         </div>
@@ -25,7 +25,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="icon-container bg-success bg-opacity-10 me-3">
-                            <i class="bi bi-calendar-day text-success fs-4"></i>
+                            <i class="bi bi-calendar-day text-info fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
                             <p class="text-muted mb-1">Today's Expenses</p>
@@ -458,7 +458,7 @@
                         <div class="col-md-6">
                             <div class="p-3 border rounded">
                                 <small class="text-muted d-block">Amount</small>
-                                <strong class="text-success">Rs.{{ number_format($viewExpense->amount, 2) }}</strong>
+                                <strong class="text-info">Rs.{{ number_format($viewExpense->amount, 2) }}</strong>
                             </div>
                         </div>
 
@@ -560,7 +560,7 @@
     }
 
     .summary-card.today {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.month {
@@ -568,7 +568,7 @@
     }
 
     .summary-card.total {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .icon-container {
@@ -633,7 +633,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #28a745;
+        border-color: #2563EB;
     }
 
     .btn {
@@ -644,13 +644,13 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
@@ -736,3 +736,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

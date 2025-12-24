@@ -7,10 +7,10 @@
                 <div class="d-flex justify-content-between align-items-start">
                     <div>
                         <div class="stat-label mb-2">Total Sales</div>
-                        <div class="stat-value text-success">Rs.{{ number_format($totalSales, 2) }}</div>
+                        <div class="stat-value text-info">Rs.{{ number_format($totalSales, 2) }}</div>
                         <small class="text-muted">This Month</small>
                     </div>
-                    <div class="stat-icon bg-success bg-opacity-10 text-success">
+                    <div class="stat-icon bg-success bg-opacity-10 text-info">
                         <i class="bi bi-graph-up-arrow"></i>
                     </div>
                 </div>
@@ -37,12 +37,12 @@
                 <div class="d-flex justify-content-between align-items-start">
                     <div>
                         <div class="stat-label mb-2">Net Profit</div>
-                        <div class="stat-value {{ $netProfit >= 0 ? 'text-success' : 'text-danger' }}">
+                        <div class="stat-value {{ $netProfit >= 0 ? 'text-info' : 'text-danger' }}">
                             Rs.{{ number_format(abs($netProfit), 2) }}
                         </div>
                         <small class="text-muted">This Month</small>
                     </div>
-                    <div class="stat-icon {{ $netProfit >= 0 ? 'bg-success' : 'bg-danger' }} bg-opacity-10 {{ $netProfit >= 0 ? 'text-success' : 'text-danger' }}">
+                    <div class="stat-icon {{ $netProfit >= 0 ? 'bg-success' : 'bg-danger' }} bg-opacity-10 {{ $netProfit >= 0 ? 'text-info' : 'text-danger' }}">
                         <i class="bi bi-cash-stack"></i>
                     </div>
                 </div>
@@ -234,3 +234,7 @@
     });
 </script>
 @endpush
+
+
+
+

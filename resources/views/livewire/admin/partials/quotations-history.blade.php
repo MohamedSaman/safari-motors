@@ -57,7 +57,7 @@
                     @endif
                 </td>
                 <td class="text-end">
-                    <strong class="text-success">Rs. {{ number_format($quotation['total'] ?? 0, 2) }}</strong>
+                    <strong class="text-info">Rs. {{ number_format($quotation['total'] ?? 0, 2) }}</strong>
                 </td>
                 <td class="text-center">
                     @php
@@ -83,7 +83,7 @@
                 <td colspan="6" class="text-end fw-bold">Total:</td>
                 <td class="text-center fw-bold">{{ array_sum(array_column($quotationsHistory, 'quantity')) }}</td>
                 <td colspan="2"></td>
-                <td class="text-end fw-bold text-success">
+                <td class="text-end fw-bold text-info">
                     Rs. {{ number_format(array_sum(array_column($quotationsHistory, 'total')), 2) }}
                 </td>
                 <td></td>
@@ -97,3 +97,8 @@
     <p class="text-muted mt-3 fs-5">No quotation history found for this product.</p>
 </div>
 @endif
+
+
+
+
+

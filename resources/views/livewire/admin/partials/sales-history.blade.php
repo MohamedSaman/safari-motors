@@ -48,7 +48,7 @@
                     @endif
                 </td>
                 <td class="text-end">
-                    <strong class="text-success">Rs. {{ number_format($sale['total'] ?? 0, 2) }}</strong>
+                    <strong class="text-info">Rs. {{ number_format($sale['total'] ?? 0, 2) }}</strong>
                     @if(($sale['total_discount'] ?? 0) > 0)
                         <div><small class="text-danger">Discount: Rs. {{ number_format($sale['total_discount'], 2) }}</small></div>
                     @endif
@@ -105,7 +105,7 @@
                 <td colspan="5" class="text-end fw-bold">Total:</td>
                 <td class="text-center fw-bold">{{ array_sum(array_column($salesHistory, 'quantity')) }}</td>
                 <td colspan="1"></td>
-                <td class="text-end fw-bold text-success">
+                <td class="text-end fw-bold text-info">
                     Rs. {{ number_format(array_sum(array_column($salesHistory, 'total')), 2) }}
                 </td>
                 <td colspan="2"></td>
@@ -119,3 +119,8 @@
     <p class="text-muted mt-3 fs-5">No sales history found for this product.</p>
 </div>
 @endif
+
+
+
+
+

@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-receipt text-success me-2"></i> Customer Payment List
+                <i class="bi bi-receipt text-info me-2"></i> Customer Payment List
             </h3>
             <p class="text-muted mb-0">View all customer receipts and payment allocations</p>
         </div>
@@ -77,7 +77,7 @@
                         <div class="row g-3">
                             <div class="col-md-4">
                                 <div class="d-flex align-items-center">
-                                    <i class="bi bi-person-circle text-success me-2" style="font-size: 1.5rem;"></i>
+                                    <i class="bi bi-person-circle text-info me-2" style="font-size: 1.5rem;"></i>
                                     <div>
                                         <small class="text-muted d-block">Customer Name</small>
                                         <strong>{{ $selectedCustomer->name }}</strong>
@@ -148,7 +148,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-4 text-end">
-                                        <div class="fs-4 fw-bold text-success">Rs.{{ number_format($payment->amount, 2) }}</div>
+                                        <div class="fs-4 fw-bold text-info">Rs.{{ number_format($payment->amount, 2) }}</div>
                                         <span class="badge bg-secondary">
                                             <i class="bi bi-{{ $payment->payment_method === 'cash' ? 'cash' : ($payment->payment_method === 'cheque' ? 'receipt' : 'bank') }} me-1"></i>
                                             {{ ucfirst(str_replace('_', ' ', $payment->payment_method)) }}
@@ -220,7 +220,7 @@
                                                     <td><span class="badge bg-dark">#{{ $alloc->sale_id }}</span></td>
                                                     <td>{{ $alloc->sale ? $alloc->sale->invoice_number : 'N/A' }}</td>
                                                     
-                                                    <td class="text-end fw-bold text-success">Rs.{{ number_format($alloc->allocated_amount, 2) }}</td>
+                                                    <td class="text-end fw-bold text-info">Rs.{{ number_format($alloc->allocated_amount, 2) }}</td>
                                                 </tr>
                                                 @endforeach
                                                 <tr class="table-3ctive">
@@ -297,3 +297,7 @@
         }
     </style>
 </div>
+
+
+
+

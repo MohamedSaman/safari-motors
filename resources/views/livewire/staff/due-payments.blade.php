@@ -89,7 +89,7 @@
                                     <div class="card-body p-3">
                                         <div class="d-flex align-items-center">
                                             <div class="icon-shape icon-md rounded-circle bg-success bg-opacity-10 me-3 text-center">
-                                                <i class="bi bi text-success">Rs.</i>
+                                                <i class="bi bi text-info">Rs.</i>
                                             </div>
                                             <div>
                                                 <p class="text-xs text-muted mb-0 text-uppercase">Total Due</p>
@@ -97,7 +97,7 @@
                                                     <h3 class="mb-0 fw-bold">
                                                         Rs.{{ number_format($duePayments->where('status', null)->sum('amount'), 0) }}
                                                     </h3>
-                                                    <span class="badge bg-success bg-opacity-10 text-success ms-2">Amount</span>
+                                                    <span class="badge bg-success bg-opacity-10 text-info ms-2">Amount</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -229,7 +229,7 @@
                                             <div class="d-flex align-items-center">
                                                 <div
                                                     class="icon-shape icon-xs rounded-circle bg-success bg-opacity-10 me-2 text-center">
-                                                    <i class="bi bi text-success">Rs.</i>
+                                                    <i class="bi bi text-info">Rs.</i>
                                                 </div>
                                                 <span class="text-sm font-weight-bold">
                                                     {{ number_format($payment->amount, 2) }}
@@ -488,7 +488,7 @@
                                                     </div>
                                                     @endif
                                                     <div class="position-absolute bottom-0 start-0 end-0 py-2 px-3 bg-dark bg-opacity-50 text-white text-start small">
-                                                        <i class="bi bi-check-circle-fill text-success me-1"></i>
+                                                        <i class="bi bi-check-circle-fill text-info me-1"></i>
                                                         New attachment preview
                                                     </div>
                                                 </div>
@@ -717,3 +717,7 @@
         </div>
     </div>
 </div>
+
+
+
+

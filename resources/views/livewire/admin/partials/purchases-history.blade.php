@@ -21,7 +21,7 @@
             <tr>
                 <td class="text-center">{{ $index + 1 }}</td>
                 <td>
-                    <strong class="text-success">{{ $purchase['order_code'] ?? 'N/A' }}</strong>
+                    <strong class="text-info">{{ $purchase['order_code'] ?? 'N/A' }}</strong>
                 </td>
                 <td>
                     <small>{{ \Carbon\Carbon::parse($purchase['order_date'])->format('d M Y') }}</small>
@@ -51,7 +51,7 @@
                     @endif
                 </td>
                 <td class="text-end">
-                    <strong class="text-success">Rs. {{ number_format($purchase['total'] ?? 0, 2) }}</strong>
+                    <strong class="text-info">Rs. {{ number_format($purchase['total'] ?? 0, 2) }}</strong>
                 </td>
                 <td class="text-center">
                     @php
@@ -75,7 +75,7 @@
                 <td colspan="5" class="text-end fw-bold">Total:</td>
                 <td class="text-center fw-bold">{{ array_sum(array_column($purchasesHistory, 'quantity')) }}</td>
                 <td colspan="2"></td>
-                <td class="text-end fw-bold text-success">
+                <td class="text-end fw-bold text-info">
                     Rs. {{ number_format(array_sum(array_column($purchasesHistory, 'total')), 2) }}
                 </td>
                 <td></td>
@@ -89,3 +89,8 @@
     <p class="text-muted mt-3 fs-5">No purchase history found for this product.</p>
 </div>
 @endif
+
+
+
+
+

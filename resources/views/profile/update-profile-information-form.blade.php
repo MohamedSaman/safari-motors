@@ -75,7 +75,7 @@
                 </p>
 
                 @if ($this->verificationLinkSent)
-                    <p class="mt-2 small text-success fw-semibold">
+                    <p class="mt-2 small text-info fw-semibold">
                         {{ __('A new verification link has been sent to your email address.') }}
                     </p>
                 @endif
@@ -93,3 +93,7 @@
         </x-button>
     </x-slot>
 </x-form-section>
+
+
+
+

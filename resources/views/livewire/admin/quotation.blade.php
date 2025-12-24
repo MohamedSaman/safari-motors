@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-2">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-cart-check-fill text-success me-2"></i> Purchase Order Management
+                <i class="bi bi-cart-check-fill text-info me-2"></i> Purchase Order Management
             </h3>
             <p class="text-muted mb-0">Create and manage purchase orders from suppliers</p>
         </div>
@@ -38,7 +38,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div class="icon-container bg-success bg-opacity-10 me-3">
-                                <i class="bi bi-patch-check-fill text-success fs-4"></i>
+                                <i class="bi bi-patch-check-fill text-info fs-4"></i>
                             </div>
                             <div class="flex-grow-1">
                                 <p class="text-muted mb-1">Completed Orders</p>
@@ -95,7 +95,7 @@
                                     </button>
 
                                     @if($order->status == 'pending')
-                                    <button class="btn btn-link text-success p-0 me-2"
+                                    <button class="btn btn-link text-info p-0 me-2"
                                         wire:click="confirmComplete({{ $order->id }})"
                                         title="Mark Complete">
                                         <i class="bi bi-check-circle fs-6"></i>
@@ -347,11 +347,11 @@
     }
 
     .summary-card.pending {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.completed {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .icon-container {
@@ -386,8 +386,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #28a745;
-            background: #28a745;
+            background: #2563EB;
+            background: #2563EB;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -423,7 +423,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #28a745;
+        border-color: #2563EB;
     }
 
     .btn {
@@ -434,13 +434,13 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
@@ -474,3 +474,8 @@
     // No additional event listeners needed - modals are opened directly via $this->js() in the component
 </script>
 @endpush
+
+
+
+
+

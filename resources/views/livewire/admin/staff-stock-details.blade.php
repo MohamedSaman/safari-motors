@@ -105,7 +105,7 @@
                                 </div>
                                 <div class="col-4">
                                     <div class="p-2 p-md-3 rounded-3 bg-white shadow-sm">
-                                        <div class="text-success fs-5 fs-md-4 fw-bold">
+                                        <div class="text-info fs-5 fs-md-4 fw-bold">
                                             {{ $stockDetails->sum('sold_quantity') }}</div>
                                         <div class="text-muted small">Total Sold</div>
                                     </div>
@@ -324,3 +324,8 @@
         }
     </script>
 @endpush
+
+
+
+
+

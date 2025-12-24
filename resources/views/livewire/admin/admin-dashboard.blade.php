@@ -23,7 +23,7 @@
         }
 
         .stat-change {
-            color: #28a745;
+            color: #2563EB;
             font-size: 13px;
         }
 
@@ -138,7 +138,7 @@
         }
 
         .progress-bar {
-            background-color: #28a745;
+            background-color: #2563EB;
             height: 4px;
         }
 
@@ -268,7 +268,7 @@
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div>
                 <h3 class="fw-bold text-dark mb-2">
-                    <i class="bi bi-speedometer2 text-success me-2"></i> Overview
+                    <i class="bi bi-speedometer2 text-info me-2"></i> Overview
                 </h3>
                 <p class="text-muted mb-0">Get a complete view of your product performance and stock activity.</p>
             </div>
@@ -300,7 +300,7 @@
                     <!-- Additional Info -->
                     <div class="stat-info mt-3 pt-2 border-top">
                         <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-muted"><i class="bi bi-cart-check-fill text-success me-1"></i> Sales Value</small>
+                            <small class="text-muted"><i class="bi bi-cart-check-fill text-info me-1"></i> Sales Value</small>
                             <span class="badge bg-success">Rs.{{ number_format($totalSales, 2) }}</span>
                         </div>
                     </div>
@@ -467,8 +467,8 @@
                     labels: categoryLabels,
                     datasets: [{
                         label: 'Sales by Category',
-                        backgroundColor: '#28a745',
-                        borderColor: '#28a745',
+                        backgroundColor: '#2563EB',
+                        borderColor: '#2563EB',
                         borderWidth: 1,
                         data: categoryTotals
                     }]
@@ -521,3 +521,8 @@
     </script>
     @endpush
 </div>
+
+
+
+
+

@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-2">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-clipboard-check-fill text-success me-2"></i> Goods Received Notes
+                <i class="bi bi-clipboard-check-fill text-info me-2"></i> Goods Received Notes
             </h3>
             <p class="text-muted mb-0">Process and track incoming orders from suppliers</p>
         </div>
@@ -33,7 +33,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div class="icon-container bg-success bg-opacity-10 me-3">
-                                <i class="bi bi-archive-fill text-success fs-4"></i>
+                                <i class="bi bi-archive-fill text-info fs-4"></i>
                             </div>
                             <div class="flex-grow-1">
                                 <p class="text-muted mb-1">Fully Received</p>
@@ -331,11 +331,11 @@
         }
 
         .summary-card.awaiting {
-            border-left-color: #28a745;
+            border-left-color: #2563EB;
         }
 
         .summary-card.received {
-            border-left-color: #28a745;
+            border-left-color: #2563EB;
         }
 
         .icon-container {
@@ -370,8 +370,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #28a745;
-            background: #28a745;
+            background: #2563EB;
+            background: #2563EB;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -383,7 +383,7 @@
         }
 
         .summary-card.total {
-            border-left-color: #28a745;
+            border-left-color: #2563EB;
         }
 
         .btn-link {
@@ -411,7 +411,7 @@
         .form-control:focus,
         .form-select:focus {
             box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-            border-color: #28a745;
+            border-color: #2563EB;
         }
 
         .btn {
@@ -422,13 +422,13 @@
         }
 
         .btn-primary {
-            background-color: #28a745;
-            border-color: #28a745;
+            background-color: #2563EB;
+            border-color: #2563EB;
         }
 
         .btn-primary:hover {
-            background-color: #218838;
-            border-color: #218838;
+            background-color: #1D4ED8;
+            border-color: #1D4ED8;
             transform: translateY(-2px);
         }
 
@@ -487,3 +487,8 @@
     </script>
     @endpush
 </div>
+
+
+
+
+

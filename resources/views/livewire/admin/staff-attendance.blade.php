@@ -95,7 +95,7 @@
                                 @php
                                 $status = $attendance->status ?? 'absent';
                                 $statusClass = match ($status) {
-                                'present' => 'bg-success-subtle text-success-emphasis',
+                                'present' => 'bg-success-subtle text-info-emphasis',
                                 'late' => 'bg-warning-subtle text-warning-emphasis',
                                 'early' => 'bg-info-subtle text-info-emphasis',
                                 'leave', 'absent', null => 'bg-danger-subtle text-danger-emphasis',
@@ -158,7 +158,7 @@
                                 @php
                                 $status = $attendance->status ?? 'absent';
                                 $statusClass = match ($status) {
-                                'present' => 'bg-success-subtle text-success-emphasis',
+                                'present' => 'bg-success-subtle text-info-emphasis',
                                 'late' => 'bg-warning-subtle text-warning-emphasis',
                                 'early' => 'bg-info-subtle text-info-emphasis',
                                 'leave', 'absent', null => 'bg-danger-subtle text-danger-emphasis',
@@ -215,3 +215,7 @@
         </div>
     </div>
 </div>
+
+
+
+

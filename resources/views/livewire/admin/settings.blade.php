@@ -2,7 +2,7 @@
 
     {{-- Page Header --}}
     <div class="d-flex align-items-center mb-4">
-        <i class="bi bi-gear-fill text-success fs-2"></i>
+        <i class="bi bi-gear-fill text-info fs-2"></i>
         <div class="ms-3">
             <h1 class="h3 fw-bold mb-0">System Settings</h1>
             <p class="text-muted mb-0">Manage all system configurations.</p>
@@ -155,7 +155,7 @@
                     type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapseSystemConfigs" aria-expanded="false"
                     aria-controls="collapseSystemConfigs">
-                    <i class="bi bi-sliders fs-5 me-3 text-success"></i>
+                    <i class="bi bi-sliders fs-5 me-3 text-info"></i>
                     System Configurations
                 </button>
             </h2>
@@ -650,7 +650,7 @@
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
-            cancelButtonColor: '#28a745',
+            cancelButtonColor: '#2563EB',
             confirmButtonText: 'Yes, delete it!',
             cancelButtonText: 'Cancel',
             reverseButtons: true
@@ -671,7 +671,7 @@
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
-            cancelButtonColor: '#28a745',
+            cancelButtonColor: '#2563EB',
             confirmButtonText: 'Yes, delete it!',
             cancelButtonText: 'Cancel',
             reverseButtons: true
@@ -692,7 +692,7 @@
             icon: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#d33',
-            cancelButtonColor: '#28a745',
+            cancelButtonColor: '#2563EB',
             confirmButtonText: 'Yes, delete it!',
             cancelButtonText: 'Cancel',
             reverseButtons: true
@@ -706,3 +706,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

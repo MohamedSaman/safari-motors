@@ -70,7 +70,7 @@
                                 @endif
                                 <tr>
                                     <td><strong>Cash Payment:</strong></td>
-                                    <td class="text-end text-success fw-bold">Rs.{{ number_format($totalPaymentAmount, 2) }}</td>
+                                    <td class="text-end text-info fw-bold">Rs.{{ number_format($totalPaymentAmount, 2) }}</td>
                                 </tr>
                                 <tr class="border-top">
                                     <td><strong>Total Payment:</strong></td>
@@ -106,7 +106,7 @@
                         @if($paymentData['payment_method'] === 'cheque')
                         <div class="col-12">
                             <div class="border rounded p-3 bg-light">
-                                <h6 class="fw-semibold mb-3 text-success">
+                                <h6 class="fw-semibold mb-3 text-info">
                                     <i class="bi bi-receipt me-2"></i>Cheque Details
                                 </h6>
                                 <div class="row g-3">
@@ -207,7 +207,7 @@
                                 <tr>
                                     <td class="fw-bold">{{ $allocation['order_code'] }}</td>
                                     <td class="text-end">Rs.{{ number_format($allocation['due_amount'], 2) }}</td>
-                                    <td class="text-end text-success fw-bold">Rs.{{ number_format($allocation['payment_amount'], 2) }}</td>
+                                    <td class="text-end text-info fw-bold">Rs.{{ number_format($allocation['payment_amount'], 2) }}</td>
                                     <td class="text-end text-danger">Rs.{{ number_format($allocation['due_amount'] - $allocation['payment_amount'], 2) }}</td>
                                     <td>
                                         @php
@@ -307,7 +307,7 @@
                                 @endif
                                 <tr>
                                     <td><strong>Paid Amount:</strong></td>
-                                    <td class="text-end text-success">Rs.{{ number_format($selectedOrderForView->total_amount - $selectedOrderForView->due_amount - $returnAmount, 2) }}</td>
+                                    <td class="text-end text-info">Rs.{{ number_format($selectedOrderForView->total_amount - $selectedOrderForView->due_amount - $returnAmount, 2) }}</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Due Amount:</strong></td>
@@ -410,7 +410,7 @@
                                 <tr>
                                     <td>{{ $payment->payment_date ? date('M d, Y', strtotime($payment->payment_date)) : '-' }}</td>
                                     <td><span class="badge bg-info">{{ ucfirst($payment->payment_method) }}</span></td>
-                                    <td class="text-end text-success fw-bold">Rs.{{ number_format($payment->amount, 2) }}</td>
+                                    <td class="text-end text-info fw-bold">Rs.{{ number_format($payment->amount, 2) }}</td>
                                     <td>{{ $payment->payment_reference ?? '-' }}</td>
                                 </tr>
                                 @endforeach
@@ -465,7 +465,7 @@
                             <p class="mb-1"><strong>Overpayment Credit Used:</strong> <span class="text-info">Rs.{{ number_format($lastPayment->overpayment_used, 2) }}</span></p>
                             @endif
                             <p class="mb-1"><strong>Cash Paid:</strong> Rs.{{ number_format($lastPayment->amount, 2) }}</p>
-                            <p class="mb-1"><strong>Total Payment:</strong> <span class="text-success fw-bold">Rs.{{ number_format($lastPayment->amount + ($lastPayment->overpayment_used ?? 0), 2) }}</span></p>
+                            <p class="mb-1"><strong>Total Payment:</strong> <span class="text-info fw-bold">Rs.{{ number_format($lastPayment->amount + ($lastPayment->overpayment_used ?? 0), 2) }}</span></p>
                             <p class="mb-1"><strong>Reference No:</strong> {{ $lastPayment->payment_reference ?? 'N/A' }}</p>
                             <p class="mb-0"><strong>Received By:</strong> Admin</p>
                         </div>
@@ -486,7 +486,7 @@
                                 @foreach($lastPayment->allocations as $allocation)
                                 <tr>
                                     <td class="fw-bold">{{ $allocation->order->order_code }}</td>
-                                    <td class="text-end text-success">Rs.{{ number_format($allocation->allocated_amount, 2) }}</td>
+                                    <td class="text-end text-info">Rs.{{ number_format($allocation->allocated_amount, 2) }}</td>
                                     <td>
                                         @if($allocation->order->due_amount == 0)
                                             <span class="badge bg-success">Fully Paid</span>
@@ -512,7 +512,7 @@
                                 @endif
                                 <tr>
                                     <td class="fw-bold">TOTAL</td>
-                                    <td class="text-end fw-bold text-success">Rs.{{ number_format($lastPayment->amount + ($lastPayment->overpayment_used ?? 0), 2) }}</td>
+                                    <td class="text-end fw-bold text-info">Rs.{{ number_format($lastPayment->amount + ($lastPayment->overpayment_used ?? 0), 2) }}</td>
                                     <td></td>
                                 </tr>
                             </tfoot>
@@ -552,7 +552,7 @@
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
                 <h3 class="fw-bold text-dark mb-2">
-                    <i class="bi bi-receipt text-success me-2"></i> Supplier Payment Receipt
+                    <i class="bi bi-receipt text-info me-2"></i> Supplier Payment Receipt
                 </h3>
                 <p class="text-muted mb-0">Record supplier payments and allocate to due purchase orders</p>
             </div>
@@ -595,7 +595,7 @@
                                 @endif
                             </p>
                             @if($supplierOverpayment > 0)
-                            <p class="mb-0 text-success fw-bold">
+                            <p class="mb-0 text-info fw-bold">
                                 <i class="bi bi-wallet2 me-1"></i>Overpayment Credit: Rs.{{ number_format($supplierOverpayment, 2) }}
                             </p>
                             @endif
@@ -744,7 +744,7 @@
                                         <td class="fw-bold">{{ $order->order_code }}</td>
                                         <td>{{ $order->order_date ? date('M d, Y', strtotime($order->order_date)) : '-' }}</td>
                                         <td>Rs.{{ number_format($order->total_amount, 2) }}</td>
-                                        <td class="fw-bold {{ $isSelected ? 'text-success' : 'text-danger' }}">
+                                        <td class="fw-bold {{ $isSelected ? 'text-info' : 'text-danger' }}">
                                             Rs.{{ number_format($order->due_amount, 2) }}
                                         </td>
                                         <td>
@@ -770,10 +770,10 @@
                             <div class="card-footer bg-light">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="fw-semibold">
-                                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                        <i class="bi bi-check-circle-fill text-info me-2"></i>
                                         {{ count($selectedOrders) }} order(s) selected
                                     </span>
-                                    <span class="fw-bold text-success">
+                                    <span class="fw-bold text-info">
                                         Total Due: Rs.{{ number_format($totalDueAmount, 2) }}
                                     </span>
                                 </div>
@@ -816,7 +816,7 @@
                                     <span class="fw-bold">
                                         <i class="bi bi-wallet2 me-1"></i> Overpayment Credit Available
                                     </span>
-                                    <span class="fw-bold text-success">Rs.{{ number_format($supplierOverpayment, 2) }}</span>
+                                    <span class="fw-bold text-info">Rs.{{ number_format($supplierOverpayment, 2) }}</span>
                                 </div>
                                 <div class="form-check form-switch mb-2">
                                     <input class="form-check-input" type="checkbox" id="useOverpayment" 
@@ -861,7 +861,7 @@
                                 @if($overpaymentToApply > 0)
                                 <div class="d-flex justify-content-between align-items-center mb-1">
                                     <span class="text-muted">Overpayment Credit:</span>
-                                    <span class="fw-bold text-success">Rs.{{ number_format($overpaymentToApply, 2) }}</span>
+                                    <span class="fw-bold text-info">Rs.{{ number_format($overpaymentToApply, 2) }}</span>
                                 </div>
                                 @endif
                                 @if($totalPaymentAmount > 0)
@@ -1031,7 +1031,7 @@
 
     /* Success animation */
     .alert-success {
-        border-left: 4px solid #28a745;
+        border-left: 4px solid #2563EB;
         animation: slideIn 0.5s ease-out;
     }
 
@@ -1042,8 +1042,8 @@
 
     /* Checkbox styling */
     .form-check-input:checked {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 </style>
 @endpush
@@ -1064,8 +1064,8 @@
                 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
                 <style>
                     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; }
-                    .receipt-header { border-bottom: 2px solid #28a745; padding-bottom: 15px; margin-bottom: 20px; }
-                    .text-success { color: #198754 !important; }
+                    .receipt-header { border-bottom: 2px solid #2563EB; padding-bottom: 15px; margin-bottom: 20px; }
+                    .text-info { color: #198754 !important; }
                     .table th { background-color: #ffffff !important; }
                     @media print { 
                         .no-print { display: none !important; }
@@ -1109,3 +1109,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

@@ -41,3 +41,7 @@ $maxWidth = [
         {{ $slot }}
     </div>
 </div>
+
+
+
+

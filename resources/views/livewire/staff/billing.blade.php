@@ -411,7 +411,7 @@
                                                                 {{ number_format($ProductDetails->selling_price, 2) }}
                                                             </h5>
                                                             @if ($ProductDetails->available_stock > 0)
-                                                            <small class="text-success">
+                                                            <small class="text-info">
                                                                 <i class="bi bi-check-circle-fill"></i>
                                                                 {{ $ProductDetails->available_stock }}
                                                                 units
@@ -435,7 +435,7 @@
                                                             </div>
                                                             <div class="border border-success rounded-3 p-2 text-center mt-3"
                                                                 style="background-color: rgba(25, 135, 84, 0.1);">
-                                                                <span class="text-success fw-bold fs-5">
+                                                                <span class="text-info fw-bold fs-5">
                                                                     SAVE Rs.
                                                                     {{ number_format($ProductDetails->discount_price, 2) }}
                                                                 </span>
@@ -636,7 +636,7 @@
                                                                 <p class="card-text fw-bold">
                                                                     Available Stock</p>
                                                                 <h4
-                                                                    class="card-title {{ $ProductDetails->available_stock > 0 ? 'text-success' : 'text-danger' }}">
+                                                                    class="card-title {{ $ProductDetails->available_stock > 0 ? 'text-info' : 'text-danger' }}">
                                                                     {{ $ProductDetails->available_stock }}
                                                                 </h4>
                                                             </div>
@@ -768,17 +768,17 @@
                                                     <div class="card border-success bg-success bg-opacity-10">
                                                         <div
                                                             class="card-header bg-success bg-opacity-25 border-success">
-                                                            <h6 class="text-success mb-0 fw-bold">
+                                                            <h6 class="text-info mb-0 fw-bold">
                                                                 SPECIAL DISCOUNT
                                                             </h6>
                                                         </div>
                                                         <div class="card-body">
                                                             <div
                                                                 class="d-flex justify-content-between align-items-center">
-                                                                <p class="card-text fw-bold text-success">
+                                                                <p class="card-text fw-bold text-info">
                                                                     Discount
                                                                     Amount</p>
-                                                                <h5 class="card-title text-success">
+                                                                <h5 class="card-title text-info">
                                                                     Rs.
                                                                     {{ number_format($ProductDetails->discount_price, 2) }}
                                                                 </h5>
@@ -1307,3 +1307,7 @@
     </script>
     @endpush
 </div>
+
+
+
+

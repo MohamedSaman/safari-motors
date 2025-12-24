@@ -301,7 +301,7 @@
                                         @endif
                                     </td>
                                     <td class="fw-bold">Rs.{{ number_format($item['net_unit_price'], 2) }}</td>
-                                    <td class="fw-bold text-success">
+                                    <td class="fw-bold text-info">
                                         Rs.{{ number_format($item['return_qty'] * $item['net_unit_price'], 2) }}
                                     </td>
                                     <td>
@@ -350,7 +350,7 @@
                             <p><strong>Purchase Order:</strong> #{{ $selectedPurchaseOrder?->order_code }}</p>
                         </div>
                         <div class="col-md-6">
-                            <p><strong>Return Value:</strong> <span class="text-success fw-bold">Rs.{{ number_format($totalReturnValue, 2) }}</span></p>
+                            <p><strong>Return Value:</strong> <span class="text-info fw-bold">Rs.{{ number_format($totalReturnValue, 2) }}</span></p>
                             <p><strong>Items:</strong> {{ count(array_filter($returnItems, fn($item) => $item['return_qty'] > 0)) }}</p>
                         </div>
                     </div>
@@ -392,7 +392,7 @@
                             <tfoot class="table-light">
                                 <tr>
                                     <td colspan="4" class="text-end fw-bold">Total Return Amount:</td>
-                                    <td class="fw-bold text-success">Rs.{{ number_format($totalReturnValue, 2) }}</td>
+                                    <td class="fw-bold text-info">Rs.{{ number_format($totalReturnValue, 2) }}</td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -514,8 +514,8 @@
         border-top: none;
         font-weight: 600;
         color: #ffffff;
-        background: #28a745;
-        background: #28a745;
+        background: #2563EB;
+        background: #2563EB;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -585,3 +585,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

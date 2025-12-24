@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <hr class="my-4">
-                    <div class="p-3 bg-success-subtle text-success-emphasis rounded-3 d-flex justify-content-between align-items-center">
+                    <div class="p-3 bg-success-subtle text-info-emphasis rounded-3 d-flex justify-content-between align-items-center">
                         <h4 class="fw-bolder mb-0">Net Salary</h4>
                         <h4 class="fw-bolder mb-0">LKR {{ number_format($salaryBreakdown['net_salary'] ?? 0,2) }}</h4>
                     </div>
@@ -43,3 +43,6 @@
         </div>
     </div>
 @endif
+
+
+

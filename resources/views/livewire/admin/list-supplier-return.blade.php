@@ -37,7 +37,7 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="icon-container bg-success bg-opacity-10 me-3">
-                            <i class="bi bi-box text-success fs-4"></i>
+                            <i class="bi bi-box text-info fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
                             <p class="text-muted mb-1">Total Quantity</p>
@@ -238,7 +238,7 @@
                                 <span class="fw-semibold">Rs.{{ number_format($return->unit_price, 2) }}</span>
                             </td>
                             <td>
-                                <span class="fw-bold text-success">Rs.{{ number_format($return->total_amount, 2) }}</span>
+                                <span class="fw-bold text-info">Rs.{{ number_format($return->total_amount, 2) }}</span>
                             </td>
                             <td>
                                 @php
@@ -296,7 +296,7 @@
                 <button class="dropdown-item py-2 d-flex align-items-center"
                         wire:click="exportSingleCSV({{ $return->id }})"
                         wire:loading.attr="disabled">
-                    <i class="bi bi-file-earmark-excel text-success me-2"></i>
+                    <i class="bi bi-file-earmark-excel text-info me-2"></i>
                     <span>Export CSV</span>
                     <div wire:loading wire:target="exportSingleCSV({{ $return->id }})"
                          class="spinner-border spinner-border-sm ms-2">
@@ -371,7 +371,7 @@
                         </div>
                         <div class="col-md-6">
                             <p><strong>Return Date:</strong> {{ $selectedReturn->created_at->format('M j, Y g:i A') }}</p>
-                            <p><strong>Total Amount:</strong> <span class="fw-bold text-success">Rs.{{ number_format($selectedReturn->total_amount, 2) }}</span></p>
+                            <p><strong>Total Amount:</strong> <span class="fw-bold text-info">Rs.{{ number_format($selectedReturn->total_amount, 2) }}</span></p>
                             <p>
                                 <strong>Reason:</strong>
                                 <span class="badge bg-{{ $reasonColors[$selectedReturn->return_reason] ?? 'secondary' }}">
@@ -418,7 +418,7 @@
                                         <div class="col-6 text-end">
                                             <p class="mb-2"><span class="badge bg-warning fs-6">{{ $selectedReturn->return_quantity }}</span></p>
                                             <p class="mb-2">Rs.{{ number_format($selectedReturn->unit_price, 2) }}</p>
-                                            <p class="mb-0 fw-bold text-success">Rs.{{ number_format($selectedReturn->total_amount, 2) }}</p>
+                                            <p class="mb-0 fw-bold text-info">Rs.{{ number_format($selectedReturn->total_amount, 2) }}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -487,8 +487,8 @@
         border-top: none;
         font-weight: 600;
         color: #ffffff;
-        background: #28a745;
-        background: #28a745;
+        background: #2563EB;
+        background: #2563EB;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -522,7 +522,7 @@
             title: event.detail.type === 'error' ? 'Error!' : 'Success!',
             text: event.detail.message,
             icon: event.detail.type === 'error' ? 'error' : 'success',
-            confirmButtonColor: '#28a745'
+            confirmButtonColor: '#2563EB'
         });
     });
 
@@ -538,3 +538,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

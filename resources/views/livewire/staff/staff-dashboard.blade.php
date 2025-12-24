@@ -41,7 +41,7 @@
             }
 
             .stat-change {
-                color: #28a745;
+                color: #2563EB;
                 font-size: 12px;
             }
             
@@ -88,12 +88,12 @@
             }
 
             .content-tab.active {
-                color: #28a745;
-                border-bottom-color: #28a745;
+                color: #2563EB;
+                border-bottom-color: #2563EB;
             }
 
             .content-tab:hover:not(.active) {
-                color: #28a745;
+                color: #2563EB;
                 border-bottom-color: #dee2e6;
             }
 
@@ -299,7 +299,7 @@
 
             .progress-bar {
                 height: 100%;
-                background-color: #28a745;
+                background-color: #2563EB;
             }
 
             .staff-info {
@@ -582,11 +582,11 @@
                     <!-- Fully Paid Invoices Information -->
                     <div class="stat-info mt-2 mt-md-3 pt-2 border-top">
                         <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-muted"><i class="bi bi-check-circle-fill text-success me-1"></i> Fully
+                            <small class="text-muted"><i class="bi bi-check-circle-fill text-info me-1"></i> Fully
                                 Paid</small>
                             <span class="badge bg-success">{{ $fullPaidCount }}</span>
                         </div>
-                        <small class="d-block text-end text-success">Rs.{{ number_format($fullPaidAmount, 2) }}</small>
+                        <small class="d-block text-end text-info">Rs.{{ number_format($fullPaidAmount, 2) }}</small>
                     </div>
                 </div>
             </div>
@@ -878,7 +878,7 @@
                                             <small class="text-muted">Sales Progress</small>
                                             <div class="d-flex align-items-center flex-wrap">
                                                 <small
-                                                    class="me-1 text-success fw-bold">Rs.{{ number_format($customer->collected_amount, 0) }}</small>
+                                                    class="me-1 text-info fw-bold">Rs.{{ number_format($customer->collected_amount, 0) }}</small>
                                                 <small class="text-muted">/
                                                     Rs.{{ number_format($customer->total_sales, 0) }}</small>
                                                 <span class="badge bg-success ms-1">{{ round(($customer->collected_amount / $customer->total_sales) * 100) }}%</span>
@@ -901,7 +901,7 @@
                                             <small class="text-muted">Payment Collection</small>
                                             <div class="d-flex align-items-center flex-wrap">
                                                 <small
-                                                    class="me-1 text-success fw-bold">Rs.{{ number_format($customer->collected_amount, 0) }}</small>
+                                                    class="me-1 text-info fw-bold">Rs.{{ number_format($customer->collected_amount, 0) }}</small>
                                                 @if ($customer->due_amount > 0)
                                                     <small class="text-danger fw-bold">-
                                                         Rs.{{ number_format($customer->due_amount, 0) }}</small>
@@ -968,7 +968,7 @@
                 labels: @json(collect($brandSales)->pluck('brand')),
                 datasets: [{
                     label: 'Sales by Brand',
-                    backgroundColor: '#28a745',
+                    backgroundColor: '#2563EB',
                     data: @json(collect($brandSales)->pluck('total_sales'))
                 }]
             },
@@ -1047,3 +1047,9 @@
         });
     });
 </script>
+
+
+
+
+
+

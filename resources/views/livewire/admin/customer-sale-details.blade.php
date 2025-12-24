@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-graph-up text-success me-2"></i> Customer Sales Details
+                <i class="bi bi-graph-up text-info me-2"></i> Customer Sales Details
             </h3>
             <p class="text-muted mb-0">Track and manage customer sales performance efficiently</p>
         </div>
@@ -170,12 +170,12 @@
                         <div class="col-12 col-md-4">
                             <div class="card summary-card h-100">
                                 <div class="card-header bg-success bg-opacity-10 border-0">
-                                    <h6 class="fw-bold text-success mb-0">
+                                    <h6 class="fw-bold text-info mb-0">
                                         <i class="bi bi-currency-rupee me-2"></i> Amount Paid
                                     </h6>
                                 </div>
                                 <div class="card-body text-center">
-                                    <h4 class="fw-bold text-success mb-1">
+                                    <h4 class="fw-bold text-info mb-1">
                                         Rs.{{ number_format($modalData['salesSummary']->total_paid, 2) }}
                                     </h4>
                                     <p class="text-muted small mb-0">
@@ -292,7 +292,7 @@
                                                 <span class="text-muted">Rs.{{ number_format($item->discount, 2) }}</span>
                                             </td>
                                             <td class="text-end">
-                                                <span class="fw-bold text-success">Rs.{{ number_format($item->total, 2) }}</span>
+                                                <span class="fw-bold text-info">Rs.{{ number_format($item->total, 2) }}</span>
                                             </td>
                                         </tr>
                                         @empty
@@ -360,11 +360,11 @@
     }
 
     .summary-card:nth-child(1) {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card:nth-child(2) {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card:nth-child(3) {
@@ -408,19 +408,19 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
     .btn-success {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-success:hover {
@@ -475,3 +475,8 @@
     }
 </script>
 @endpush
+
+
+
+
+

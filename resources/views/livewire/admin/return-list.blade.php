@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-arrow-return-left text-success me-2"></i> Product Returns List
+                <i class="bi bi-arrow-return-left text-info me-2"></i> Product Returns List
             </h3>
             <p class="text-muted mb-0">View and manage all product returns</p>
         </div>
@@ -129,7 +129,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content" id="printableReturnReceipt">
                 <!-- Header – logo + company name -->
-                <div class="modal-header text-center border-0" style="background: #28a745; color: #fff;">
+                <div class="modal-header text-center border-0" style="background: #2563EB; color: #fff;">
                     <div class="w-100">
                         <img src="{{ asset('images/SAFARI.png') }}" alt="Logo"
                              class="img-fluid mb-2" style="max-height:60px;">
@@ -319,8 +319,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #28a745;
-            background: #28a745;
+            background: #2563EB;
+            background: #2563EB;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -465,3 +465,8 @@
     }
 </script>
 @endpush
+
+
+
+
+

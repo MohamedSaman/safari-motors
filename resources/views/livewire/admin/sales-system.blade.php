@@ -71,7 +71,7 @@
                 <div class="card h-100 shadow-sm border-1">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h5 class="card-title mb-0 fw-semibold">
-                            <i class="bi bi-search me-2 text-success"></i> Add Products
+                            <i class="bi bi-search me-2 text-info"></i> Add Products
                         </h5>
                     </div>
                     <div class="card-body position-relative">
@@ -92,7 +92,7 @@
                                     <p class="text-muted small mb-0">
                                         Code: {{ $product['code'] }} | Model: {{ $product['model'] }}
                                     </p>
-                                    <p class="text-success small mb-0">
+                                    <p class="text-info small mb-0">
                                         Rs.{{ number_format($product['price'], 2) }} | Stock: {{ $product['stock'] }}
                                     </p>
                                 </div>
@@ -879,3 +879,7 @@
     });
 </script>
 @endpush
+
+
+
+

@@ -35,12 +35,12 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="icon-container bg-success bg-opacity-10 me-3">
-                            <i class="bi bi-check-circle text-success fs-4"></i>
+                            <i class="bi bi-check-circle text-info fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
                             <p class="text-muted mb-1">Total Approved</p>
                             <h4 class="fw-bold mb-0">{{ \App\Models\Payment::where('status', 'approved')->count() }}</h4>
-                            <span class="badge bg-success bg-opacity-10 text-success">Completed</span>
+                            <span class="badge bg-success bg-opacity-10 text-info">Completed</span>
                         </div>
                     </div>
                 </div>
@@ -631,7 +631,7 @@
     }
 
     .summary-card.pending {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.approved {
@@ -694,7 +694,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #28a745;
+        border-color: #2563EB;
     }
 
     .btn {
@@ -705,13 +705,13 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
@@ -833,3 +833,8 @@
     });
 </script>
 @endpush>
+
+
+
+
+

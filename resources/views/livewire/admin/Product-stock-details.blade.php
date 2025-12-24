@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-box-seam text-success me-2"></i> Product Stock Details
+                <i class="bi bi-box-seam text-info me-2"></i> Product Stock Details
             </h3>
             <p class="text-muted mb-0">Manage and monitor product inventory levels</p>
         </div>
@@ -43,12 +43,12 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="icon-container bg-success bg-opacity-10 me-3">
-                            <i class="bi bi-check-circle text-success fs-4"></i>
+                            <i class="bi bi-check-circle text-info fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
                             <p class="text-muted mb-1">Available Stock</p>
                             <h4 class="fw-bold mb-0">{{ $ProductStocks->sum('available_stock') }}</h4>
-                            <span class="badge bg-success bg-opacity-10 text-success">Ready to Sell</span>
+                            <span class="badge bg-success bg-opacity-10 text-info">Ready to Sell</span>
                         </div>
                     </div>
                 </div>
@@ -237,7 +237,7 @@
     }
 
     .summary-card.total {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.available {
@@ -245,7 +245,7 @@
     }
 
     .summary-card.sold {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.damaged {
@@ -276,24 +276,24 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
     .btn-outline-primary {
-        color: #28a745;
-        border-color: #28a745;
+        color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-outline-primary:hover {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
         transform: translateY(-2px);
     }
 
@@ -349,11 +349,11 @@
                     .print-header {
                         margin-bottom: 20px;
                         padding-bottom: 15px;
-                        border-bottom: 2px solid #28a745;
+                        border-bottom: 2px solid #2563EB;
                     }
                     
                     .print-header h2 {
-                        color: #28a745;
+                        color: #2563EB;
                         font-weight: 700;
                     }
                     
@@ -434,3 +434,8 @@
     }
 </script>
 @endpush
+
+
+
+
+

@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-file-earmark-text text-success me-2"></i> Quotation Management
+                <i class="bi bi-file-earmark-text text-info me-2"></i> Quotation Management
             </h3>
             <p class="text-muted mb-0">Review, manage and track all quotations efficiently</p>
         </div>
@@ -99,7 +99,7 @@
                                         <span class="fw-medium text-dark">{{ $quotation->quotation_date->format('d/m/Y') }}</span>
                                     </td>
                                     <td wire:click="viewQuotation({{ $quotation->id }})">
-                                        <span class="fw-bold text-success">Rs. {{ number_format($quotation->total_amount, 2) }}</span>
+                                        <span class="fw-bold text-info">Rs. {{ number_format($quotation->total_amount, 2) }}</span>
                                     </td>
                                     <td wire:click="viewQuotation({{ $quotation->id }})">
                                         <span class="badge bg-{{ $quotation->status === 'converted' ? 'success' : ($quotation->status === 'draft' ? 'secondary' : 'primary') }}">
@@ -130,7 +130,7 @@
                         Loading...
                     </span>
                     <span wire:loading.remove wire:target="openCreateSaleModal({{ $quotation->id }})">
-                        <i class="bi bi-cart-check text-success me-2"></i>
+                        <i class="bi bi-cart-check text-info me-2"></i>
                         Create Sale
                     </span>
                 </button>
@@ -191,7 +191,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title fw-bold">
-                        <i class="bi bi-cart-check text-success me-2 "></i> Create Sale from Quotation
+                        <i class="bi bi-cart-check text-info me-2 "></i> Create Sale from Quotation
                     </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                         wire:click="closeCreateSaleModal"></button>
@@ -248,7 +248,7 @@
                                                 <div class="position-relative">
                                                     @if($item['product_name'])
                                                     <div class="mb-2">
-                                                        <small class="text-success fw-bold d-block">{{ $item['product_name'] }}</small>
+                                                        <small class="text-info fw-bold d-block">{{ $item['product_name'] }}</small>
                                                         <small class="text-muted">Code: {{ $item['product_code'] }} | Model: {{ $item['product_model'] }} | Stock: {{ $item['current_stock'] }}</small>
                                                     </div>
                                                     @else
@@ -308,7 +308,7 @@
                                             <td class="text-end fw-bold text-danger">
                                                 Rs. {{ number_format($item['total_discount'], 2) }}
                                             </td>
-                                            <td class="text-end fw-bold text-success">
+                                            <td class="text-end fw-bold text-info">
                                                 Rs. {{ number_format($item['total'], 2) }}
                                             </td>
                                             <td class="text-center">
@@ -419,7 +419,7 @@
 
                                             <tr class="border-top">
                                                 <td class="fw-bold fs-5">Grand Total:</td>
-                                                <td class="text-end fw-bold fs-5 text-success">Rs. {{ number_format($grandTotal, 2) }}</td>
+                                                <td class="text-end fw-bold fs-5 text-info">Rs. {{ number_format($grandTotal, 2) }}</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -641,7 +641,7 @@
     }
 
     .action-btn.view {
-        color: #28a745;
+        color: #2563EB;
         background-color: rgba(13, 110, 253, 0.1);
     }
 
@@ -713,12 +713,12 @@
     }
 
     .quotation-header {
-        background: #28a745;
+        background: #2563EB;
     }
 
     .company-info h6,
     .client-info h6 {
-        color: #28a745;
+        color: #2563EB;
     }
 
     .table-light th {
@@ -740,8 +740,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #28a745;
-            background: #28a745;
+            background: #2563EB;
+            background: #2563EB;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -870,3 +870,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

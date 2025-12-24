@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-credit-card text-success me-2"></i> Payment Records
+                <i class="bi bi-credit-card text-info me-2"></i> Payment Records
             </h3>
             <p class="text-muted mb-0">View and manage all payment records</p>
         </div>
@@ -53,12 +53,12 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="icon-container bg-success bg-opacity-10 me-3">
-                            <i class="bi bi-check-circle text-success fs-4"></i>
+                            <i class="bi bi-check-circle text-info fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
                             <p class="text-muted mb-1">Approved Payments</p>
                             <h4 class="fw-bold mb-0">Rs.{{ number_format($approvedPayments, 2) }}</h4>
-                            <span class="badge bg-success bg-opacity-10 text-success">Confirmed</span>
+                            <span class="badge bg-success bg-opacity-10 text-info">Confirmed</span>
                         </div>
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                                                 @endif
                                                 <div class="col-12">
                                                     <label class="form-label fw-semibold text-muted small">Total</label>
-                                                    <p class="fw-bold text-success h5 mb-0">Rs.{{ number_format($selectedPayment->sale->total_amount, 2) }}</p>
+                                                    <p class="fw-bold text-info h5 mb-0">Rs.{{ number_format($selectedPayment->sale->total_amount, 2) }}</p>
                                                 </div>
                                                 <div class="col-12">
                                                     <label class="form-label fw-semibold text-muted small">Due Amount</label>
@@ -661,11 +661,11 @@
     }
 
     .summary-card.total {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.pending {
-        border-left-color: #28a745;
+        border-left-color: #2563EB;
     }
 
     .summary-card.approved {
@@ -724,7 +724,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #28a745;
+        border-color: #2563EB;
     }
 
     .btn {
@@ -735,24 +735,24 @@
     }
 
     .btn-primary {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-primary:hover {
-        background-color: #218838;
-        border-color: #218838;
+        background-color: #1D4ED8;
+        border-color: #1D4ED8;
         transform: translateY(-2px);
     }
 
     .btn-outline-primary {
-        color: #28a745;
-        border-color: #28a745;
+        color: #2563EB;
+        border-color: #2563EB;
     }
 
     .btn-outline-primary:hover {
-        background-color: #28a745;
-        border-color: #28a745;
+        background-color: #2563EB;
+        border-color: #2563EB;
         transform: translateY(-2px);
     }
 
@@ -893,12 +893,12 @@
                         vertical-align: baseline;
                         border-radius: 0.25rem;
                     }
-                    .bg-warning { background-color: #28a745; color: #000; }
+                    .bg-warning { background-color: #2563EB; color: #000; }
                     .bg-success { background-color: #198754; color: #fff; }
                     .bg-danger { background-color: #dc3545; color: #fff; }
                     .bg-secondary { background-color: #000000; color: #fff; }
-                    .text-primary { color: #28a745 !important; }
-                    .text-success { color: #198754 !important; }
+                    .text-primary { color: #2563EB !important; }
+                    .text-info { color: #198754 !important; }
                     .text-danger { color: #dc3545 !important; }
                     .fw-bold { font-weight: bold; }
                     .fw-semibold { font-weight: 600; }
@@ -981,3 +981,8 @@
     });
 </script>
 @endpush
+
+
+
+
+

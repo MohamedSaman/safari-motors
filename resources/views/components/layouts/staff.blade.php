@@ -94,7 +94,7 @@
         }
 
         .nav-link.active {
-            background: #28a745;
+            background: #2563EB;
             color: #ffffff;
             font-weight: 500;
         }
@@ -177,14 +177,14 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background-color: #28a745;
+            background-color: #2563EB;
             color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 600;
             letter-spacing: -0.03em;
-            border: 1px solid #28a745;
+            border: 1px solid #2563EB;
         }
 
         .admin-name {
@@ -271,7 +271,7 @@
         }
 
         .stat-change {
-            color: #28a745;
+            color: #2563EB;
             font-size: 13px;
         }
 
@@ -282,88 +282,88 @@
         
         /* Button Styles */
         .btn {
-            background: #28a745;
+            background: #2563EB;
             color: #ffffff;
             border: none;
         }
         
         .btn:hover {
-            background: #218838;
+            background: #1D4ED8;
             color: #ffffff;
         }
         
         .btn-primary {
-            background: #28a745 !important;
-            border-color: #28a745 !important;
+            background: #2563EB !important;
+            border-color: #2563EB !important;
             color: #ffffff !important;
         }
         
         .btn-primary:hover {
-            background: #218838 !important;
-            border-color: #218838 !important;
+            background: #1D4ED8 !important;
+            border-color: #1D4ED8 !important;
             color: #ffffff !important;
         }
         
         .btn-success {
-            background: #28a745 !important;
-            border-color: #28a745 !important;
+            background: #2563EB !important;
+            border-color: #2563EB !important;
             color: #ffffff !important;
         }
         
         .btn-success:hover {
-            background: #218838 !important;
-            border-color: #218838 !important;
+            background: #1D4ED8 !important;
+            border-color: #1D4ED8 !important;
             color: #ffffff !important;
         }
         
         .btn-info {
-            background: #28a745 !important;
-            border-color: #28a745 !important;
+            background: #2563EB !important;
+            border-color: #2563EB !important;
             color: #ffffff !important;
         }
         
         .btn-info:hover {
-            background: #218838 !important;
-            border-color: #218838 !important;
+            background: #1D4ED8 !important;
+            border-color: #1D4ED8 !important;
             color: #ffffff !important;
         }
         
         .btn-outline-primary {
-            color: #28a745 !important;
-            border-color: #28a745 !important;
+            color: #2563EB !important;
+            border-color: #2563EB !important;
             background: transparent !important;
         }
         
         .btn-outline-primary:hover {
             color: #ffffff !important;
-            background: #28a745 !important;
-            border-color: #28a745 !important;
+            background: #2563EB !important;
+            border-color: #2563EB !important;
         }
         
         /* Table Styles */
         .table th {
-            background: #28a745 !important;
+            background: #2563EB !important;
             color: #ffffff !important;
         }
         
         /* Modal Header */
         .modal-header {
-            background: #28a745 !important;
+            background: #2563EB !important;
             color: #ffffff !important;
         }
         
         /* Global color overrides for all custom styles */
         .bg-primary, .badge-primary {
-            background-color: #28a745 !important;
+            background-color: #2563EB !important;
             color: #ffffff !important;
         }
         
         .text-primary {
-            color: #28a745 !important;
+            color: #2563EB !important;
         }
         
         .border-primary {
-            border-color: #28a745 !important;
+            border-color: #2563EB !important;
         }
         
         /* Card backgrounds */
@@ -379,13 +379,13 @@
         /* Alert colors */
         .alert-primary {
             background-color: #d4edda !important;
-            border-color: #28a745 !important;
+            border-color: #2563EB !important;
             color: #000000 !important;
         }
         
         .alert-info {
             background-color: #d4edda !important;
-            border-color: #28a745 !important;
+            border-color: #2563EB !important;
             color: #000000 !important;
         }
         }
@@ -406,12 +406,12 @@
         }
 
         .content-tab.active {
-            color: #28a745;
-            border-bottom-color: #28a745;
+            color: #2563EB;
+            border-bottom-color: #2563EB;
         }
 
         .content-tab:hover:not(.active) {
-            color: #28a745;
+            color: #2563EB;
             border-bottom-color: #dee2e6;
         }
 
@@ -1550,3 +1550,8 @@
 </body>
 
 </html>
+
+
+
+
+

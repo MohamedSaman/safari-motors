@@ -38,3 +38,6 @@
     <p><strong>Grand Total:</strong> ₹{{ number_format($receipt->total_amount,2) }}</p>
     <p><strong>Payment Status:</strong> {{ ucfirst($receipt->payment_status) }}</p>
 </div>
+
+
+

@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-cash-stack text-success me-2"></i> Admin Sales Management
+                <i class="bi bi-cash-stack text-info me-2"></i> Admin Sales Management
             </h3>
             <p class="text-muted mb-0">View and manage admin sales</p>
         </div>
@@ -35,7 +35,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs fw-bold text-success text-uppercase mb-1">Total Revenue</div>
+                            <div class="text-xs fw-bold text-info text-uppercase mb-1">Total Revenue</div>
                             <div class="h5 mb-0 fw-bold text-gray-800">Rs.{{ number_format($stats['total_amount'], 2) }}</div>
                         </div>
                         <div class="col-auto"><i class="bi bi-currency-dollar fa-2x text-gray-300"></i></div>
@@ -195,7 +195,7 @@
                                                     Loading...
                                                 </span>
                                                 <span wire:loading.remove wire:target="downloadInvoice({{ $sale->id }})">
-                                                    <i class="bi bi-download text-success me-2"></i>
+                                                    <i class="bi bi-download text-info me-2"></i>
                                                     Download Invoice
                                                 </span>
                                             </button>
@@ -211,7 +211,7 @@
                                                     Loading...
                                                 </span>
                                                 <span wire:loading.remove wire:target="printInvoice({{ $sale->id }})">
-                                                    <i class="bi bi-download text-success me-2"></i>
+                                                    <i class="bi bi-download text-info me-2"></i>
                                                     Print
                                                 </span>
                                             </button>
@@ -580,8 +580,8 @@
             font-weight: 600;
             border-top: none;
             color: #ffffff;
-            background: #28a745;
-            background: #28a745;
+            background: #2563EB;
+            background: #2563EB;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -599,7 +599,7 @@
 
         .modal-header {
             border-bottom: 1px solid #dee2e6;
-            background: #28a745;
+            background: #2563EB;
             color: #fff;
         }
 
@@ -685,7 +685,7 @@
                 text-align: center !important;
                 margin-bottom: 15px !important;
                 background: transparent !important;
-                border-bottom: 2px solid #28a745 !important;
+                border-bottom: 2px solid #2563EB !important;
             }
 
             .modal-header img {
@@ -810,7 +810,7 @@
                 color: #dc3545 !important;
             }
 
-            .text-success {
+            .text-info {
                 color: #198754 !important;
             }
 
@@ -951,3 +951,8 @@
         });
     </script>
     @endpush
+
+
+
+
+

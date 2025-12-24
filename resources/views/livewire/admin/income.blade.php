@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-graph-up-arrow text-success me-2"></i> Day Summary Report
+                <i class="bi bi-graph-up-arrow text-info me-2"></i> Day Summary Report
             </h3>
             <p class="text-muted mb-0">Track and manage your company revenue efficiently</p>
         </div>
@@ -154,7 +154,7 @@
                                                                             <td>{{ $payment->sale->invoice_date ?? '-' }}</td>
                                                                             <td>{{ \Carbon\Carbon::parse($payment->payment_date)->format('Y-m-d H:i') }}</td>
                                                                             <td class="text-end pe-4">
-                                                                                <span class="fw-bold text-success">Rs. {{ number_format($payment->amount, 2) }}</span>
+                                                                                <span class="fw-bold text-info">Rs. {{ number_format($payment->amount, 2) }}</span>
                                                                             </td>
                                                                         </tr>
                                                                         @empty
@@ -170,7 +170,7 @@
                                                                     <tfoot style="background: #ffffff;">
                                                                         <tr>
                                                                             <td colspan="5" class="ps-4 fw-bold">TOTAL CASH SALES:</td>
-                                                                            <td class="text-end pe-4 fw-bold text-success">
+                                                                            <td class="text-end pe-4 fw-bold text-info">
                                                                                 Rs. {{ number_format($cashPayments->sum('amount'), 2) }}
                                                                             </td>
                                                                         </tr>
@@ -193,7 +193,7 @@
         <div class="card-header d-flex justify-content-between align-items-center">
             <div>
                 <h5 class="fw-bold text-dark mb-1">
-                    <i class="bi bi-calendar2-day text-success me-2"></i> Daily Income Entries
+                    <i class="bi bi-calendar2-day text-info me-2"></i> Daily Income Entries
                 </h5>
                 <p class="text-muted small mb-0">Record daily sales and automatically deposit cash into Cash in Hand balance</p>
             </div>
@@ -219,7 +219,7 @@
                                                     </td>
                                                     <td>{{ $deposit->description ?? '—' }}</td>
                                                     <td class="text-end">
-                                                        <span class="fw-bold text-success">{{ number_format($deposit->amount, 2) }}</span>
+                                                        <span class="fw-bold text-info">{{ number_format($deposit->amount, 2) }}</span>
                                                     </td>
                                                     <td class="text-end pe-4">
                                                         <button class="text-danger  me-2 bg-opacity-0 border-0" wire:click="deleteDeposit({{ $deposit->id }})">
@@ -256,7 +256,7 @@
                                                         <!-- Cash Summary Section -->
                                                         <div class="p-3 mb-4 bg-light rounded-3">
                                                             <h6 class="fw-bold text-dark mb-3">
-                                                                <i class="bi bi-wallet2 text-success me-2"></i> Current Cash Summary
+                                                                <i class="bi bi-wallet2 text-info me-2"></i> Current Cash Summary
                                                             </h6>
                                                             <div class="d-flex justify-content-between small mb-2">
                                                                 <span class="text-muted">Opening Cash (POS):</span>
@@ -277,7 +277,7 @@
                                                             <hr>
                                                             <div class="d-flex justify-content-between small mb-2">
                                                                 <span class="text-muted fw-bold">Current Total Cash:</span>
-                                                                <span class="fw-bold text-success">Rs. {{ number_format($openingCash + $cashIncome - $todayReturns - $todayDeposits, 2) }}</span>
+                                                                <span class="fw-bold text-info">Rs. {{ number_format($openingCash + $cashIncome - $todayReturns - $todayDeposits, 2) }}</span>
                                                             </div>
                                                         </div>
 
@@ -355,7 +355,7 @@
                                                             <hr>
                                                             <div class="d-flex justify-content-between small">
                                                                 <span class="text-muted fw-bold">Current Total:</span>
-                                                                <span class="fw-semibold text-success">Rs. {{ number_format($openingCash + $cashIncome - $todayReturns, 2) }}</span>
+                                                                <span class="fw-semibold text-info">Rs. {{ number_format($openingCash + $cashIncome - $todayReturns, 2) }}</span>
                                                             </div>
                                                         </div>
 
@@ -377,11 +377,11 @@
                                                         <!-- New Total Preview -->
                                                         <div class="p-3 bg-success bg-opacity-10 rounded-3 border border-success border-opacity-25">
                                                             <h6 class="fw-bold text-dark mb-2">
-                                                                <i class="bi bi-calculator text-success me-2"></i> New Total Preview
+                                                                <i class="bi bi-calculator text-info me-2"></i> New Total Preview
                                                             </h6>
                                                             <div class="d-flex justify-content-between small">
                                                                 <span class="text-muted">New Base Cash:</span>
-                                                                <span class="fw-semibold text-success">Rs. {{ number_format($cashInHand, 2) }}</span>
+                                                                <span class="fw-semibold text-info">Rs. {{ number_format($cashInHand, 2) }}</span>
                                                             </div>
                                                         </div>
 
@@ -441,11 +441,11 @@
                                 }
 
                                 .summary-card.total {
-                                    border-left-color: #28a745;
+                                    border-left-color: #2563EB;
                                 }
 
                                 .summary-card.cash {
-                                    border-left-color: #28a745;
+                                    border-left-color: #2563EB;
                                 }
 
                                 .icon-container {
@@ -544,8 +544,8 @@
                                 }
 
                                 .btn-warning {
-                                    background-color: #28a745;
-                                    border-color: #28a745;
+                                    background-color: #2563EB;
+                                    border-color: #2563EB;
                                 }
 
                                 .btn-warning:hover {
@@ -588,3 +588,8 @@
                                 });
                             </script>
                             @endpush
+
+
+
+
+

@@ -34,7 +34,7 @@
                                 {{ $session->ip_address }},
 
                                 @if ($session->is_current_device)
-                                    <span class="text-success fw-semibold">{{ __('This device') }}</span>
+                                    <span class="text-info fw-semibold">{{ __('This device') }}</span>
                                 @else
                                     {{ __('Last active') }} {{ $session->last_active }}
                                 @endif
@@ -90,3 +90,7 @@
         </x-dialog-modal>
     </x-slot>
 </x-action-section>
+
+
+
+

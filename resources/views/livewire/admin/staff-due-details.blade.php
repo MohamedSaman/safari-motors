@@ -158,7 +158,7 @@
                             display: inline-block;
                         }
                         .bg-primary, .badge-primary {
-                            background-color: #28a745;
+                            background-color: #2563EB;
                             color: white;
                         }
                         .bg-success, .badge-success {
@@ -174,7 +174,7 @@
                             color: black;
                         }
                         .bg-warning, .badge-warning {
-                            background-color: #28a745;
+                            background-color: #2563EB;
                             color: black;
                         }
                         .progress {
@@ -215,7 +215,7 @@
                             margin-right: 10px;
                         }
                         .btn-primary {
-                            background-color: #28a745;
+                            background-color: #2563EB;
                             color: white;
                         }
                         .btn-secondary {
@@ -294,3 +294,9 @@
     });
 </script>
 @endpush
+
+
+
+
+
+

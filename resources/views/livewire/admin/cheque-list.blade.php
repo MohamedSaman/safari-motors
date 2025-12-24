@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-journal-check text-success me-2"></i> Cheque Management
+                <i class="bi bi-journal-check text-info me-2"></i> Cheque Management
             </h3>
             <p class="text-muted mb-0">View and manage all customer cheques</p>
         </div>
@@ -30,7 +30,7 @@
                 <div class="card-body">
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
-                            <div class="text-xs fw-bold text-success text-uppercase mb-1">Completed Cheques</div>
+                            <div class="text-xs fw-bold text-info text-uppercase mb-1">Completed Cheques</div>
                             <div class="h5 mb-0 fw-bold text-gray-800">{{ $completeCount ?? 0 }}</div>
                         </div>
                         <div class="col-auto"><i class="bi bi-check2-circle fa-2x text-gray-300"></i></div>
@@ -138,7 +138,7 @@
                                         <li>
                                             <button class="dropdown-item"
                                                 wire:click="confirmComplete({{ $cheque->id }})">
-                                                <i class="bi bi-check2-circle text-success me-2"></i>
+                                                <i class="bi bi-check2-circle text-info me-2"></i>
                                                 Complete
                                             </button>
                                         </li>
@@ -180,3 +180,7 @@
         </div>
     </div>
 </div>
+
+
+
+

@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-5">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-arrow-return-left text-success me-2"></i> Product Returns
+                <i class="bi bi-arrow-return-left text-info me-2"></i> Product Returns
             </h3>
             <p class="text-muted mb-0">Manage product returns and refunds efficiently</p>
         </div>
@@ -287,7 +287,7 @@
                                         @endif
                                     </td>
                                     <td class="fw-bold">Rs.{{ number_format($item['net_unit_price'], 2) }}</td>
-                                    <td class="fw-bold text-success">
+                                    <td class="fw-bold text-info">
                                         Rs.{{ number_format($item['return_qty'] * $item['net_unit_price'], 2) }}
                                     </td>
                                 </tr>
@@ -326,7 +326,7 @@
                             <p><strong>Invoice:</strong> #{{ $selectedInvoice?->invoice_number }}</p>
                         </div>
                         <div class="col-md-6">
-                            <p><strong>Return Value:</strong> <span class="text-success fw-bold">Rs.{{ number_format($totalReturnValue, 2) }}</span></p>
+                            <p><strong>Return Value:</strong> <span class="text-info fw-bold">Rs.{{ number_format($totalReturnValue, 2) }}</span></p>
                             <p><strong>Items:</strong> {{ count(array_filter($returnItems, fn($item) => $item['return_qty'] > 0)) }}</p>
                         </div>
                     </div>
@@ -362,7 +362,7 @@
                             <tfoot class="table-light">
                                 <tr>
                                     <td colspan="3" class="text-end fw-bold">Total Return Amount:</td>
-                                    <td class="fw-bold text-success">Rs.{{ number_format($totalReturnValue, 2) }}</td>
+                                    <td class="fw-bold text-info">Rs.{{ number_format($totalReturnValue, 2) }}</td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -544,3 +544,7 @@
     });
 </script>
 @endpush
+
+
+
+

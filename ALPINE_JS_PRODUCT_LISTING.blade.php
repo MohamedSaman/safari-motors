@@ -16,7 +16,7 @@
         <div class="d-flex justify-content-between align-items-center mb-5">
             <div>
                 <h3 class="fw-bold text-dark mb-2">
-                    <i class="bi bi-box-seam text-success me-2"></i> Product Inventory Management
+                    <i class="bi bi-box-seam text-info me-2"></i> Product Inventory Management
                 </h3>
                 <p class="text-muted mb-0">Manage your product catalog and inventory levels efficiently</p>
             </div>
@@ -45,7 +45,7 @@
                     <small class="text-muted" x-show="loading">
                         <i class="spinner-border spinner-border-sm me-1"></i> Loading products...
                     </small>
-                    <small class="text-success" x-show="!loading && products.length > 0">
+                    <small class="text-info" x-show="!loading && products.length > 0">
                         <i class="bi bi-check-circle me-1"></i> 
                         Showing <span x-text="filteredProducts.length"></span> of <span x-text="products.length"></span> products (cached)
                     </small>

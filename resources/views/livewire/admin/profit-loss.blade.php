@@ -31,8 +31,8 @@
 
         .revenue-icon { background: #198754; }
         .expense-icon { background: #dc3545; }
-        .salary-icon { background: #28a745; }
-        .profit-icon { background: #28a745; }
+        .salary-icon { background: #2563EB; }
+        .profit-icon { background: #2563EB; }
 
         .metric-content h6 {
             color: #000000;
@@ -111,7 +111,7 @@
         }
 
         .filter-card .form-control:focus {
-            border-color: #28a745;
+            border-color: #2563EB;
             box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
         }
 
@@ -122,8 +122,8 @@
         }
 
         .filter-card .btn-primary {
-            background: #28a745;
-            border-color: #28a745;
+            background: #2563EB;
+            border-color: #2563EB;
         }
 
         .filter-card .btn-primary:hover {
@@ -211,7 +211,7 @@
         }
 
         .badge-warning {
-            background: #28a745;
+            background: #2563EB;
             color: #212529;
         }
 
@@ -220,7 +220,7 @@
             border-radius: 8px;
             padding: 1rem 1.25rem;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-            border-left: 4px solid #28a745;
+            border-left: 4px solid #2563EB;
         }
     </style>
     @endpush
@@ -230,7 +230,7 @@
         <div class="row align-items-center">
             <div class="col-md-8">
                 <h1>
-                    <i class="fas fa-chart-line me-3" style="color: #28a745;"></i>Profit & Loss Statement
+                    <i class="fas fa-chart-line me-3" style="color: #2563EB;"></i>Profit & Loss Statement
                 </h1>
                 <p class="subtitle">📊 Financial overview and performance analysis</p>
             </div>
@@ -295,7 +295,7 @@
                     </div>
                     <div class="metric-content">
                         <h6>Total Revenue</h6>
-                        <div class="metric-value text-success">Rs. {{ $totalRevenue > 0 ? number_format($totalRevenue, 2) : '0.00' }}</div>
+                        <div class="metric-value text-info">Rs. {{ $totalRevenue > 0 ? number_format($totalRevenue, 2) : '0.00' }}</div>
                         <p class="metric-percentage">💰 Net income from sales</p>
                     </div>
                 </div>
@@ -323,7 +323,7 @@
                     </div>
                     <div class="metric-content">
                         <h6>Net Profit</h6>
-                        <div class="metric-value {{ $netProfit >= 0 ? 'text-success' : 'text-danger' }}">Rs. {{ number_format($netProfit, 2) }}</div>
+                        <div class="metric-value {{ $netProfit >= 0 ? 'text-info' : 'text-danger' }}">Rs. {{ number_format($netProfit, 2) }}</div>
                         <p class="metric-percentage">{{ $netProfit >= 0 ? '📈' : '📉' }} {{ $netProfitPercentage }}% margin</p>
                     </div>
                 </div>
@@ -343,20 +343,20 @@
                     <table class="table table-hover mb-0">
                         <tbody>
                             <!-- Revenue Section -->
-                            <tr style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); border-left: 4px solid #28a745;">
-                                <td colspan="2" class="fw-bold text-success fs-5">📈 GROSS SALES REVENUE</td>
+                            <tr style="background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%); border-left: 4px solid #2563EB;">
+                                <td colspan="2" class="fw-bold text-info fs-5">📈 GROSS SALES REVENUE</td>
                             </tr>
                             <tr>
                                 <td class="ps-4">Total Sales Amount</td>
-                                <td class="text-end fw-bold text-success">
+                                <td class="text-end fw-bold text-info">
                                     {{ number_format($incomeTotals['Total Sales Revenue'] ?? 0, 2) }}
                                 </td>
                             </tr>
                             @if(!empty($revenueBreakdown))
                                 @foreach($revenueBreakdown as $type => $amount)
-                                    <tr class="table-light" style="border-left: 2px solid #28a745;">
+                                    <tr class="table-light" style="border-left: 2px solid #2563EB;">
                                         <td class="ps-5">└─ {{ $type }}</td>
-                                        <td class="text-end text-success">{{ number_format($amount, 2) }}</td>
+                                        <td class="text-end text-info">{{ number_format($amount, 2) }}</td>
                                     </tr>
                                 @endforeach
                             @endif
@@ -377,7 +377,7 @@
                             <tr style="height: 8px; background: transparent;"></tr>
 
                             <!-- Net Revenue (Gross Profit) -->
-                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #28a745;">
+                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #2563EB;">
                                 <td class="fw-bold text-warning fs-5">✅ NET REVENUE (Gross Sales - COGS)</td>
                                 <td class="text-end fw-bold text-warning" style="font-size: 1.1rem;">
                                     {{ number_format($totalRevenue, 2) }}
@@ -416,7 +416,7 @@
                             <tr style="height: 8px; background: transparent;"></tr>
 
                             <!-- Operating Expenses Section -->
-                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #28a745;">
+                            <tr style="background: linear-gradient(135deg, #fff3cd 0%, #fce4a6 100%); border-left: 4px solid #2563EB;">
                                 <td colspan="2" class="fw-bold text-warning fs-5">💼 OPERATING EXPENSES</td>
                             </tr>
                             <tr>
@@ -427,14 +427,14 @@
                             </tr>
                             @if(!empty($expenseBreakdown))
                                 @foreach($expenseBreakdown as $category => $details)
-                                    <tr class="table-light" style="border-left: 2px solid #28a745;">
+                                    <tr class="table-light" style="border-left: 2px solid #2563EB;">
                                         <td class="ps-5">└─ {{ $category }}</td>
                                         <td class="text-end text-warning">{{ number_format($details['amount'], 2) }}</td>
                                     </tr>
                                 @endforeach
                             @endif
 
-                            <tr class="table-light" style="border-left: 2px solid #28a745;">
+                            <tr class="table-light" style="border-left: 2px solid #2563EB;">
                                 <td class="ps-5">Expenses Total</td>
                                 <td class="text-end fw-bold text-warning">
                                     {{ number_format($totalExpenses, 2) }}
@@ -444,9 +444,9 @@
                             <tr style="height: 8px; background: transparent;"></tr>
 
                             <!-- Net Profit -->
-                            <tr style="background: linear-gradient(135deg, {{ $netProfit >= 0 ? '#d4edda 0%, #c3e6cb' : '#ffe7e7 0%, #f5c6cb' }} 100%); border-left: 4px solid {{ $netProfit >= 0 ? '#28a745' : '#dc3545' }};">
-                                <td class="fw-bold {{ $netProfit >= 0 ? 'text-success' : 'text-danger' }}" style="font-size: 1.1rem;">💰 NET PROFIT / (LOSS)</td>
-                                <td class="text-end fw-bold {{ $netProfit >= 0 ? 'text-success' : 'text-danger' }}" style="font-size: 1.2rem;">
+                            <tr style="background: linear-gradient(135deg, {{ $netProfit >= 0 ? '#d4edda 0%, #c3e6cb' : '#ffe7e7 0%, #f5c6cb' }} 100%); border-left: 4px solid {{ $netProfit >= 0 ? '#2563EB' : '#dc3545' }};">
+                                <td class="fw-bold {{ $netProfit >= 0 ? 'text-info' : 'text-danger' }}" style="font-size: 1.1rem;">💰 NET PROFIT / (LOSS)</td>
+                                <td class="text-end fw-bold {{ $netProfit >= 0 ? 'text-info' : 'text-danger' }}" style="font-size: 1.2rem;">
                                     {{ number_format($netProfit, 2) }}
                                 </td>
                             </tr>
@@ -484,9 +484,9 @@
                                     </thead>
                                     <tbody>
                                         @foreach($paymentMethodWiseRevenue as $method => $amount)
-                                            <tr style="border-left: 3px solid #28a745;">
-                                                <td><i class="fas fa-circle" style="font-size: 8px; color: #28a745; margin-right: 8px;"></i>{{ $method }}</td>
-                                                <td class="text-end fw-bold text-success">{{ number_format($amount, 2) }}</td>
+                                            <tr style="border-left: 3px solid #2563EB;">
+                                                <td><i class="fas fa-circle" style="font-size: 8px; color: #2563EB; margin-right: 8px;"></i>{{ $method }}</td>
+                                                <td class="text-end fw-bold text-info">{{ number_format($amount, 2) }}</td>
                                                 <td class="text-end text-muted small">{{ $totalRevenue > 0 ? number_format(($amount / $totalRevenue) * 100, 1) : 0 }}%</td>
                                             </tr>
                                         @endforeach
@@ -596,12 +596,12 @@
                             </thead>
                             <tbody>
                                 @foreach($monthlyTrends as $trend)
-                                    <tr style="border-left: 3px solid {{ $trend['profit'] >= 0 ? '#28a745' : '#dc3545' }};">
+                                    <tr style="border-left: 3px solid {{ $trend['profit'] >= 0 ? '#2563EB' : '#dc3545' }};">
                                         <td class="fw-bold">{{ $trend['month'] }}</td>
-                                        <td class="text-end text-success fw-bold">{{ number_format($trend['revenue'], 2) }}</td>
+                                        <td class="text-end text-info fw-bold">{{ number_format($trend['revenue'], 2) }}</td>
                                         <td class="text-end text-warning">{{ number_format($trend['cogs'], 2) }}</td>
                                         <td class="text-end text-danger">{{ number_format($trend['expenses'], 2) }}</td>
-                                        <td class="text-end fw-bold {{ $trend['profit'] >= 0 ? 'text-success' : 'text-danger' }}">{{ number_format($trend['profit'], 2) }}</td>
+                                        <td class="text-end fw-bold {{ $trend['profit'] >= 0 ? 'text-info' : 'text-danger' }}">{{ number_format($trend['profit'], 2) }}</td>
                                         <td class="text-end text-muted small">
                                             {{ $trend['revenue'] > 0 ? number_format(($trend['profit'] / $trend['revenue']) * 100, 1) : 0 }}%
                                         </td>
@@ -627,14 +627,14 @@
                     </div>
                     <div class="metric-content">
                         <h6>Gross Profit Margin</h6>
-                        <div class="metric-value text-success">{{ $grossProfitPercentage }}%</div>
+                        <div class="metric-value text-info">{{ $grossProfitPercentage }}%</div>
                         <p class="metric-percentage">Efficiency ratio</p>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-md-6 mb-3">
                 <div class="pl-metric-card">
-                    <div class="metric-icon" style="background: #28a745;">
+                    <div class="metric-icon" style="background: #2563EB;">
                         <i class="fas fa-chart-pie"></i>
                     </div>
                     <div class="metric-content">
@@ -660,7 +660,7 @@
             </div>
             <div class="col-xl-3 col-md-6 mb-3">
                 <div class="pl-metric-card">
-                    <div class="metric-icon" style="background: #28a745;">
+                    <div class="metric-icon" style="background: #2563EB;">
                         <i class="fas fa-boxes"></i>
                     </div>
                     <div class="metric-content">
@@ -711,3 +711,9 @@
     }
 </style>
 @endpush
+
+
+
+
+
+

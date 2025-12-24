@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-between align-items-center mb-2">
         <div>
             <h3 class="fw-bold text-dark mb-2">
-                <i class="bi bi-cart-check-fill text-success me-2"></i> Purchase Order Management
+                <i class="bi bi-cart-check-fill text-info me-2"></i> Purchase Order Management
             </h3>
             <p class="text-muted mb-0">Create and manage purchase orders from suppliers</p>
         </div>
@@ -38,7 +38,7 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center">
                             <div class="icon-container bg-success bg-opacity-10 me-3">
-                                <i class="bi bi-patch-check-fill text-success fs-4"></i>
+                                <i class="bi bi-patch-check-fill text-info fs-4"></i>
                             </div>
                             <div class="flex-grow-1">
                                 <p class="text-muted mb-1">Completed Orders</p>
@@ -216,7 +216,7 @@
                                             <!-- Re-Process GRN for Partial Orders -->
                                             <li>
                                                 <button class="dropdown-item" wire:click="reProcessGRN({{ $order->id }})">
-                                                    <i class="bi bi-arrow-clockwise text-success me-2"></i> Re-Process GRN
+                                                    <i class="bi bi-arrow-clockwise text-info me-2"></i> Re-Process GRN
                                                 </button>
                                             </li>
 
@@ -373,7 +373,7 @@
                                         style="width: 100%;">
                                 </td>
                                 <td class="text-end">
-                                    <strong class="text-success">Rs. {{ number_format($item['total_price'], 2) }}</strong>
+                                    <strong class="text-info">Rs. {{ number_format($item['total_price'], 2) }}</strong>
                                 </td>
                                 <td class="text-center">
                                     <button class="btn btn-sm btn-outline-danger"
@@ -581,7 +581,7 @@
                                         Calc: {{ number_format($this->calculateSellingPrice($index), 0) }}
                                     </small>
                                 </td>
-                                <td class="text-end fw-semibold text-success">
+                                <td class="text-end fw-semibold text-info">
                                     {{ number_format($this->calculateCost($index), 2) }}
                                 </td>
                                 <td class="text-end fw-bold text-primary">
@@ -700,7 +700,7 @@
                             <td>{{ $item->quantity }}</td>
                             <td>
                                 @if($item->status == 'received')
-                                <span class="text-success fw-bold">{{ $item->received_quantity }}</span>
+                                <span class="text-info fw-bold">{{ $item->received_quantity }}</span>
                                 @else
                                 <span class="text-muted">-</span>
                                 @endif
@@ -711,7 +711,7 @@
                                     @if($discount > 0)
                                     <small class="text-danger">-{{ $discount }}% (Rs.{{ number_format($discountAmount, 2) }})</small>
                                     <br>
-                                    <strong class="text-success">Net: Rs.{{ number_format($netUnitPrice, 2) }}</strong>
+                                    <strong class="text-info">Net: Rs.{{ number_format($netUnitPrice, 2) }}</strong>
                                     @endif
                                 </div>
                             </td>
@@ -832,7 +832,7 @@
                                     wire:change="updateEditItemTotal({{ $index }})">
                             </td>
                             <td class="text-end">
-                                <strong class="text-success">
+                                <strong class="text-info">
                                     Rs. {{ number_format(floatval($item['quantity'] ?? 0) * floatval($item['unit_price'] ?? 0), 2) }}
                                 </strong>
                             </td>
@@ -911,3 +911,7 @@
     });
 </script>
 @endpush
+
+
+
+

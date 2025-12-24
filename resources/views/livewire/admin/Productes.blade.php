@@ -18,12 +18,12 @@
         }
 
         .content-tab.active {
-            color: #28a745;
-            border-bottom-color: #28a745;
+            color: #2563EB;
+            border-bottom-color: #2563EB;
         }
 
         .content-tab:hover:not(.active) {
-            color: #28a745;
+            color: #2563EB;
             border-bottom-color: #dee2e6;
         }
 
@@ -72,7 +72,7 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #28a745;
+            background: #2563EB;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -107,12 +107,12 @@
         }
 
         .action-btn.view {
-            color: #28a745;
+            color: #2563EB;
             background-color: rgba(40, 167, 69, 0.1);
         }
 
         .action-btn.edit {
-            color: #28a745;
+            color: #2563EB;
             background-color: rgba(40, 167, 69, 0.1);
         }
 
@@ -155,7 +155,7 @@
         .form-control:focus,
         .form-select:focus {
             box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-            border-color: #28a745;
+            border-color: #2563EB;
         }
 
         /* Modern button styling */
@@ -167,36 +167,36 @@
         }
 
         .btn-primary {
-            background-color: #28a745;
-            border-color: #28a745;
+            background-color: #2563EB;
+            border-color: #2563EB;
         }
 
         .btn-primary:hover {
-            background-color: #218838;
-            border-color: #218838;
+            background-color: #1D4ED8;
+            border-color: #1D4ED8;
             transform: translateY(-2px);
         }
 
         .btn-success {
-            background-color: #28a745;
-            border-color: #28a745;
+            background-color: #2563EB;
+            border-color: #2563EB;
         }
 
         .btn-success:hover {
-            background-color: #218838;
-            border-color: #218838;
+            background-color: #1D4ED8;
+            border-color: #1D4ED8;
             transform: translateY(-2px);
         }
 
         .btn-warning {
-            background-color: #28a745;
-            border-color: #28a745;
+            background-color: #2563EB;
+            border-color: #2563EB;
             color: #000;
         }
 
         .btn-warning:hover {
-            background-color: #218838;
-            border-color: #218838;
+            background-color: #1D4ED8;
+            border-color: #1D4ED8;
             transform: translateY(-2px);
             color: #000;
         }
@@ -212,19 +212,19 @@
         }
 
         .nav-tabs-custom .nav-link.active {
-            color: #28a745;
-            border-bottom-color: #28a745;
+            color: #2563EB;
+            border-bottom-color: #2563EB;
             background-color: transparent;
         }
 
         .nav-tabs-custom .nav-link:hover {
-            color: #28a745;
+            color: #2563EB;
             border-bottom-color: #dee2e6;
         }
 
         /* History Table Styles */
         .history-table th {
-            background: #28a745;
+            background: #2563EB;
             color: white;
             font-weight: 600;
             border: none;
@@ -257,9 +257,9 @@
             }
 
             .content-tab.active {
-                background-color: #28a745;
+                background-color: #2563EB;
                 color: white;
-                border-color: #28a745;
+                border-color: #2563EB;
             }
 
             .pagination {
@@ -367,19 +367,19 @@
 
         /* Stock Adjustment Modal Styles */
         #stockAdjustmentModal .modal-header {
-            background: #28a745 !important;
+            background: #2563EB !important;
         }
 
         #stockAdjustmentModal .alert-info {
             background-color: #ffffff;
-            border-left: 4px solid #28a745;
+            border-left: 4px solid #2563EB;
         }
 
         #stockAdjustmentModal .preview-box {
             background: #ffffff;
             border-radius: 8px;
             padding: 15px;
-            border-left: 4px solid #28a745;
+            border-left: 4px solid #2563EB;
         }
 
         /* Stock level indicators */
@@ -394,7 +394,7 @@
         }
 
         .stock-high {
-            color: #28a745;
+            color: #2563EB;
             font-weight: bold;
         }
 
@@ -482,7 +482,7 @@
             <div class="d-flex justify-content-between align-items-center mb-5">
                 <div>
                     <h3 class="fw-bold text-dark mb-2">
-                        <i class="bi bi-box-seam text-success me-2"></i> Product Inventory Management
+                        <i class="bi bi-box-seam text-info me-2"></i> Product Inventory Management
                     </h3>
                     <p class="text-muted mb-0">Manage your product catalog and inventory levels efficiently</p>
                 </div>
@@ -717,7 +717,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content border-0 shadow-lg">
                     <div class="modal-header border-0 bg-gradient-primary text-white position-relative"
-                        style="background: #28a745; padding: 1.5rem;">
+                        style="background: #2563EB; padding: 1.5rem;">
                         <h5 class="modal-title fw-bold d-flex align-items-center">
                             <i class="bi bi-box-seam me-2 fs-4"></i>
                             <span>Product Details</span>
@@ -771,7 +771,7 @@
                                         <div class="col-6">
                                             <div class="card border-0 shadow-sm bg-white">
                                                 <div class="card-body p-3">
-                                                    <div class="text-success mb-1">
+                                                    <div class="text-info mb-1">
                                                         <i class="bi bi-currency-dollar fs-4"></i>
                                                     </div>
                                                     <h5 class="fw-bold mb-0">Rs.{{
@@ -850,7 +850,7 @@
 
                                     <div class="info-section mb-4">
                                         <div class="section-header d-flex align-items-center mb-3">
-                                            <div class="icon-box bg-success bg-opacity-10 text-success rounded-circle me-3"
+                                            <div class="icon-box bg-success bg-opacity-10 text-info rounded-circle me-3"
                                                 style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
                                                 <i class="bi bi-currency-dollar"></i>
                                             </div>
@@ -869,9 +869,9 @@
                                             <div class="col-md-4">
                                                 <div
                                                     class="price-card text-center p-3 border border-success rounded-3 bg-success bg-opacity-10 h-100">
-                                                    <small class="text-success d-block mb-2 fw-semibold">Selling
+                                                    <small class="text-info d-block mb-2 fw-semibold">Selling
                                                         Price</small>
-                                                    <h4 class="fw-bold text-success mb-0">
+                                                    <h4 class="fw-bold text-info mb-0">
                                                         Rs.{{ number_format($viewProduct->price->selling_price ?? 0, 2)
                                                         }}
                                                     </h4>
@@ -900,7 +900,7 @@
                                         <div class="row g-3">
                                             <div class="col-md-6">
                                                 <div class="stock-card p-3 border rounded-3 text-center">
-                                                    <i class="bi bi-box-seam text-success fs-3 mb-2"></i>
+                                                    <i class="bi bi-box-seam text-info fs-3 mb-2"></i>
                                                     <h5 class="fw-bold mb-1">{{ $viewProduct->stock->available_stock ??
                                                         0 }}</h5>
                                                     <small class="text-muted">Available Stock</small>
@@ -1620,7 +1620,7 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label for="availableQuantity" class="form-label fw-semibold">
-                                                <i class="bi bi-box-seam text-success me-1"></i> Available Quantity:
+                                                <i class="bi bi-box-seam text-info me-1"></i> Available Quantity:
                                             </label>
                                             <input type="number" class="form-control" id="availableQuantity"
                                                 wire:model="availableQuantity" min="1"
@@ -1661,7 +1661,7 @@
 
                     <!-- Header -->
                     <div class="modal-header border-0 text-white"
-                        style="background: #28a745;">
+                        style="background: #2563EB;">
                         <h5 class="modal-title fw-bold">
                             <i class="bi bi-clock-history me-2"></i>
                             Product History - {{ $historyProductName ?? 'Loading...' }}
@@ -1847,3 +1847,8 @@
     </script>
     @endpush
 </div>
+
+
+
+
+

@@ -29,9 +29,9 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
                             <h6 class="text-muted mb-1 small">Total Stock</h6>
-                            <h3 class="mb-0 fw-bold text-success">{{ number_format($reportStats['total_stock'] ?? 0) }}</h3>
+                            <h3 class="mb-0 fw-bold text-info">{{ number_format($reportStats['total_stock'] ?? 0) }}</h3>
                         </div>
-                        <i class="bi bi-boxes fs-1 text-success opacity-50"></i>
+                        <i class="bi bi-boxes fs-1 text-info opacity-50"></i>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@
                     @endphp
                     <div class="mb-3">
                         <div class="d-flex justify-content-between mb-1">
-                            <span class="text-success">
+                            <span class="text-info">
                                 <i class="bi bi-circle-fill me-1" style="font-size: 8px;"></i>In Stock
                             </span>
                             <span class="fw-semibold">{{ $inStock }}</span>
@@ -245,3 +245,7 @@
     </div>
     @endif
 </div>
+
+
+
+
