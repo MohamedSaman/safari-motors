@@ -38,10 +38,10 @@
         <!-- Header -->
         <div class="col-12">
             <div class="card border-0 shadow-sm rounded-4">
-                <div class="card-body d-flex justify-content-between align-items-center py-3 px-4 bg-white">
+                <div class="card-body d-flex justify-content-between align-items-center px-4 bg-white">
                     <div class="d-flex align-items-center">
-                        <div class="bg-primary text-white rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                            <i class="bi bi-shop fs-4"></i>
+                        <div class="me-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
+                            <img src="{{ asset('images/safari-dark.png') }}" alt="Safari" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
                         <div>
                             <h4 class="mb-0 fw-bold text-primary">SAFARI MOTORS</h4>
