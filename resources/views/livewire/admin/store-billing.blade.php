@@ -114,7 +114,7 @@
                         @endforeach
                     </div>
                     @elseif($search)
-                    <div class="text-center py-5 text-muted">
+                    <div class="text-center py-5 text-muted" style="position: absolute; top: 70px; left: 16px; right: 16px; max-height: 500px; overflow-y: scroll; background: white; z-index: 1000; border: 1px solid #dee2e6;">
                         <i class="bi bi-search display-4 opacity-50"></i>
                         <p>No products found</p>
                     </div>
