@@ -702,6 +702,12 @@ class StoreBilling extends Component
         $this->js("Swal.fire('success', 'Additional discount removed!', 'success')");
     }
 
+    // Process Sale - called from blade template
+    public function processSale()
+    {
+        $this->validateAndCreateSale();
+    }
+
     // Validate Payment Before Creating Sale
     public function validateAndCreateSale()
     {
