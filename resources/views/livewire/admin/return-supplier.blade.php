@@ -268,13 +268,13 @@
                                         @endif
                                     </td>
                                     <td>
-                                        <span class="badge bg-success">{{ $item['max_qty'] }}</span>
+                                        <span class="badge bg-success">{{ $item['available_stock'] }}</span>
                                     </td>
                                     <td>
                                         <input type="number" class="form-control form-control-sm" style="width: 80px;" 
-                                            min="0" max="{{ $item['max_qty'] }}"
+                                            min="0" max="{{ $item['available_stock'] }}"
                                             wire:model.lazy="returnItems.{{ $index }}.return_qty"
-                                            @if($item['max_qty'] == 0) disabled @endif>
+                                            @if($item['available_stock'] == 0) disabled @endif>
                                     </td>
                                     <td>
                                         <select class="form-select form-select-sm" wire:model.lazy="returnItems.{{ $index }}.return_reason">

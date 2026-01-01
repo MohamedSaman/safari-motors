@@ -115,7 +115,11 @@ class ReturnSupplier extends Component
             // Build return items with remaining quantities
             foreach ($this->selectedPurchaseOrder->items as $item) {
                 $alreadyReturned = $this->getAlreadyReturnedQuantity($item->product->id);
-                $remainingQty = $item->quantity - $alreadyReturned;
+                $remainingQty = ($item->received_quantity ?? $item->quantity) - $alreadyReturned;
+
+                // Get actual product stock
+                $productStock = ProductStock::where('product_id', $item->product->id)->first();
+                $actualStockQty = $productStock ? $productStock->available_stock : 0;
 
                 if ($remainingQty > 0) {
                     // Calculate per-unit discount (item discount is percentage)
@@ -136,9 +140,10 @@ class ReturnSupplier extends Component
                         'overall_discount_per_unit' => $proportionalOverallDiscount,
                         'total_discount_per_unit' => $totalDiscountPerUnit,
                         'net_unit_price' => $unitPrice - $totalDiscountPerUnit,
-                        'original_qty' => $item->quantity,
+                        'original_qty' => $actualStockQty, // Changed to actual stock quantity
                         'already_returned' => $alreadyReturned,
-                        'max_qty' => $remainingQty,
+                        'max_qty' => min($remainingQty, $actualStockQty), // Limit by both remaining and actual stock
+                        'available_stock' => $actualStockQty, // Add actual stock quantity
                         'return_qty' => 0,
                         'return_reason' => 'damaged',
                     ];
@@ -334,8 +339,8 @@ class ReturnSupplier extends Component
             }
 
             if (isset($item['return_qty']) && $item['return_qty'] > 0) {
-                if ($item['return_qty'] > $item['max_qty']) {
-                    $this->js("Swal.fire('Error!', 'Invalid return quantity for " . $item['name'] . ". Maximum available: " . $item['max_qty'] . "', 'error')");
+                if ($item['return_qty'] > $item['available_stock']) {
+                    $this->js("Swal.fire('Error!', 'Invalid return quantity for " . $item['name'] . ". Maximum available: " . $item['available_stock'] . "', 'error')");
                     return;
                 }
                 $hasReturnItems = true;
