@@ -441,11 +441,11 @@
                                 }
 
                                 .summary-card.total {
-                                    border-left-color: #2563EB;
+                                    border-left-color: #1B5E85;
                                 }
 
                                 .summary-card.cash {
-                                    border-left-color: #2563EB;
+                                    border-left-color: #1B5E85;
                                 }
 
                                 .icon-container {
@@ -544,8 +544,8 @@
                                 }
 
                                 .btn-warning {
-                                    background-color: #2563EB;
-                                    border-color: #2563EB;
+                                    background-color: #1B5E85;
+                                    border-color: #1B5E85;
                                 }
 
                                 .btn-warning:hover {

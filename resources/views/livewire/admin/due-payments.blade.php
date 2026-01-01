@@ -546,15 +546,15 @@
     }
 
     .summary-card.pending {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .summary-card.pending-amount {
-        border-left-color: #000000;
+        border-left-color: #333333;
     }
 
     .summary-card.awaiting {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .summary-card.total {
@@ -573,7 +573,7 @@
     .table th {
         border-top: none;
         font-weight: 600;
-        color: #000000;
+        color: #333333;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -609,7 +609,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #2563EB;
+        border-color: #1B5E85;
     }
 
     .btn {
@@ -620,19 +620,19 @@
     }
 
     .btn-primary {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-primary:hover {
-        background-color: #1D4ED8;
-        border-color: #1D4ED8;
+        background-color: #164568;
+        border-color: #164568;
         transform: translateY(-2px);
     }
 
     .btn-secondary {
-        background-color: #000000;
-        border-color: #000000;
+        background-color: #333333;
+        border-color: #333333;
     }
 
     .btn-secondary:hover {

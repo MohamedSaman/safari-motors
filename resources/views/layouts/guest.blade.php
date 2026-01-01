@@ -52,7 +52,7 @@
 
             .user-icon-container i {
                 font-size: 3rem;
-                color: #2563EB;
+                color: #1B5E85;
                 background: #f0f0f0;
                 border-radius: 50%;
                 width: 70px;
@@ -97,7 +97,7 @@
             }
 
             .forgot-link {
-                color: #2563EB;
+                color: #1B5E85;
                 text-decoration: none;
             }
 
@@ -105,7 +105,7 @@
                 width: 100%;
                 border-radius: 25px;
                 padding: 10px;
-                background-color: #2563EB;
+                background-color: #1B5E85;
                 border: none;
                 font-weight: 600;
                 margin-bottom: 20px;
@@ -159,7 +159,7 @@
                 height: 35px;
                 border-radius: 50%;
                 background-color: #f5f5f5;
-                color: #2563EB;
+                color: #1B5E85;
                 text-decoration: none;
                 transition: all 0.3s ease;
             }

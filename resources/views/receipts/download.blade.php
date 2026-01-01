@@ -84,7 +84,7 @@
         }
 
         .border-success {
-            border-color: #2563EB;
+            border-color: #1B5E85;
         }
 
         .border-warning {
@@ -166,7 +166,7 @@
         }
 
         .bg-success {
-            background-color: #2563EB;
+            background-color: #1B5E85;
             color: white;
         }
 

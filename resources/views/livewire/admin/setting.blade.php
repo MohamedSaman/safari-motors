@@ -229,7 +229,7 @@
     }
 
     .btn-edit {
-        background: #2563EB;
+        background: #1B5E85;
         color: white;
     }
 
@@ -249,7 +249,7 @@
     }
 
     /* Loading state for modern buttons */
-    .btn-action[wire\\:loading] {
+    .btn-action[wire\:loading] {
         opacity: 0.7;
         pointer-events: none;
     }
@@ -274,7 +274,7 @@
             title: 'Success!',
             text: 'Configuration added successfully.',
             icon: 'success',
-            confirmButtonColor: '#2563EB',
+            confirmButtonColor: '#1B5E85',
         });
     });
 
@@ -283,7 +283,7 @@
             title: 'Updated!',
             text: 'Configuration updated successfully.',
             icon: 'success',
-            confirmButtonColor: '#2563EB',
+            confirmButtonColor: '#1B5E85',
         });
     });
 
@@ -292,7 +292,7 @@
             title: 'Deleted!',
             text: 'Configuration deleted successfully.',
             icon: 'success',
-            confirmButtonColor: '#2563EB',
+            confirmButtonColor: '#1B5E85',
         });
     });
 
@@ -340,7 +340,7 @@
             text: "This configuration will be deleted permanently.",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonColor: "#2563EB",
+            confirmButtonColor: "#1B5E85",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {

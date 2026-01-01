@@ -1,28 +1,28 @@
 
-<div class="container-fluid py-4" style="background: #f8f9fa; min-height: 100vh;">
+<div class="container-fluid py-4" style="background-color: #f5fdf1ff; min-height: 100vh;">
     <!-- Opening Cash Modal -->
     @if($showOpeningCashModal)
     <div class="modal fade show d-block" tabindex="-1" style="background: rgba(0,0,0,0.6);">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 shadow-lg rounded-4">
-                <div class="modal-header bg-primary text-white">
+            <div class="modal-content border-0 shadow-sm" style="border-radius: 0;">
+                <div class="modal-header text-white" style="background: #1B5E85;">
                     <h5 class="modal-title fw-bold">
                         <i class="bi bi-cash-coin me-2"></i> Start POS Session
                     </h5>
                 </div>
                 <div class="modal-body text-center p-4">
-                    <i class="bi bi-shop-window display-4 text-primary mb-3"></i>
+                    <i class="bi bi-shop-window display-4 mb-3" style="color: #1B5E85;"></i>
                     <h5 class="fw-bold mb-3">Opening Cash Amount</h5>
                     <p class="text-muted mb-4">Enter the cash in drawer to begin today's session</p>
 
                     <input type="number" class="form-control form-control-lg text-center mb-4 shadow-sm"
                            wire:model.live="openingCashAmount" min="0" step="0.01" autofocus
-                           placeholder="0.00" style="font-size: 1.8rem; border: 2px solid #0d6efd;">
+                           placeholder="0.00" style="font-size: 1.8rem; border: 2px solid #1B5E85; border-radius: 0;">
                     @error('openingCashAmount')
                     <div class="alert alert-danger mt-2">{{ $message }}</div>
                     @enderror
 
-                    <button class="btn btn-primary btn-lg w-100 rounded-pill"
+                    <button class="btn btn-lg w-100" style="background: #1B5E85; color: white; border-radius: 0;"
                             wire:click="submitOpeningCash">
                         <i class="bi bi-check2-circle me-2"></i> Start Session
                     </button>
@@ -37,20 +37,20 @@
 
         <!-- Header -->
         <div class="col-12">
-            <div class="card border-0 shadow-sm rounded-4">
+            <div class="card border-0 shadow-sm" style="border-radius: 0;">
                 <div class="card-body d-flex justify-content-between align-items-center px-4 bg-white">
                     <div class="d-flex align-items-center">
                         <div class="me-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
                             <img src="{{ asset('images/safari-dark.png') }}" alt="Safari" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
                         <div>
-                            <h4 class="mb-0 fw-bold text-primary">SAFARI MOTORS</h4>
+                            <h4 class="mb-0 fw-bold" style="color: #1B5E85;">SAFARI MOTORS</h4>
                             <small class="text-muted">Point of Sale System</small>
                         </div>
                     </div>
 
                     <div class="d-flex gap-3">
-                        <button class="btn btn-outline-primary rounded-pill px-4"
+                        <button class="btn px-4" style="background: #1B5E85; color: white; border-radius: 0;"
                                 wire:click="viewCloseRegisterReport">
                             <i class="bi bi-receipt-cutoff me-2"></i> View Report
                         </button>
@@ -60,12 +60,12 @@
         </div>
         <div class="col-lg-6">
             <!-- Customer Information -->
-            <div class="card border-0 shadow-sm rounded-4 mb-4">
+            <div class="card border-0 shadow-sm mb-4" style="border-radius: 0;">
                 <div class="card-header bg-white d-flex justify-content-between align-items-center py-3 px-4 border-0">
-                    <h5 class="mb-0 fw-bold text-primary">
+                    <h5 class="mb-0 fw-bold" style="color: #1B5E85;">
                         <i class="bi bi-person-circle me-2"></i> Customer
                     </h5>
-                    <button class="btn btn-sm btn-outline-primary rounded-pill"
+                    <button class="btn btn-sm" style="background: #1B5E85; color: white; border-radius: 0;"
                             wire:click="openCustomerModal">
                         <i class="bi bi-plus-lg me-1"></i> Add Customer
                     </button>
@@ -85,9 +85,9 @@
         </div>
         <div class="col-lg-6">
             <!-- Product Search -->
-            <div class="card border-0 shadow-sm rounded-4 mb-4">
+            <div class="card border-0 shadow-sm mb-4" style="border-radius: 0;">
                 <div class="card-header bg-white py-3 px-4 border-0">
-                    <h5 class="mb-0 fw-bold text-primary">
+                    <h5 class="mb-0 fw-bold" style="color: #1B5E85;">
                         <i class="bi bi-search me-2"></i> Add Products
                     </h5>
                 </div>
@@ -124,12 +124,12 @@
         </div>
         <div class="col-lg-8">
             <!-- Sale Items -->
-            <div class="card border-0 shadow-sm rounded-4" style="min-height:55vh;">
+            <div class="card border-0 shadow-sm" style="min-height:55vh; border-radius: 0;">
                 <div class="card-header bg-white d-flex justify-content-between align-items-center py-3 px-4 border-0">
-                    <h5 class="mb-0 fw-bold text-primary">
+                    <h5 class="mb-0 fw-bold" style="color: #1B5E85;">
                         <i class="bi bi-cart4 me-2"></i> Sale Items
                     </h5>
-                    <span class="badge bg-primary rounded-pill px-3 py-2">{{ count($cart) }} items</span>
+                    <span class="badge px-3 py-2" style="background: #1B5E85; border-radius: 0;">{{ count($cart) }} items</span>
                 </div>
 
                 <div class="card-body p-0">
@@ -181,7 +181,7 @@
                                     </td>
                                     <td class="fw-bold">Rs.{{ number_format($item['total'], 2) }}</td>
                                     <td class="text-center">
-                                        <button class="btn btn-sm btn-outline-danger rounded-circle"
+                                        <button class="btn btn-sm" style="background: #dc3545; color: white; border-radius: 0;"
                                                 wire:click="removeFromCart({{ $index }})">
                                             <i class="bi bi-trash"></i>
                                         </button>
@@ -242,7 +242,7 @@
                     </div>
 
                     <div class="card-footer bg-white border-0 d-flex justify-content-end p-3">
-                        <button class="btn btn-outline-danger rounded-pill px-4"
+                        <button class="btn px-4" style="background: #dc3545; color: white; border-radius: 0;"
                                 wire:click="clearCart">
                             <i class="bi bi-trash3 me-2"></i> Clear All
                         </button>
@@ -259,9 +259,9 @@
         </div>
         <div class="col-lg-4">
             <!-- Payment Section -->
-            <div class="card border-0 shadow-sm rounded-4" style="min-height:55vh;">
+            <div class="card border-0 shadow-sm" style="min-height:55vh; border-radius: 0;">
                 <div class="card-header bg-white py-3 px-4 border-0">
-                    <h5 class="mb-0 fw-bold text-primary">
+                    <h5 class="mb-0 fw-bold" style="color: #1B5E85;">
                         <i class="bi bi-credit-card-2-front me-2"></i> Payment
                     </h5>
                 </div>
@@ -333,7 +333,7 @@
                 </div>
 
                 <div class="card-footer bg-white border-0 p-4">
-                    <button class="btn btn-success btn-lg w-100 rounded-pill shadow-lg"
+                    <button class="btn btn-lg w-100 shadow-lg" style="background: #1B5E85; color: white; border-radius: 0;"
                             wire:click="processSale" wire:loading.attr="disabled">
                         <span wire:loading.remove>
                             <i class="bi bi-check2-circle me-2"></i> Complete Sale
@@ -353,8 +353,8 @@
     @if($showCustomerModal)
     <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-0">
-                <div class="modal-header text-white rounded-0" style="background: #2563EB;">
+            <div class="modal-content" style="border-radius: 0;">
+                <div class="modal-header text-white" style="background: #1B5E85; border-radius: 0;">
                     <h5 class="modal-title fw-bold">
                         <i class="bi bi-person-plus me-2"></i>Add New Customer
                     </h5>
@@ -363,22 +363,22 @@
                 <div class="modal-body">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold" style="color:#2563EB;">Name *</label>
+                            <label class="form-label fw-semibold" style="color:#1B5E85;">Name *</label>
                             <input type="text" class="form-control rounded-0" wire:model="customerName" placeholder="Enter customer name">
                             @error('customerName') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold" style="color:#2563EB;">Phone *</label>
+                            <label class="form-label fw-semibold" style="color:#1B5E85;">Phone *</label>
                             <input type="text" class="form-control rounded-0" wire:model="customerPhone" placeholder="Enter phone number">
                             @error('customerPhone') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold" style="color:#2563EB;">Email</label>
+                            <label class="form-label fw-semibold" style="color:#1B5E85;">Email</label>
                             <input type="email" class="form-control rounded-0" wire:model="customerEmail" placeholder="Enter email address">
                             @error('customerEmail') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold" style="color:#2563EB;">Customer Type *</label>
+                            <label class="form-label fw-semibold" style="color:#1B5E85;">Customer Type *</label>
                             <select class="form-select rounded-0" wire:model="customerType">
                                 <option value="retail">Retail</option>
                                 <option value="wholesale">Wholesale</option>
@@ -387,21 +387,21 @@
                             @error('customerType') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold" style="color:#2563EB;">Business Name</label>
+                            <label class="form-label fw-semibold" style="color:#1B5E85;">Business Name</label>
                             <input type="text" class="form-control rounded-0" wire:model="businessName" placeholder="Enter business name">
                         </div>
                         <div class="col-12">
-                            <label class="form-label fw-semibold" style="color:#2563EB;">Address *</label>
+                            <label class="form-label fw-semibold" style="color:#1B5E85;">Address *</label>
                             <textarea class="form-control rounded-0" wire:model="customerAddress" rows="3" placeholder="Enter address"></textarea>
                             @error('customerAddress') <span class="text-danger small">{{ $message }}</span> @enderror
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer rounded-0">
-                    <button type="button" class="btn btn-secondary rounded-0" style="background: #2563EB;" wire:click="closeCustomerModal">
+                    <button type="button" class="btn btn-secondary rounded-0" style="background: #1B5E85; border-radius: 0;" wire:click="closeCustomerModal">
                         <i class="bi bi-x-circle me-2"></i>Cancel
                     </button>
-                    <button type="button" class="btn rounded-0 text-white" style="background: #2563EB; border-color:#2563EB;" wire:click="createCustomer">
+                    <button type="button" class="btn rounded-0 text-white" style="background: #1B5E85; border-color:#1B5E85; border-radius: 0;" wire:click="createCustomer">
                         <i class="bi bi-check-circle me-2"></i>Create Customer
                     </button>
                 </div>
@@ -414,8 +414,8 @@
     @if($showPaymentConfirmModal)
     <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.7);">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-0">
-                <div class="modal-header text-white rounded-0" style="background: #2563EB;">
+            <div class="modal-content" style="border-radius: 0;">
+                <div class="modal-header text-white" style="background: #1B5E85; border-radius: 0;">
                     <h5 class="modal-title fw-bold">
                         <i class="bi bi-exclamation-triangle me-2"></i>Partial Payment Confirmation
                     </h5>
@@ -443,10 +443,10 @@
                     </p>
                 </div>
                 <div class="modal-footer rounded-0">
-                    <button type="button" class="btn btn-secondary rounded-0" style="background: #2563EB;" wire:click="cancelSaleConfirmation">
+                    <button type="button" class="btn btn-secondary rounded-0" style="background: #1B5E85; border-radius: 0;" wire:click="cancelSaleConfirmation">
                         <i class="bi bi-x-circle me-2"></i>Cancel
                     </button>
-                    <button type="button" class="btn rounded-0 text-white" style="background: #2563EB; border-color:#2563EB;" wire:click="confirmSaleWithDue">
+                    <button type="button" class="btn rounded-0 text-white" style="background: #1B5E85; border-color:#1B5E85; border-radius: 0;" wire:click="confirmSaleWithDue">
                         <i class="bi bi-check-circle me-2"></i>Yes, Proceed with Due
                     </button>
                 </div>
@@ -459,8 +459,8 @@
     @if($showSaleModal && $createdSale)
     <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content rounded-0">
-                <div class="modal-header text-white rounded-0" style="background: #2563EB;">
+            <div class="modal-content" style="border-radius: 0;">
+                <div class="modal-header text-white" style="background: #1B5E85; border-radius: 0;">
                     <h5 class="modal-title fw-bold">
                         <i class="bi bi-cart-check me-2"></i>
                         Sale Completed Successfully! - {{ $createdSale->invoice_number }}
@@ -636,8 +636,8 @@
     @if($showCloseRegisterModal)
     <div class="modal fade show d-block" id="closeRegisterModal" tabindex="-1" style="background-color: rgba(0,0,0,0.5);" data-bs-backdrop="static">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header" style="background: #2563EB; color: white;">
+            <div class="modal-content" style="border-radius: 0;">
+                <div class="modal-header" style="background: #1B5E85; color: white; border-radius: 0;">
                     <h5 class="modal-title fw-bold" id="closeRegisterModalLabel">
                         <i class="bi bi-x-circle me-2"></i>CLOSE REGISTER ({{ date('d/m/Y H:i') }})
                     </h5>
@@ -839,7 +839,7 @@
     .search-results {
         max-height: 400px;
         overflow-y: auto;
-        border: 2px solid #2563EB !important;
+        border: 2px solid #1B5E85 !important;
         border-radius: 0;
         position: relative;
         z-index: 10;
@@ -855,12 +855,12 @@
     }
 
     .search-results::-webkit-scrollbar-thumb {
-        background: #2563EB;
+        background: #1B5E85;
         border-radius: 4px;
     }
 
     .search-results::-webkit-scrollbar-thumb:hover {
-        background: #2563EB;
+        background: #1B5E85;
     }
 
     .search-item:last-child {

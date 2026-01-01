@@ -12,18 +12,18 @@
             padding: 10px 20px;
             cursor: pointer;
             font-weight: 500;
-            color: #000000;
+            color: #333333;
             border-bottom: 3px solid transparent;
             transition: all 0.2s;
         }
 
         .content-tab.active {
-            color: #2563EB;
-            border-bottom-color: #2563EB;
+            color: #1B5E85;
+            border-bottom-color: #1B5E85;
         }
 
         .content-tab:hover:not(.active) {
-            color: #2563EB;
+            color: #1B5E85;
             border-bottom-color: #dee2e6;
         }
 
@@ -72,7 +72,7 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #2563EB;
+            background: #1B5E85;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -107,12 +107,12 @@
         }
 
         .action-btn.view {
-            color: #2563EB;
+            color: #1B5E85;
             background-color: rgba(40, 167, 69, 0.1);
         }
 
         .action-btn.edit {
-            color: #2563EB;
+            color: #1B5E85;
             background-color: rgba(40, 167, 69, 0.1);
         }
 
@@ -155,7 +155,7 @@
         .form-control:focus,
         .form-select:focus {
             box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-            border-color: #2563EB;
+            border-color: #1B5E85;
         }
 
         /* Modern button styling */
@@ -167,36 +167,36 @@
         }
 
         .btn-primary {
-            background-color: #2563EB;
-            border-color: #2563EB;
+            background-color: #1B5E85;
+            border-color: #1B5E85;
         }
 
         .btn-primary:hover {
-            background-color: #1D4ED8;
-            border-color: #1D4ED8;
+            background-color: #164568;
+            border-color: #164568;
             transform: translateY(-2px);
         }
 
         .btn-success {
-            background-color: #2563EB;
-            border-color: #2563EB;
+            background-color: #1B5E85;
+            border-color: #1B5E85;
         }
 
         .btn-success:hover {
-            background-color: #1D4ED8;
-            border-color: #1D4ED8;
+            background-color: #164568;
+            border-color: #164568;
             transform: translateY(-2px);
         }
 
         .btn-warning {
-            background-color: #2563EB;
-            border-color: #2563EB;
+            background-color: #1B5E85;
+            border-color: #1B5E85;
             color: #000;
         }
 
         .btn-warning:hover {
-            background-color: #1D4ED8;
-            border-color: #1D4ED8;
+            background-color: #164568;
+            border-color: #164568;
             transform: translateY(-2px);
             color: #000;
         }
@@ -204,7 +204,7 @@
         /* History Modal Styles */
         .nav-tabs-custom .nav-link {
             border: none;
-            color: #000000;
+            color: #333333;
             font-weight: 500;
             padding: 1rem 1.5rem;
             border-bottom: 3px solid transparent;
@@ -212,19 +212,19 @@
         }
 
         .nav-tabs-custom .nav-link.active {
-            color: #2563EB;
-            border-bottom-color: #2563EB;
+            color: #1B5E85;
+            border-bottom-color: #1B5E85;
             background-color: transparent;
         }
 
         .nav-tabs-custom .nav-link:hover {
-            color: #2563EB;
+            color: #1B5E85;
             border-bottom-color: #dee2e6;
         }
 
         /* History Table Styles */
         .history-table th {
-            background: #2563EB;
+            background: #1B5E85;
             color: white;
             font-weight: 600;
             border: none;
@@ -257,9 +257,9 @@
             }
 
             .content-tab.active {
-                background-color: #2563EB;
+                background-color: #1B5E85;
                 color: white;
-                border-color: #2563EB;
+                border-color: #1B5E85;
             }
 
             .pagination {
@@ -367,19 +367,19 @@
 
         /* Stock Adjustment Modal Styles */
         #stockAdjustmentModal .modal-header {
-            background: #2563EB !important;
+            background: #1B5E85 !important;
         }
 
         #stockAdjustmentModal .alert-info {
             background-color: #ffffff;
-            border-left: 4px solid #2563EB;
+            border-left: 4px solid #1B5E85;
         }
 
         #stockAdjustmentModal .preview-box {
             background: #ffffff;
             border-radius: 8px;
             padding: 15px;
-            border-left: 4px solid #2563EB;
+            border-left: 4px solid #1B5E85;
         }
 
         /* Stock level indicators */
@@ -394,7 +394,7 @@
         }
 
         .stock-high {
-            color: #2563EB;
+            color: #1B5E85;
             font-weight: bold;
         }
 
@@ -717,7 +717,7 @@
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content border-0 shadow-lg">
                     <div class="modal-header border-0 bg-gradient-primary text-white position-relative"
-                        style="background: #2563EB; padding: 1.5rem;">
+                        style="background: #1B5E85; padding: 1.5rem;">
                         <h5 class="modal-title fw-bold d-flex align-items-center">
                             <i class="bi bi-box-seam me-2 fs-4"></i>
                             <span>Product Details</span>
@@ -1661,7 +1661,7 @@
 
                     <!-- Header -->
                     <div class="modal-header border-0 text-white"
-                        style="background: #2563EB;">
+                        style="background: #1B5E85;">
                         <h5 class="modal-title fw-bold">
                             <i class="bi bi-clock-history me-2"></i>
                             Product History - {{ $historyProductName ?? 'Loading...' }}

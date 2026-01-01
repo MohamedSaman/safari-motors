@@ -361,17 +361,17 @@
     }
 
     .summary-card:nth-child(1) {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .summary-card:nth-child(2) {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .table th {
         border-top: none;
         font-weight: 600;
-        color: #000000;
+        color: #333333;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -405,19 +405,19 @@
     }
 
     .btn-primary {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-primary:hover {
-        background-color: #1D4ED8;
-        border-color: #1D4ED8;
+        background-color: #164568;
+        border-color: #164568;
         transform: translateY(-2px);
     }
 
     .btn-success {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-success:hover {
@@ -468,7 +468,7 @@
                     .header h2 { margin-bottom: 5px; }
                     .header p { margin-top: 0; color: #666; }
                     .badge { padding: 3px 8px; border-radius: 4px; font-size: smaller; }
-                    .bg-primary { background-color: #2563EB; color: white; }
+                    .bg-primary { background-color: #1B5E85; color: white; }
                     .bg-danger { background-color: #dc3545; color: white; }
                     .bg-success { background-color: #198754; color: white; }
                 </style>
@@ -480,7 +480,7 @@
                 </div>
                 ${tableContent}
                 <div style="text-align: center; margin-top: 20px;">
-                    <button onclick="window.print();" style="padding: 8px 16px; background: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
+                    <button onclick="window.print();" style="padding: 8px 16px; background: #1B5E85; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
                     <button onclick="window.close();" style="padding: 8px 16px; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
                 </div>
             </body>
@@ -535,14 +535,14 @@
                     .fw-bold { font-weight: bold; }
                     .text-info { color: green; }
                     .text-danger { color: red; }
-                    .text-muted { color: #000000; }
+                    .text-muted { color: #333333; }
                     .badge { padding: 3px 8px; border-radius: 4px; font-size: smaller; }
                     .bg-success { background-color: #198754; color: white; }
                     .bg-danger { background-color: #dc3545; color: white; }
-                    .bg-warning { background-color: #2563EB; color: black; }
+                    .bg-warning { background-color: #1B5E85; color: black; }
                     .bg-info { background-color: #0dcaf0; color: white; }
                     .bg-light { background-color: #ffffff; color: black; }
-                    .bg-primary { background-color: #2563EB; color: white; }
+                    .bg-primary { background-color: #1B5E85; color: white; }
                     img { max-width: 100%; }
                     @media print {
                         .no-print { display: none; }
@@ -571,7 +571,7 @@
                 </div>
                 
                 <div class="no-print" style="text-align: center; margin-top: 30px;">
-                    <button onclick="window.print();" style="padding: 8px 16px; background: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
+                    <button onclick="window.print();" style="padding: 8px 16px; background: #1B5E85; color: white; border: none; border-radius: 4px; cursor: pointer;">Print Report</button>
                     <button onclick="window.close();" style="padding: 8px 16px; background: #6c757d; color: white; border: none; border-radius: 4px; cursor: pointer; margin-left: 10px;">Close</button>
                 </div>
             </body>

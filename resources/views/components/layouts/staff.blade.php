@@ -24,14 +24,14 @@
         body {
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
             background-color: #ffffff;
-            color: #000000;
+            color: #333333;
         }
 
         .sidebar {
             width: 265px;
             height: 100vh;
             background-color: #ffffff;
-            color: #000000;
+            color: #333333;
             border-right: 1px solid #dee2e6;
             padding: 20px 0;
             position: fixed;
@@ -78,7 +78,7 @@
         .sidebar-title {
             font-weight: 600;
             font-size: 1.2rem;
-            color: #000000;
+            color: #333333;
             letter-spacing: -0.02em;
         }
 
@@ -88,13 +88,13 @@
         }
 
         .nav-link {
-            color: #000000;
+            color: #333333;
             padding: 8px 20px;
             transition: all 0.2s;
         }
 
         .nav-link.active {
-            background: #2563EB;
+            background: #1B5E85;
             color: #ffffff;
             font-weight: 500;
         }
@@ -102,7 +102,7 @@
         .nav-link:focus,
         .nav-link:hover,
         .nav-link:focus-visible {
-            color: #000000;
+            color: #333333;
             background-color: #f8f9fa;
             outline: none;
         }
@@ -164,7 +164,7 @@
             padding: 5px;
             border-radius: 5px;
             transition: background-color 0.2s;
-            color: #000000;
+            color: #333333;
         }
 
         .admin-info:hover {
@@ -177,14 +177,14 @@
             width: 36px;
             height: 36px;
             border-radius: 50%;
-            background-color: #2563EB;
+            background-color: #1B5E85;
             color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 600;
             letter-spacing: -0.03em;
-            border: 1px solid #2563EB;
+            border: 1px solid #1B5E85;
         }
 
         .admin-name {
@@ -263,7 +263,7 @@
         }
 
         .stat-label {
-            color: #000000;
+            color: #333333;
             font-size: 14px;
             margin-bottom: 5px;
             font-size: 0.875rem;
@@ -271,7 +271,7 @@
         }
 
         .stat-change {
-            color: #2563EB;
+            color: #1B5E85;
             font-size: 13px;
         }
 
@@ -282,88 +282,88 @@
         
         /* Button Styles */
         .btn {
-            background: #2563EB;
+            background: #1B5E85;
             color: #ffffff;
             border: none;
         }
         
         .btn:hover {
-            background: #1D4ED8;
+            background: #164568;
             color: #ffffff;
         }
         
         .btn-primary {
-            background: #2563EB !important;
-            border-color: #2563EB !important;
+            background: #1B5E85 !important;
+            border-color: #1B5E85 !important;
             color: #ffffff !important;
         }
         
         .btn-primary:hover {
-            background: #1D4ED8 !important;
-            border-color: #1D4ED8 !important;
+            background: #164568 !important;
+            border-color: #164568 !important;
             color: #ffffff !important;
         }
         
         .btn-success {
-            background: #2563EB !important;
-            border-color: #2563EB !important;
+            background: #1B5E85 !important;
+            border-color: #1B5E85 !important;
             color: #ffffff !important;
         }
         
         .btn-success:hover {
-            background: #1D4ED8 !important;
-            border-color: #1D4ED8 !important;
+            background: #164568 !important;
+            border-color: #164568 !important;
             color: #ffffff !important;
         }
         
         .btn-info {
-            background: #2563EB !important;
-            border-color: #2563EB !important;
+            background: #1B5E85 !important;
+            border-color: #1B5E85 !important;
             color: #ffffff !important;
         }
         
         .btn-info:hover {
-            background: #1D4ED8 !important;
-            border-color: #1D4ED8 !important;
+            background: #164568 !important;
+            border-color: #164568 !important;
             color: #ffffff !important;
         }
         
         .btn-outline-primary {
-            color: #2563EB !important;
-            border-color: #2563EB !important;
+            color: #1B5E85 !important;
+            border-color: #1B5E85 !important;
             background: transparent !important;
         }
         
         .btn-outline-primary:hover {
             color: #ffffff !important;
-            background: #2563EB !important;
-            border-color: #2563EB !important;
+            background: #1B5E85 !important;
+            border-color: #1B5E85 !important;
         }
         
         /* Table Styles */
         .table th {
-            background: #2563EB !important;
+            background: #1B5E85 !important;
             color: #ffffff !important;
         }
         
         /* Modal Header */
         .modal-header {
-            background: #2563EB !important;
+            background: #1B5E85 !important;
             color: #ffffff !important;
         }
         
         /* Global color overrides for all custom styles */
         .bg-primary, .badge-primary {
-            background-color: #2563EB !important;
+            background-color: #1B5E85 !important;
             color: #ffffff !important;
         }
         
         .text-primary {
-            color: #2563EB !important;
+            color: #1B5E85 !important;
         }
         
         .border-primary {
-            border-color: #2563EB !important;
+            border-color: #1B5E85 !important;
         }
         
         /* Card backgrounds */
@@ -373,20 +373,20 @@
         
         .card-header {
             background-color: #ffffff !important;
-            color: #000000 !important;
+            color: #333333 !important;
         }
         
         /* Alert colors */
         .alert-primary {
             background-color: #d4edda !important;
-            border-color: #2563EB !important;
-            color: #000000 !important;
+            border-color: #1B5E85 !important;
+            color: #333333 !important;
         }
         
         .alert-info {
             background-color: #d4edda !important;
-            border-color: #2563EB !important;
-            color: #000000 !important;
+            border-color: #1B5E85 !important;
+            color: #333333 !important;
         }
         }
 
@@ -400,18 +400,18 @@
             padding: 10px 20px;
             cursor: pointer;
             font-weight: 500;
-            color: #000000;
+            color: #333333;
             border-bottom: 3px solid transparent;
             transition: all 0.2s;
         }
 
         .content-tab.active {
-            color: #2563EB;
-            border-bottom-color: #2563EB;
+            color: #1B5E85;
+            border-bottom-color: #1B5E85;
         }
 
         .content-tab:hover:not(.active) {
-            color: #2563EB;
+            color: #1B5E85;
             border-bottom-color: #dee2e6;
         }
 
@@ -848,7 +848,7 @@
         }
 
         .sidebar::-webkit-scrollbar-thumb {
-            background-color: #000000;
+            background-color: #333333;
         }
 
         /* Add padding to the bottom of sidebar to ensure last items are visible */

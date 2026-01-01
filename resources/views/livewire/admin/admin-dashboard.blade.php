@@ -17,13 +17,13 @@
         }
 
         .stat-label {
-            color: #000000;
+            color: #555555;
             font-size: 14px;
             margin-bottom: 5px;
         }
 
         .stat-change {
-            color: #2563EB;
+            color: #0D7EA8;
             font-size: 13px;
         }
 
@@ -74,12 +74,12 @@
             font-size: 1.25rem;
             margin-bottom: 5px;
             font-weight: 500;
-            color: #212529;
+            color: #1B5E85;
         }
 
         .widget-header p {
             font-size: 0.875rem;
-            color: #000000;
+            color: #555555;
             margin-bottom: 0;
         }
 
@@ -97,12 +97,12 @@
         .item-details h6 {
             font-size: 1rem;
             margin-bottom: 3px;
-            color: #212529;
+            color: #1B5E85;
         }
 
         .item-details p {
             font-size: 0.875rem;
-            color: #000000;
+            color: #555555;
             margin-bottom: 0;
         }
 
@@ -138,7 +138,7 @@
         }
 
         .progress-bar {
-            background-color: #2563EB;
+            background-color: #0D7EA8;
             height: 4px;
         }
 
@@ -467,8 +467,8 @@
                     labels: categoryLabels,
                     datasets: [{
                         label: 'Sales by Category',
-                        backgroundColor: '#2563EB',
-                        borderColor: '#2563EB',
+                        backgroundColor: '#0D7EA8',
+                        borderColor: '#0D7EA8',
                         borderWidth: 1,
                         data: categoryTotals
                     }]

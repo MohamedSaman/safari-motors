@@ -29,7 +29,7 @@
             }
 
             .stat-label {
-                color: #000000;
+                color: #333333;
                 font-size: 13px;
                 margin-bottom: 5px;
             }
@@ -41,7 +41,7 @@
             }
 
             .stat-change {
-                color: #2563EB;
+                color: #1B5E85;
                 font-size: 12px;
             }
             
@@ -75,7 +75,7 @@
                 padding: 8px 12px;
                 cursor: pointer;
                 font-weight: 500;
-                color: #000000;
+                color: #333333;
                 border-bottom: 3px solid transparent;
                 transition: all 0.2s;
                 white-space: nowrap;
@@ -88,12 +88,12 @@
             }
 
             .content-tab.active {
-                color: #2563EB;
-                border-bottom-color: #2563EB;
+                color: #1B5E85;
+                border-bottom-color: #1B5E85;
             }
 
             .content-tab:hover:not(.active) {
-                color: #2563EB;
+                color: #1B5E85;
                 border-bottom-color: #dee2e6;
             }
 
@@ -270,17 +270,17 @@
 
             .in-stock {
                 background-color: #d4edda;
-                color: #000000;
+                color: #333333;
             }
 
             .low-stock {
                 background-color: #fff3cd;
-                color: #000000;
+                color: #333333;
             }
 
             .out-of-stock {
                 background-color: #f8d7da;
-                color: #000000;
+                color: #333333;
             }
 
             .progress {
@@ -299,7 +299,7 @@
 
             .progress-bar {
                 height: 100%;
-                background-color: #2563EB;
+                background-color: #1B5E85;
             }
 
             .staff-info {
@@ -968,7 +968,7 @@
                 labels: @json(collect($brandSales)->pluck('brand')),
                 datasets: [{
                     label: 'Sales by Brand',
-                    backgroundColor: '#2563EB',
+                    backgroundColor: '#1B5E85',
                     data: @json(collect($brandSales)->pluck('total_sales'))
                 }]
             },

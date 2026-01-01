@@ -487,8 +487,8 @@
         border-top: none;
         font-weight: 600;
         color: #ffffff;
-        background: #2563EB;
-        background: #2563EB;
+        background: #1B5E85;
+        background: #1B5E85;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -522,7 +522,7 @@
             title: event.detail.type === 'error' ? 'Error!' : 'Success!',
             text: event.detail.message,
             icon: event.detail.type === 'error' ? 'error' : 'success',
-            confirmButtonColor: '#2563EB'
+            confirmButtonColor: '#1B5E85'
         });
     });
 

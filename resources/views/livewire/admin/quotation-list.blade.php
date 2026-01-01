@@ -641,7 +641,7 @@
     }
 
     .action-btn.view {
-        color: #2563EB;
+        color: #1B5E85;
         background-color: rgba(13, 110, 253, 0.1);
     }
 
@@ -659,7 +659,7 @@
     }
 
     .action-btn.success {
-        color: #000000;
+        color: #333333;
         background-color: rgba(108, 117, 125, 0.1);
     }
 
@@ -713,17 +713,17 @@
     }
 
     .quotation-header {
-        background: #2563EB;
+        background: #1B5E85;
     }
 
     .company-info h6,
     .client-info h6 {
-        color: #2563EB;
+        color: #1B5E85;
     }
 
     .table-light th {
         background-color: #ffffff;
-        color: #000000;
+        color: #333333;
         font-weight: 600;
     }
 
@@ -740,8 +740,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #2563EB;
-            background: #2563EB;
+            background: #1B5E85;
+            background: #1B5E85;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;

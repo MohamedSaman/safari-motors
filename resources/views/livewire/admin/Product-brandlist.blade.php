@@ -192,7 +192,7 @@
     }
 
     .summary-card.total {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .icon-container {
@@ -227,8 +227,8 @@
         border-top: none;
         font-weight: 600;
         color: #ffffff;
-        background: #2563EB;
-        background: #2563EB;
+        background: #1B5E85;
+        background: #1B5E85;
         font-size: 0.85rem;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -262,7 +262,7 @@
 
     .form-control:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #2563EB;
+        border-color: #1B5E85;
     }
 
     .btn {
@@ -273,13 +273,13 @@
     }
 
     .btn-primary {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-primary:hover {
-        background-color: #1D4ED8;
-        border-color: #1D4ED8;
+        background-color: #164568;
+        border-color: #164568;
         transform: translateY(-2px);
     }
 </style>
@@ -293,7 +293,7 @@
             text: "You won't be able to revert this!",
             icon: "warning",
             showCancelButton: true,
-            confirmButtonColor: "#2563EB",
+            confirmButtonColor: "#1B5E85",
             cancelButtonColor: "#d33",
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {

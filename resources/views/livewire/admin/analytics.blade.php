@@ -21,7 +21,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: #2563EB;
+            background: #1B5E85;
         }
 
         .analytics-metric-card:hover {
@@ -41,13 +41,13 @@
             margin-bottom: 16px;
         }
 
-        .revenue-icon { background: #2563EB; }
-        .sales-icon { background: #2563EB; }
-        .due-icon { background: #2563EB; }
-        .profit-icon { background: #2563EB; }
+        .revenue-icon { background: #1B5E85; }
+        .sales-icon { background: #1B5E85; }
+        .due-icon { background: #1B5E85; }
+        .profit-icon { background: #1B5E85; }
 
         .metric-content h6 {
-            color: #000000;
+            color: #333333;
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 8px;
@@ -58,7 +58,7 @@
         .metric-value {
             font-size: 28px;
             font-weight: 700;
-            color: #000000;
+            color: #333333;
             margin-bottom: 8px;
             line-height: 1.2;
         }
@@ -71,8 +71,8 @@
             gap: 4px;
         }
 
-        .metric-change.positive { color: #2563EB; }
-        .metric-change.negative { color: #000000; }
+        .metric-change.positive { color: #1B5E85; }
+        .metric-change.negative { color: #333333; }
 
         .analytics-chart-card {
             background: white;
@@ -96,13 +96,13 @@
         .chart-title {
             font-size: 18px;
             font-weight: 600;
-            color: #000000;
+            color: #333333;
             margin-bottom: 4px;
         }
 
         .chart-subtitle {
             font-size: 14px;
-            color: #000000;
+            color: #333333;
             margin-bottom: 0;
         }
 
@@ -140,9 +140,9 @@
         }
 
         .chart-controls .btn.active {
-            background: #2563EB;
+            background: #1B5E85;
             color: white;
-            border-color: #2563EB;
+            border-color: #1B5E85;
         }
 
         .status-legend {
@@ -166,8 +166,8 @@
             border-radius: 50%;
         }
 
-        .legend-color.paid { background: #2563EB; }
-        .legend-color.partial { background: #2563EB; }
+        .legend-color.paid { background: #1B5E85; }
+        .legend-color.partial { background: #1B5E85; }
         .legend-color.pending { background: #dc3545; }
 
         .performance-card {
@@ -188,10 +188,10 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, #2563EB, #fd7e14);
+            background: linear-gradient(90deg, #1B5E85, #fd7e14);
         }
 
-        .performance-card.rank-1::before { background: linear-gradient(90deg, #2563EB, #fd7e14); }
+        .performance-card.rank-1::before { background: linear-gradient(90deg, #1B5E85, #fd7e14); }
         .performance-card.rank-2::before { background: linear-gradient(90deg, #6c757d, #495057); }
         .performance-card.rank-3::before { background: linear-gradient(90deg, #cd7f32, #8B4513); }
 
@@ -206,7 +206,7 @@
             gap: 8px;
             font-size: 18px;
             font-weight: 700;
-            color: #000000;
+            color: #333333;
             margin-bottom: 12px;
         }
 
@@ -231,7 +231,7 @@
 
         .stat-label {
             font-size: 13px;
-            color: #000000;
+            color: #333333;
             font-weight: 500;
         }
 
@@ -732,12 +732,12 @@
                         {
                             label: 'Total Sales',
                             data: salesData,
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             backgroundColor: 'rgba(0, 123, 255, 0.15)',
                             borderWidth: 4,
                             pointRadius: 6,
                             pointHoverRadius: 8,
-                            pointBackgroundColor: '#2563EB',
+                            pointBackgroundColor: '#1B5E85',
                             pointBorderColor: '#fff',
                             pointBorderWidth: 2,
                             fill: true,
@@ -746,12 +746,12 @@
                         {
                             label: 'Revenue',
                             data: revenueData,
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             backgroundColor: 'rgba(40, 167, 69, 0.15)',
                             borderWidth: 4,
                             pointRadius: 6,
                             pointHoverRadius: 8,
-                            pointBackgroundColor: '#2563EB',
+                            pointBackgroundColor: '#1B5E85',
                             pointBorderColor: '#fff',
                             pointBorderWidth: 2,
                             fill: true,
@@ -790,7 +790,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {
@@ -844,7 +844,7 @@
                 }
             });
             const statusCounts = invoiceStatusData.map(item => item.count);
-            const statusColors = ['#2563EB', '#2563EB', '#dc3545'];
+            const statusColors = ['#1B5E85', '#1B5E85', '#dc3545'];
 
             invoiceStatusChartInstance = new Chart(ctx, {
                 type: 'doughnut',
@@ -869,7 +869,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {
@@ -900,7 +900,7 @@
                         label: 'Collections',
                         data: paymentAmounts,
                         backgroundColor: 'rgba(40, 167, 69, 0.8)',
-                        borderColor: '#2563EB',
+                        borderColor: '#1B5E85',
                         borderWidth: 2,
                         borderRadius: 8,
                         borderSkipped: false,
@@ -918,7 +918,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {
@@ -987,7 +987,7 @@
                             label: 'Revenue',
                             data: revenueData,
                             backgroundColor: 'rgba(40, 167, 69, 0.8)',
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             borderWidth: 2
                         },
                         {
@@ -1015,7 +1015,7 @@
                             backgroundColor: 'rgba(0, 0, 0, 0.8)',
                             titleColor: '#fff',
                             bodyColor: '#fff',
-                            borderColor: '#2563EB',
+                            borderColor: '#1B5E85',
                             borderWidth: 1,
                             callbacks: {
                                 label: function(context) {

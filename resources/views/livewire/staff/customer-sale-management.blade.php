@@ -25,7 +25,7 @@
             left: 0;
             width: 100%;
             height: 6px;
-            background: #2563EB;
+            background: #1B5E85;
             opacity: 0.8;
         }
 
@@ -37,7 +37,7 @@
         }
 
         .stat-label {
-            color: #000000;
+            color: #333333;
             font-size: 14px;
             font-weight: 500;
             margin-bottom: 10px;
@@ -69,7 +69,7 @@
             text-transform: uppercase;
             font-size: 12px;
             letter-spacing: 1px;
-            color: #000000;
+            color: #333333;
             padding: 16px 20px;
             border-bottom: 2px solid #e2e8f0;
         }
@@ -78,7 +78,7 @@
             padding: 16px 20px;
             vertical-align: middle;
             border-bottom: 1px solid #f1f5f9;
-            color: #000000;
+            color: #333333;
             font-size: 14px;
         }
 
@@ -99,7 +99,7 @@
             font-family: 'Courier New', monospace;
             font-weight: 600;
             letter-spacing: -0.5px;
-            color: #000000;
+            color: #333333;
         }
 
         /* Avatar styling */
@@ -128,17 +128,17 @@
 
         .badge-paid {
             background-color: #d4edda;
-            color: #000000;
+            color: #333333;
         }
 
         .badge-partial {
             background-color: #fff3cd;
-            color: #000000;
+            color: #333333;
         }
 
         .badge-unpaid {
             background-color: #f8d7da;
-            color: #000000;
+            color: #333333;
         }
 
         /* Enhanced buttons */
@@ -172,7 +172,7 @@
         .modal-title {
             font-weight: 600;
             font-size: 18px;
-            color: #000000;
+            color: #333333;
         }
 
         .modal-body {

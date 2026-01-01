@@ -237,7 +237,7 @@
     }
 
     .summary-card.total {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .summary-card.available {
@@ -245,7 +245,7 @@
     }
 
     .summary-card.sold {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .summary-card.damaged {
@@ -276,24 +276,24 @@
     }
 
     .btn-primary {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-primary:hover {
-        background-color: #1D4ED8;
-        border-color: #1D4ED8;
+        background-color: #164568;
+        border-color: #164568;
         transform: translateY(-2px);
     }
 
     .btn-outline-primary {
-        color: #2563EB;
-        border-color: #2563EB;
+        color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-outline-primary:hover {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
         transform: translateY(-2px);
     }
 
@@ -349,11 +349,11 @@
                     .print-header {
                         margin-bottom: 20px;
                         padding-bottom: 15px;
-                        border-bottom: 2px solid #2563EB;
+                        border-bottom: 2px solid #1B5E85;
                     }
                     
                     .print-header h2 {
-                        color: #2563EB;
+                        color: #1B5E85;
                         font-weight: 700;
                     }
                     
@@ -365,7 +365,7 @@
                     
                     th { 
                         background-color: #ffffff !important;
-                        color: #000000;
+                        color: #333333;
                         font-weight: 600;
                         text-transform: uppercase;
                         font-size: 0.8rem;

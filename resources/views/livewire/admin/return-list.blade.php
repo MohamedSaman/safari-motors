@@ -129,7 +129,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content" id="printableReturnReceipt">
                 <!-- Header – logo + company name -->
-                <div class="modal-header text-center border-0" style="background: #2563EB; color: #fff;">
+                <div class="modal-header text-center border-0" style="background: #1B5E85; color: #fff;">
                     <div class="w-100">
                         <img src="{{ asset('images/SAFARI.png') }}" alt="Logo"
                              class="img-fluid mb-2" style="max-height:60px;">
@@ -319,8 +319,8 @@
             border-top: none;
             font-weight: 600;
             color: #ffffff;
-            background: #2563EB;
-            background: #2563EB;
+            background: #1B5E85;
+            background: #1B5E85;
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;

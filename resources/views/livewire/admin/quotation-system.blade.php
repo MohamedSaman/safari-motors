@@ -600,7 +600,7 @@
 
     /* Quick discount buttons */
     .btn-outline-secondary:hover {
-        background-color: #000000;
+        background-color: #333333;
         color: white;
     }
 

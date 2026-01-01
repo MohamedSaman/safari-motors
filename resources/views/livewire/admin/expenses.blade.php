@@ -58,7 +58,7 @@
             <div class="card summary-card total h-100">
                 <div class="card-body">
                     <div class="d-flex align-items-center">
-                        <div class="icon-container bg-primary bg-opacity-10 me-3">
+                        <div class="icon-container bg-info bg-opacity-10 me-3">
                             <i class="bi bi-cash-coin text-primary fs-4"></i>
                         </div>
                         <div class="flex-grow-1">
@@ -560,7 +560,7 @@
     }
 
     .summary-card.today {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .summary-card.month {
@@ -568,7 +568,7 @@
     }
 
     .summary-card.total {
-        border-left-color: #2563EB;
+        border-left-color: #1B5E85;
     }
 
     .icon-container {
@@ -633,7 +633,7 @@
     .form-control:focus,
     .form-select:focus {
         box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.15);
-        border-color: #2563EB;
+        border-color: #1B5E85;
     }
 
     .btn {
@@ -644,13 +644,13 @@
     }
 
     .btn-primary {
-        background-color: #2563EB;
-        border-color: #2563EB;
+        background-color: #1B5E85;
+        border-color: #1B5E85;
     }
 
     .btn-primary:hover {
-        background-color: #1D4ED8;
-        border-color: #1D4ED8;
+        background-color: #164568;
+        border-color: #164568;
         transform: translateY(-2px);
     }
 
