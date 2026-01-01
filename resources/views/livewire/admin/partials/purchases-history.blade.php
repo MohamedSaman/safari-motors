@@ -38,7 +38,7 @@
                     <small class="text-muted">{{ $purchase['supplier_phone'] ?? 'N/A' }}</small>
                 </td>
                 <td class="text-center">
-                    <span class="badge bg-dark">{{ $purchase['quantity'] ?? 0 }}</span>
+                    <span class="badge bg-info">{{ $purchase['received_qty'] ?? 0 }}</span>
                 </td>
                 <td class="text-end">
                     Rs. {{ number_format($purchase['unit_price'] ?? 0, 2) }}
@@ -73,7 +73,7 @@
         <tfoot class="table-light">
             <tr>
                 <td colspan="5" class="text-end fw-bold">Total:</td>
-                <td class="text-center fw-bold">{{ array_sum(array_column($purchasesHistory, 'quantity')) }}</td>
+                <td class="text-center fw-bold">{{ (int)array_sum(array_column($purchasesHistory, 'quantity')) }}</td>
                 <td colspan="2"></td>
                 <td class="text-end fw-bold text-info">
                     Rs. {{ number_format(array_sum(array_column($purchasesHistory, 'total')), 2) }}
