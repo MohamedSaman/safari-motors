@@ -27,21 +27,43 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background-image: url('{{ asset('/images/bgproduct.jpg') }}');
+                background-image: url('{{ asset('/images/loginn.jpg') }}');
                 background-size: cover;
                 background-position: center;
                 z-index: 0;
             }
 
             .login-form-overlay {
-                background: rgba(255, 255, 255, 0.308);
-                backdrop-filter: blur(10px);
-                border-radius: 10px;
-                padding: 30px;
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(15px);
+                border-radius: 20px;
+                padding: 40px 35px;
                 width: 100%;
-                max-width: 400px;
+                max-width: 450px;
                 z-index: 1;
-                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+            }
+
+            .logo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto 30px;
+                width: 100px;
+                height: 100px;
+                background: rgba(27, 94, 133, 0.7);
+                border-radius: 50%;
+                backdrop-filter: blur(10px);
+                border: 3px solid rgba(255, 255, 255, 0.3);
+                padding: 10px;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .login-logo {
+                max-width: 100%;
+                height: auto;
+                filter: brightness(1.1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
             }
 
             .user-icon-container {
@@ -68,8 +90,23 @@
 
             .form-control {
                 border-radius: 25px;
-                padding: 12px 20px;
-                border: 1px solid #ddd;
+                padding: 14px 22px;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                background: rgba(255, 255, 255, 0.9);
+                color: #333;
+                font-size: 15px;
+                transition: all 0.3s ease;
+            }
+
+            .form-control:focus {
+                background: rgba(255, 255, 255, 1);
+                border-color: rgba(255, 255, 255, 0.6);
+                box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+                outline: none;
+            }
+
+            .form-control::placeholder {
+                color: #999;
             }
 
             /* Invalid state: red border */
@@ -92,81 +129,220 @@
             }
 
             .form-options {
-                margin-bottom: 20px;
+                margin-bottom: 25px;
                 font-size: 0.9rem;
+                color: #fff;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            .form-check-label {
+                color: #fff;
+            }
+
+            .form-check-input {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .form-check-input:checked {
+                background-color: #1B5E85;
+                border-color: #1B5E85;
             }
 
             .forgot-link {
-                color: #1B5E85;
+                color: #fff;
                 text-decoration: none;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            }
+
+            .forgot-link:hover {
+                color: rgba(255, 255, 255, 0.9);
+                text-decoration: underline;
             }
 
             .login-btn {
                 width: 100%;
                 border-radius: 25px;
-                padding: 10px;
-                background-color: #1B5E85;
+                padding: 14px;
+                background: #1B5E85;
                 border: none;
                 font-weight: 600;
-                margin-bottom: 20px;
+                margin-bottom: 25px;
+                color: #fff;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 15px rgba(27, 94, 133, 0.3);
             }
 
-            .divider {
-                text-align: center;
-                margin: 20px 0;
-                position: relative;
+            .login-btn:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(27, 94, 133, 0.4);
+                background: #145a7d;
             }
 
-            .divider::before,
-            .divider::after {
-                content: "";
-                position: absolute;
-                top: 50%;
-                width: 40%;
+            .separator-line {
+                width: 100%;
                 height: 1px;
-                background-color: #ddd;
+                background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+                margin: 25px 0;
             }
 
-            .divider::before {
-                left: 0;
+            .connect-section {
+                text-align: center;
+                margin-top: 25px;
             }
 
-            .divider::after {
-                right: 0;
+            .connect-title {
+                color: #fff;
+                font-size: 0.95rem;
+                font-weight: 500;
+                margin-bottom: 15px;
+                text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
             }
 
-            .divider span {
-                display: inline-block;
-                padding: 0 10px;
-                background-color: #fff;
-                position: relative;
-                z-index: 1;
-                color: #777;
-                font-size: 0.9rem;
-            }
-
-            .social-login {
+            .connect-links {
                 display: flex;
                 justify-content: center;
-                gap: 15px;
+                gap: 20px;
             }
 
-            .social-icon {
+            .connect-icon {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 35px;
-                height: 35px;
+                width: 45px;
+                height: 45px;
                 border-radius: 50%;
-                background-color: #f5f5f5;
-                color: #1B5E85;
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #fff;
                 text-decoration: none;
                 transition: all 0.3s ease;
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(5px);
+                font-size: 1.3rem;
             }
 
-            .social-icon:hover {
+            .connect-icon:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Email icon - Red/Orange */
+            .connect-icon:has(.bi-envelope-fill) {
+                background-color: rgba(234, 67, 53, 0.85);
+                border-color: rgba(234, 67, 53, 0.5);
+            }
+
+            .connect-icon:has(.bi-envelope-fill):hover {
+                background-color: rgba(234, 67, 53, 1);
+                border-color: rgba(234, 67, 53, 0.7);
+            }
+
+            /* WhatsApp icon - Green */
+            .connect-icon:has(.bi-whatsapp) {
+                background-color: rgba(37, 211, 102, 0.85);
+                border-color: rgba(37, 211, 102, 0.5);
+            }
+
+            .connect-icon:has(.bi-whatsapp):hover {
+                background-color: rgba(37, 211, 102, 1);
+                border-color: rgba(37, 211, 102, 0.7);
+            }
+
+            /* Mobile Responsive Styles */
+            @media (max-width: 768px) {
+                .login-form-overlay {
+                    max-width: 90%;
+                    padding: 30px 25px;
+                    margin: 0 20px;
+                }
+
+                .logo-container {
+                    width: 90px;
+                    height: 90px;
+                    padding: 8px;
+                    margin-bottom: 25px;
+                }
+
+                .form-control {
+                    padding: 12px 18px;
+                    font-size: 14px;
+                }
+
+                .login-btn {
+                    padding: 12px;
+                    font-size: 15px;
+                }
+
+                .connect-title {
+                    font-size: 0.9rem;
+                }
+
+                .connect-icon {
+                    width: 42px;
+                    height: 42px;
+                    font-size: 1.2rem;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .login-form-overlay {
+                    max-width: 95%;
+                    padding: 25px 20px;
+                    margin: 0 10px;
+                }
+
+                .logo-container {
+                    width: 80px;
+                    height: 80px;
+                    padding: 6px;
+                    margin-bottom: 20px;
+                }
+
+                .form-group {
+                    margin-bottom: 15px;
+                }
+
+                .form-control {
+                    padding: 11px 16px;
+                    font-size: 14px;
+                }
+
+                .form-options {
+                    font-size: 0.85rem;
+                    margin-bottom: 20px;
+                }
+
+                .login-btn {
+                    padding: 11px;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+
+                .separator-line {
+                    margin: 20px 0;
+                }
+
+                .connect-section {
+                    margin-top: 20px;
+                }
+
+                .connect-title {
+                    font-size: 0.85rem;
+                    margin-bottom: 12px;
+                }
+
+                .connect-links {
+                    gap: 15px;
+                }
+
+                .connect-icon {
+                    width: 38px;
+                    height: 38px;
+                    font-size: 1.1rem;
+                }
             }
         </style>
         <!-- Styles -->

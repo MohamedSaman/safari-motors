@@ -4,10 +4,12 @@
 
         <!-- Centered login form overlay -->
         <div class="login-form-overlay">
-            <!-- User icon -->
-            <div class="user-icon-container">
-                <i class="bi bi-person-circle"></i>
+            <!-- Safari Motors Logo -->
+            <div class="logo-container">
+                <img src="{{ asset('/images/safariw.png') }}" alt="Safari Motors Logo" class="login-logo">
             </div>
+
+           
 
             <form wire:submit.prevent="login">
           
@@ -50,18 +52,23 @@
                 <!-- Login button -->
                 <button type="submit" class="btn btn-primary login-btn">Login</button>
 
-                <!-- Divider with text -->
-                <div class="divider">
-                    <span>Or Login With</span>
-                </div>
+                <!-- Separator line -->
+                <div class="separator-line"></div>
 
-                <!-- Social media login options -->
-                <div class="social-login">
-                    <a href="https://www.facebook.com/webxkey" class="social-icon"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-google"></i></a>
-                    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/webxkey" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                <!-- Connect with us section -->
+                <div class="connect-section">
+                    <p class="connect-title">Connect with us</p>
+                    <div class="connect-links">
+                        <a href="mailto:contact@webxkey.com" class="connect-icon" title="Email us">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=94755299721&text=Hi%21+I%27m+interested+in+your+services.&type=phone_number&app_absent=0" 
+                           target="_blank" 
+                           class="connect-icon" 
+                           title="WhatsApp us">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
             </form>
         </div>
