@@ -52,7 +52,7 @@
                 margin: 0 auto 30px;
                 width: 100px;
                 height: 100px;
-                background: rgba(27, 94, 133, 0.7);
+                background: #1b5e85;
                 border-radius: 50%;
                 backdrop-filter: blur(10px);
                 border: 3px solid rgba(255, 255, 255, 0.3);
@@ -166,7 +166,7 @@
                 width: 100%;
                 border-radius: 25px;
                 padding: 14px;
-                background: #1B5E85;
+                background: #1b5e85;
                 border: none;
                 font-weight: 600;
                 margin-bottom: 25px;
@@ -179,7 +179,7 @@
             .login-btn:hover {
                 transform: translateY(-2px);
                 box-shadow: 0 6px 20px rgba(27, 94, 133, 0.4);
-                background: #145a7d;
+                background: #125f86ff;
             }
 
             .separator-line {
