@@ -22,6 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        DB::statement('DROP INDEX IF EXISTS idx_pos_sessions_user_date_status ON pos_sessions');
+        // MySQL compatible: drop index without IF EXISTS
+        Schema::table('pos_sessions', function (Blueprint $table) {
+            $table->dropIndex('idx_pos_sessions_user_date_status');
+        });
     }
 };
