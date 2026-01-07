@@ -28,14 +28,21 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('product_details', function (Blueprint $table) {
-            $table->foreignId('stock_id')
-                ->constrained('product_stocks')
-                ->onDelete('cascade');
-            $table->foreignId('price_id')
-                ->constrained('product_prices');
-            $table->foreignId('supplier_id')
-                ->constrained('product_suppliers')
-                ->onDelete('cascade');
+            // Only add columns if they don't exist
+            if (!Schema::hasColumn('product_details', 'stock_id')) {
+                $table->foreignId('stock_id')
+                    ->constrained('product_stocks')
+                    ->onDelete('cascade');
+            }
+            if (!Schema::hasColumn('product_details', 'price_id')) {
+                $table->foreignId('price_id')
+                    ->constrained('product_prices');
+            }
+            if (!Schema::hasColumn('product_details', 'supplier_id')) {
+                $table->foreignId('supplier_id')
+                    ->constrained('product_suppliers')
+                    ->onDelete('cascade');
+            }
         });
     }
 };
